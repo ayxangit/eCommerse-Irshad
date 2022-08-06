@@ -6,8 +6,25 @@
     list-style-type: none;
 }
 
+// font family
+$font_family:'Rokkitt', serif;
+
 // colors
 $color_border_bottom : #ecedf0;
+$color_list : #5b5f66;
+$color_orange: #f6861f;
+$color_flag:#212529;
+$color_flag_border:#e1e2e7;
+$color_green:#40b659;
+$color_input:#f9f9f9;
+$color_input_border:#dadbdd;
+$color_icon:#95979c;
+$color_icon_tag:#232d40;
+// font size
+$font_size_list :  15px;
+$font_size_placeholder:16px;
+$font_size_icon:20px;
+$font_size_text:18px;
 
 // mixinn
 @mixin d-flex-center {
@@ -31,10 +48,10 @@ $color_border_bottom : #ecedf0;
     margin: 0 auto;
 }
 
+// start header
 .header{
     width: 100%;
     height: 184px;
-    border: 1px solid black;
     .header_up{
         width: 100%;
         height: 67px;
@@ -45,24 +62,474 @@ $color_border_bottom : #ecedf0;
            .list{
             width: 55%;
             height: 30px;
-            border: 1px solid black;
             ul{
-                @include d-flex-center;
+                display: flex;
                 li{
                     margin-left: 15px;
-                    a{
-
+                }
+                .condisioner{
+                    width: 94px;
+                    height: 30px;
+                    border: 1px solid $color_orange;
+                    border-radius: 6px;
+                    @include d-flex-center;
+                    transition: 0.5s all ease-in-out;
+                    &:hover{
+                        background: $color_orange;
                     }
+                    &:hover a{
+                        color: #ffff;
+                    }
+                    a{
+                        color: $color_orange;
+                        font-family: $font_family;
+                        font-size: $font_size_list;
+                        line-height: 1.5;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+                .velo{
+                    width: 94px;
+                    height: 30px;
+                    border: 1px solid $color_orange;
+                    border-radius: 6px;
+                    @include d-flex-center;
+                    transition: 0.5s all ease-in-out;
+                    &:hover{
+                       background: $color_orange;
+                    }
+                    &:hover a{
+                        color: #fff;
+                    }
+                    a{
+                        color: $color_orange;
+                        font-family: $font_family;
+                        font-size: $font_size_list;
+                        line-height: 1.5;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+                a{
+                    color: $color_list;
+                    font-family: $font_family;
+                    font-size: $font_size_list;
+                    line-height: 2rem;
+                    font-weight: 400;
+                    cursor: pointer;
                 }
             }
            } 
            .language{
                 width: 40%;
                 height: 30px;
-                border: 1px solid black;
                 @include d-flex-center;
                 gap: 18px;
+                .call_fast{
+                    width: 25%;
+                    height: 24px;
+                    border-right: 1px solid $color_border_bottom;
+                    a{
+                        img{
+                            width: 70%;
+                        }
+                    }
+                }
+                .choose_language{
+                    width: 40%;
+                    height: 24px;
+                    border-right: 1px solid $color_border_bottom;
+                    @include d-flex-center;
+                    cursor: pointer;
+                    .flag{
+                        width: 16%;
+                        height: 24px;
+                        margin-right: 12px;
+                        @include d-flex-center;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        color: $color_flag;
+                        font-size: $font_size_list;
+                        font-weight: 400;
+                        font-family: $font_family;
+                        line-height: 1.5;
+                        margin-right: 12px;
+                        position: relative;
+                        .fa-angle-down{
+                           position: relative;
+                           top: 2px;
+                           left: 6px;
+                        }
+                    }
+                }
+                .personal_cabinet{
+                    width: 23%;
+                    height: 24px;
+                    @include d-flex-center;
+                    a{
+                        color: $color_flag;
+                        font-size: $font_size_list;
+                        font-family: $font_family;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        position: relative;
+                        .fa-user{
+                            position: relative;
+                            top: 1px;
+                            right: 6px;
+                        }
+                    }
+                }
            }
+        }
+    }
+    .header_down{
+        width: 100%;
+        height: 117px;
+        @include d-flex-center;
+        .down{
+            @include d-flex-center;
+            gap: 10px;
+            .logo{
+                width: 15%;
+                height: 49px;
+               a{
+                @include d-flex-center;
+                img{
+                    width: 60%;
+                }
+               }
+                
+            }
+            .catalog{
+                width: 12%;
+                height: 50px;
+                border: 1px solid $color_green;
+                border-radius: 0.8rem;
+                background: $color_green;
+
+            }
+            .form{
+                position: relative;
+                width: 35%;
+                height: 50px;
+                form{
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        background: $color_input;
+                        outline: none;
+                        border: 1px solid $color_input_border;
+                        border-radius: 0.8rem;
+                        padding: 1.4rem 2rem;
+                        &::placeholder{
+                            font-size: $font_size_placeholder;
+                            font-family: $font_family;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                a{
+                    position: relative;
+                    left: 340px;
+                    bottom: 33px;
+                    border-left: 1px solid $color_flag_border;
+                    .fa-magnifying-glass{
+                        color: $color_icon;
+                        margin-left: 13px;
+                        
+                    }
+                }
+            }
+            .equality{
+                width: 8%;
+                height: 46px;
+                @include d-flex-center;
+                transition: 0.5s all ease-in-out;
+                &:hover a .fa-binoculars{
+                   color: $color_orange;
+                }
+                &:hover a span{
+                    color: $color_orange;
+                 }
+                a{
+                    @include d-flex-column;
+                    gap: 3px;
+                    .fa-binoculars{
+                        color: $color_icon_tag;
+                    }
+                    span{
+                        color: $color_flag;
+                    }
+                }
+            }
+            .liked{
+                width: 8%;
+                height: 46px;
+                @include d-flex-center;
+                transition: 0.5s all ease-in-out;
+                &:hover a .fa-heart{
+                   color: $color_orange;
+                }
+                &:hover a span{
+                    color: $color_orange;
+                 }
+                a{
+                    @include d-flex-column;
+                    gap: 3px;
+                    .fa-heart{
+                        color: red;
+                    }
+                    span{
+                        color: $color_flag;
+                    }
+                }
+            }
+            .addTo_cart{
+                width: 8%;
+                height: 46px;
+                @include d-flex-center;
+                transition: 0.5s all ease-in-out;
+                &:hover a .fa-cart-shopping{
+                   color: $color_orange;
+                }
+                &:hover a span{
+                    color: $color_orange;
+                 }
+                a{
+                    @include d-flex-column;
+                    gap: 3px;
+                    .fa-cart-shopping{
+                        color: green;
+                    }
+                    span{
+                        color: $color_flag;
+                    }
+                }
+            }
+            .mothly{
+                 width: 12%;
+                 height: 77px;
+                 border: 1px solid $color_green;
+                 @include d-flex-column;
+                 gap: 7px;
+                 cursor: pointer;
+                 border-radius: 6px;
+                 transition: 0.3s all ease-in-out;
+                 &:hover{
+                    background: $color_green;
+                 }
+                 &:hover .fa-hand-holding-dollar{
+                    color: #fff;
+                 }
+                 &:hover span{
+                    color: #fff;
+                 }
+                 .fa-hand-holding-dollar{
+                    color: $color_green;
+                    font-size: $font_size_icon;
+                 }
+                 span{
+                    color: $color_green;
+                    font-size: $font_size_text;
+                    font-family: $font_family;
+                    line-height: 1.5;
+                    font-weight: 600;
+
+                 }
+            }
+        }
+
+    }
+}
+// end
+
+// start reason sale section
+.reason_sale{
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    .slideBox{
+        @include d-flex-column;
+        gap: 18px;
+        .slide_box{
+            width: 100%;
+            height: 422px;
+            border: 1px solid black;
+            @include d-justify-between;
+            .animate_slide{
+                width: 62%;
+                height: 422px;
+                .swiper {
+                    width: 100%;
+                    height: 100%;
+                    .swiper-wrapper{
+                        .swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background: #fff;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
+                            position: relative;
+                            a{
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                .condisioner_box{
+                                    width: 100%;
+                                    height: 100%;
+                                    background: url(/assets/image/background/slide_condisioner.jpg);
+                                    background-size: cover;
+                                    background-position: center center;
+                                    @include d-justify-between;
+                                    .for_you{
+                                        width: 40%;
+                                        height: 400px;
+                                        @include d-flex-column;
+                                        gap: 20px;
+                                        position: relative;
+                                        .you{
+                                            width: 87%;
+                                            height: 78px;
+                                            position: relative;
+                                            bottom: 61px;
+                                            left: 18px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .noComisia{
+                                            width: 82%;
+                                            height: 156px;
+                                            position: relative;
+                                            top: 30px;
+                                            left: 36px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .beforeCondisioner{
+                                        width: 60%;
+                                        height: 250px;
+                                        position: relative;
+                                        top: 47px;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                .slide_hot{
+                                    width: 100%;
+                                    height: 100%;
+                                    background: url(/assets/image/background/157_0.jpg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                    @include d-flex-center;
+                                    position: relative;
+                                    .part_first{
+                                        width: 32%;
+                                        height: 266px;
+                                        position: relative;
+                                        .august{
+                                            width: 57%;
+                                            height: 21px;
+                                            position: relative;
+                                            bottom: 50px;
+                                            left: 19px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .hot{
+                                            width: 95%;
+                                            height: 225px;
+                                            position: relative;
+                                            top: 22px;
+                                            left: 28px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .part_second{
+                                        width: 35%;
+                                        height: 400px;
+                                        @include d-flex-column;
+                                        .smile_sun{
+                                            width: 56%;
+                                            height: 81px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .summer{
+                                            width: 82%;
+                                            height: 174px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .part_third{
+                                        width: 30%;
+                                        height: 300px;
+                                        @include d-flex-column;
+                                        gap: 20px;
+                                        position: relative;
+                                        top: 40px;
+                                        right: 30px;
+                                        .smartfon{
+                                            width: 65%;
+                                            height: 84px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .television{
+                                            width: 65%;
+                                            height: 71px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                             img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                              }
+                          }
+                    }
+                }
+            }
+            .time_slide{
+                width: 35%;
+                height: 422px;
+                border: 1px solid black;
+            }
+        }
+        .adversitement_box{
+            width: 100%;
+            height: 158px;
+            border: 1px solid black;
         }
     }
 }
