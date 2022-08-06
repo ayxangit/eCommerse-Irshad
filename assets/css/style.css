@@ -587,7 +587,8 @@
 
 .reason_sale .slideBox .slide_box .animate_slide {
   width: 62%;
-  height: 422px;
+  height: 421px;
+  border: 1px solid black;
 }
 
 .reason_sale .slideBox .slide_box .animate_slide .swiper {
@@ -620,9 +621,6 @@
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .condisioner_box {
   width: 100%;
   height: 100%;
-  background: url(/assets/image/background/slide_condisioner.jpg);
-  background-size: cover;
-  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,6 +630,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url(/assets/image/background/grey.jpg);
+  background-size: cover;
 }
 
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .condisioner_box .for_you {
@@ -692,9 +692,6 @@
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .slide_hot {
   width: 100%;
   height: 100%;
-  background: url(/assets/image/background/157_0.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,6 +701,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(/assets/image/background/gradient.jpg);
+  background-size: cover;
   position: relative;
 }
 
@@ -711,6 +710,7 @@
   width: 32%;
   height: 266px;
   position: relative;
+  z-index: 10px;
 }
 
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .slide_hot .part_first .august {
@@ -810,6 +810,224 @@
 }
 
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .slide_hot .part_third .television img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park {
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/image/background/velo.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park::before {
+  content: "";
+  width: 100%;
+  height: 83%;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(/assets/image/imagess/velocircle.png);
+  background-size: cover;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park .circle_first_price {
+  width: 65%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park .circle_first_price .circle {
+  width: 45%;
+  height: 90px;
+  position: relative;
+  bottom: 60px;
+  right: 89px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park .circle_first_price .circle img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park .circle_first_price .first_price {
+  width: 40%;
+  height: 115px;
+  position: relative;
+  top: 41px;
+  right: 104px;
+  z-index: 10;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park .circle_first_price .first_price img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park .logo_forvard {
+  width: 20%;
+  height: 21px;
+  position: relative;
+  right: 26px;
+  bottom: 174px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park .logo_forvard img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box .honor {
+  width: 40%;
+  height: 55px;
+  position: relative;
+  top: 115px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box .honor img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box .noPercent {
+  width: 56%;
+  height: 32px;
+  position: relative;
+  top: 125px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box .noPercent img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box .phone {
+  width: 55%;
+  height: 496px;
+  position: relative;
+  top: 139px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box .phone img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch {
+  width: 100%;
+  height: 100%;
+  background: url(/assets/image/background/watch.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image {
+  width: 40%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .samsung {
+  width: 38%;
+  height: 18px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .samsung img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .onlayn {
+  width: 89%;
+  height: 21px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .onlayn img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .airpods {
+  width: 82%;
+  height: 46px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .airpods img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .sale_while {
+  width: 62%;
+  height: 58px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .sale_while img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .nowBuy {
+  width: 36%;
+  height: 19px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .nowBuy img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .date {
+  width: 84%;
+  height: 14px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .date img {
   width: 100%;
 }
 
