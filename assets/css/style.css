@@ -550,7 +550,6 @@
 .reason_sale {
   width: 100%;
   height: 600px;
-  border: 1px solid black;
 }
 
 .reason_sale .slideBox {
@@ -573,7 +572,6 @@
 .reason_sale .slideBox .slide_box {
   width: 100%;
   height: 422px;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +586,6 @@
 .reason_sale .slideBox .slide_box .animate_slide {
   width: 62%;
   height: 421px;
-  border: 1px solid black;
 }
 
 .reason_sale .slideBox .slide_box .animate_slide .swiper {
@@ -621,6 +618,8 @@
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .condisioner_box {
   width: 100%;
   height: 100%;
+  border: 1px solid transparent;
+  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,6 +691,8 @@
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .slide_hot {
   width: 100%;
   height: 100%;
+  border: 1px solid transparent;
+  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,6 +817,8 @@
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .velo_park {
   width: 100%;
   height: 100%;
+  border: 1px solid transparent;
+  border-radius: 12px;
   background-image: url(/assets/image/background/velo.jpg);
   background-size: cover;
   background-position: 50% 50%;
@@ -903,6 +906,8 @@
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .honor_box {
   width: 100%;
   height: 100%;
+  border: 1px solid transparent;
+  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,6 +961,8 @@
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch {
   width: 100%;
   height: 100%;
+  border: 1px solid transparent;
+  border-radius: 12px;
   background: url(/assets/image/background/watch.jpg);
   background-size: cover;
   position: relative;
@@ -973,8 +980,8 @@
           flex-direction: column;
   gap: 20px;
   position: relative;
-  top: 20px;
-  left: 10px;
+  top: 25px;
+  left: 25px;
 }
 
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .watch .text_image .samsung {
@@ -1031,6 +1038,156 @@
   width: 100%;
 }
 
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: url(/assets/image/background/tele.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma {
+  width: 40%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .samsungTv {
+  width: 74%;
+  height: 23px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .samsungTv img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .tillUntil {
+  width: 74%;
+  height: 152px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .tillUntil img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .dateTime {
+  width: 100%;
+  height: 27px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .dateTime img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .order {
+  width: 100%;
+  height: 75px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .text_plazma .order img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .tvPlazma {
+  width: 55%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .tvPlazma .plazmaTv {
+  width: 100%;
+  height: 328px;
+  position: relative;
+  top: 105px;
+  left: 10px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .tvPlazma .plazmaTv img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .tvPlazma .buyIt {
+  width: 24%;
+  height: 26px;
+  position: relative;
+  left: 115px;
+  bottom: 12px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .plazma .tvPlazma .buyIt img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .frozen {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: url(/assets/image/background/condisioner.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .frozen .door {
+  width: 42%;
+  height: 112px;
+  position: relative;
+  top: 28px;
+  left: 19px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .frozen .door img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .frozen .frozens {
+  width: 43%;
+  height: 102px;
+  position: relative;
+  top: 98px;
+  left: 22px;
+}
+
+.reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide a .frozen .frozens img {
+  width: 100%;
+}
+
 .reason_sale .slideBox .slide_box .animate_slide .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
@@ -1042,12 +1199,497 @@
 .reason_sale .slideBox .slide_box .time_slide {
   width: 35%;
   height: 422px;
-  border: 1px solid black;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f6861f;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .seasonTime {
+  width: 100%;
+  height: 29px;
+  background-color: #ffd436;
+  border: 1px solid transparent;
+  border-radius: 12px 12px 0 0;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a {
+  width: 96%;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .logo_text {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .logo_text h3 {
+  width: 58%;
+  height: 34px;
+  font-family: "Rokkitt", serif;
+  font-size: 20px;
+  color: #232d40;
+  font-weight: 700;
+  line-height: 1.4rem;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .logo_text .logoBrend {
+  width: 9%;
+  height: 34px;
+  margin-top: 30px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .logo_text .logoBrend img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .logo_text .logoBrends {
+  width: 24%;
+  height: 34px;
+  margin-top: 30px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .logo_text .logoBrends img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 55px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .imageBrend {
+  width: 35%;
+  height: 150px;
+  position: relative;
+  left: 10px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .imageBrend img {
+  width: 100%;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .buttonSlide {
+  width: 60%;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  position: relative;
+  left: 17px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .buttonSlide .stock {
+  width: 60%;
+  height: 30px;
+  padding: 3px 5px;
+  background: rgba(23, 67, 223, 0.07);
+  color: #1743df;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  border: 1px solid rgba(23, 67, 223, 0.07);
+  font-weight: 600;
+  border-radius: 5px;
+  position: relative;
+  left: 37px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .buttonSlide .stock .fa-envelope-open {
+  font-size: 15px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .buttonSlide .azn {
+  width: 92%;
+  height: 30px;
+  background: rgba(246, 134, 31, 0.07);
+  color: #f6861f;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Rokkitt", serif;
+  padding: 3px 5px;
+  border-radius: 5px;
+  position: relative;
+  left: 7px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .buttonSlide .noPercent {
+  width: 45%;
+  height: 30px;
+  padding: 3px 5px;
+  background: rgba(23, 67, 223, 0.07);
+  color: #1743df;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  border: 1px solid rgba(23, 67, 223, 0.07);
+  font-weight: 600;
+  border-radius: 5px;
+  position: relative;
+  left: 58px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .buttonSlide .chalange {
+  width: 80%;
+  height: 30px;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 3px 5px;
+  font-size: 16px;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  border-radius: 5px;
+  position: relative;
+  left: 19px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide a .imageButtonSlide .buttonSlide .visa {
+  width: 98%;
+  height: 30px;
+  padding: 3px 5px;
+  color: #1743df;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  border: 1px solid #1743df;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .price_text {
+  width: 30%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .price_text .oldPrice {
+  text-decoration: line-through;
+  color: #95979c;
+  font-size: 15px;
+  font-family: "Rokkitt", serif;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .price_text .newPrice {
+  color: #232d40;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Rokkitt", serif;
+  margin-left: 19px;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .boxSlideTag {
+  width: 46%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .boxSlideTag .click {
+  width: 50%;
+  height: 45px;
+  border: 1px solid #f6861f;
+  background: #f6861f;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .boxSlideTag .click:hover {
+  background: #FFF;
+  color: #f6861f;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .boxSlideTag .box {
+  width: 27%;
+  height: 45px;
+  border: 1px solid #40b659;
+  padding: 3px 5px;
+  background: #40b659;
+  border-radius: 5px;
+  margin-left: 10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .boxSlideTag .box:hover {
+  background: #fff;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .boxSlideTag .box:hover .fa-cart-shopping {
+  color: #40b659;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .priceSlide .boxSlideTag .box .fa-cart-shopping {
+  color: #fff;
+}
+
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .reason_sale .slideBox .adversitement_box {
   width: 100%;
   height: 158px;
-  border: 1px solid black;
+  border: 1px solid transparent;
+  background: #fafbfc;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reason_sale .slideBox .adversitement_box .flover {
+  width: 23%;
+  height: 86px;
+  border-right: 1px solid #e1e2e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.reason_sale .slideBox .adversitement_box .flover .fa-arrows-spin {
+  color: #40b659;
+  font-size: 40px;
+}
+
+.reason_sale .slideBox .adversitement_box .flover a h3 {
+  color: #232d40;
+  font-size: 25px;
+  font-family: "Rokkitt", serif;
+  font-weight: 700;
+}
+
+.reason_sale .slideBox .adversitement_box .location {
+  width: 18%;
+  height: 86px;
+  border-right: 1px solid #e1e2e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.reason_sale .slideBox .adversitement_box .location .fa-location-dot {
+  color: #40b659;
+  font-size: 40px;
+}
+
+.reason_sale .slideBox .adversitement_box .location a h3 {
+  color: #232d40;
+  font-size: 25px;
+  font-family: "Rokkitt", serif;
+  font-weight: 700;
+}
+
+.reason_sale .slideBox .adversitement_box .money {
+  width: 29%;
+  height: 86px;
+  border-right: 1px solid #e1e2e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.reason_sale .slideBox .adversitement_box .money .fa-wallet {
+  color: #40b659;
+  font-size: 40px;
+}
+
+.reason_sale .slideBox .adversitement_box .money h3 {
+  color: #232d40;
+  font-size: 25px;
+  font-family: "Rokkitt", serif;
+  font-weight: 700;
+}
+
+.reason_sale .slideBox .adversitement_box .service {
+  width: 30%;
+  height: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.reason_sale .slideBox .adversitement_box .service .fa-shield {
+  color: #40b659;
+  font-size: 40px;
+}
+
+.reason_sale .slideBox .adversitement_box .service a h3 {
+  color: #232d40;
+  font-size: 25px;
+  font-family: "Rokkitt", serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

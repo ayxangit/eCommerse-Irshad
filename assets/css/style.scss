@@ -12,7 +12,7 @@ $font_family:'Rokkitt', serif;
 // colors
 $color_border_bottom : #ecedf0;
 $color_list : #5b5f66;
-$color_orange: #f6861f;
+$color_orange: #f6861f; 
 $color_flag:#212529;
 $color_flag_border:#e1e2e7;
 $color_green:#40b659;
@@ -20,11 +20,20 @@ $color_input:#f9f9f9;
 $color_input_border:#dadbdd;
 $color_icon:#95979c;
 $color_icon_tag:#232d40;
+$color_bg_slide:#ffd436;
+$color_stok_bg:rgba(23,67,223,.07);
+$color_stok:#1743df;
+$color_azn_bg:rgba(246,134,31,.07);
+$color_bg_grey:#fafbfc;
 // font size
 $font_size_list :  15px;
 $font_size_placeholder:16px;
 $font_size_icon:20px;
 $font_size_text:18px;
+$font_size_stok:7px;
+$font_price_size:22px;
+$font_icon_big:40px;
+$font_text:25px;
 
 // mixinn
 @mixin d-flex-center {
@@ -352,19 +361,16 @@ $font_size_text:18px;
 .reason_sale{
     width: 100%;
     height: 600px;
-    border: 1px solid black;
     .slideBox{
         @include d-flex-column;
         gap: 18px;
         .slide_box{
             width: 100%;
             height: 422px;
-            border: 1px solid black;
             @include d-justify-between;
             .animate_slide{
                 width: 62%;
                 height: 421px;
-                border: 1px solid black;
                 .swiper {
                     width: 100%;
                     height: 100%;
@@ -393,6 +399,8 @@ $font_size_text:18px;
                                 .condisioner_box{
                                     width: 100%;
                                     height: 100%;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px;
                                     @include d-justify-between;
                                     background: url(/assets/image/background/grey.jpg);
                                     background-size: cover;
@@ -436,6 +444,8 @@ $font_size_text:18px;
                                 .slide_hot{
                                     width: 100%;
                                     height: 100%;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px;
                                     @include d-flex-center;
                                     background-image: url(/assets/image/background/gradient.jpg);
                                     background-size: cover;
@@ -512,6 +522,8 @@ $font_size_text:18px;
                                 .velo_park{
                                     width: 100%;
                                     height: 100%;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px;
                                     background-image: url(/assets/image/background/velo.jpg);
                                     background-size: cover;
                                     background-position: 50% 50%;
@@ -571,6 +583,8 @@ $font_size_text:18px;
                                 .honor_box{
                                     width: 100%;
                                     height: 100%;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px;
                                     @include d-flex-column;
                                     gap: 10px;
                                     position: relative;
@@ -605,6 +619,8 @@ $font_size_text:18px;
                                 .watch{
                                     width: 100%;
                                     height: 100%;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px;
                                     background: url(/assets/image/background/watch.jpg);
                                     background-size: cover;
                                     position: relative;
@@ -661,6 +677,111 @@ $font_size_text:18px;
                                         }
                                     }
                                 }
+                                .plazma{
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px;
+                                    background: url(/assets/image/background/tele.jpg);
+                                    background-size: cover;
+                                    background-position: center center;
+                                    @include d-justify-between;
+                                    position: relative;
+                                    .text_plazma{
+                                        width: 40%;
+                                        height: 400px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 15px;
+                                        position: relative;
+                                        top: 10px;
+                                        left: 10px;
+                                        .samsungTv{
+                                            width: 74%;
+                                            height: 23px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .tillUntil{
+                                            width: 74%;
+                                            height: 152px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .dateTime{
+                                            width: 100%;
+                                            height: 27px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .order{
+                                            width: 100%;
+                                            height: 75px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .tvPlazma{
+                                        width: 55%;
+                                        height: 400px;
+                                        @include d-flex-column;
+                                        position: relative;
+                                        .plazmaTv{
+                                            width: 100%;
+                                            height: 328px;
+                                            position: relative;
+                                            top: 105px;
+                                            left: 10px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .buyIt{
+                                            width: 24%;
+                                            height: 26px;
+                                            position: relative;
+                                            left: 115px;
+                                            bottom: 12px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .frozen{
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px;
+                                    background: url(/assets/image/background/condisioner.jpg);
+                                    background-size: cover;
+                                    background-position: center center;
+                                    position: relative;
+                                    .door{
+                                        width: 42%;
+                                        height: 112px;
+                                        position: relative;
+                                        top: 28px;
+                                        left: 19px;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                    .frozens{
+                                        width: 43%;
+                                        height: 102px;
+                                        position: relative;
+                                        top: 98px;
+                                        left: 22px;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
                             }
                              img {
                                 display: block;
@@ -675,13 +796,337 @@ $font_size_text:18px;
             .time_slide{
                 width: 35%;
                 height: 422px;
-                border: 1px solid black;
+                .swiper{
+                    width: 100%;
+                    height: 100%;
+                    .swiper-wrapper{
+                        .swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background: #fff;
+                    
+                            /* Center slide text vertically */
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
+                            .timeSlide{
+                                width: 100%;
+                                height: 100%;
+                                border: 1px solid $color_orange;
+                                border-radius: 12px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px;
+                                .seasonTime{
+                                    width: 100%;
+                                    height: 29px;
+                                    background-color: $color_bg_slide;
+                                    border: 1px solid transparent;
+                                    border-radius: 12px 12px 0 0;
+                                }
+                                a{
+                                    width: 96%;
+                                    height: 160px;
+                                    @include d-flex-column;
+                                    position: relative;
+                                    .logo_text{
+                                        width: 100%;
+                                        height: 30px;
+                                        @include d-justify-between;
+                                        h3{
+                                            width: 58%;
+                                            height: 34px;
+                                            font-family: $font_family;
+                                            font-size: $font_size_icon;
+                                            color: $color_icon_tag;
+                                            font-weight: 700;
+                                            line-height: 1.4rem;
+                                            text-align: left;
+                                            margin-left: 20px;
+                                            margin-top: 20px;
+
+                                        }
+                                        .logoBrend{
+                                            width: 9%;
+                                            height: 34px;
+                                            margin-top: 30px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .logoBrends{
+                                            width: 24%;
+                                            height: 34px;
+                                            margin-top: 30px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .imageButtonSlide{
+                                        width: 100%;
+                                        height: 200px;
+                                        @include d-flex-center;
+                                        position: relative;
+                                        top: 55px;
+                                        .imageBrend{
+                                            width: 35%;
+                                            height: 150px;
+                                            position: relative;
+                                            left: 10px;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        .buttonSlide{
+                                            width: 60%;
+                                            height: 180px;
+                                            @include d-flex-column;
+                                            gap: 15px;
+                                            position: relative;
+                                            left: 17px;
+                                            
+                                            .stock{
+                                                width: 60%;
+                                                height: 30px;
+                                                padding: 3px 5px;
+                                                background: $color_stok_bg;
+                                                color: $color_stok;
+                                                font-family: $font_family;
+                                                font-size: $font_size_placeholder;
+                                                border: 1px solid $color_stok_bg;
+                                                font-weight: 600;
+                                                border-radius: 5px;
+                                                position: relative;
+                                                left: 37px;
+                                                .fa-envelope-open{
+                                                    font-size: $font_size_list;
+                                                }
+                                            }
+                                            .azn{
+                                                width: 92%;
+                                                height: 30px;
+                                                background: $color_azn_bg;
+                                                color: $color_orange;
+                                                font-weight: 600;
+                                                font-size: $font_size_placeholder;
+                                                font-family: $font_family;
+                                                padding: 3px 5px;
+                                                border-radius: 5px;
+                                                position: relative;
+                                                left: 7px;
+
+                                            }
+                                            .noPercent{
+                                                width: 45%;
+                                                height: 30px;
+                                                padding: 3px 5px;
+                                                background: $color_stok_bg;
+                                                color: $color_stok;
+                                                font-family: $font_family;
+                                                font-size: $font_size_placeholder;
+                                                border: 1px solid $color_stok_bg;
+                                                font-weight: 600;
+                                                border-radius: 5px;
+                                                position: relative;
+                                                left: 58px;
+                                            }
+                                            .chalange{
+                                                width: 80%;
+                                                height: 30px;
+                                                border: 1px solid #000000;
+                                                color: #000000;
+                                                padding: 3px 5px;
+                                                font-size: $font_size_placeholder;
+                                                font-family: $font_family;
+                                                font-weight: 600;
+                                                border-radius: 5px;
+                                                position: relative;
+                                                left: 19px;
+                                            }
+                                            .visa{
+                                                width: 98%;
+                                                height: 30px;
+                                                padding: 3px 5px;
+                                                color: $color_stok;
+                                                font-family: $font_family;
+                                                font-size: $font_size_placeholder;
+                                                border: 1px solid $color_stok;
+                                                font-weight: 600;
+                                                border-radius: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .priceSlide{
+                                    width: 100%;
+                                    height: 40px;
+                                    @include d-justify-between;
+                                    margin-top: 100px;
+                                    .price_text{
+                                        width: 30%;
+                                        height: 30px;
+                                        @include d-flex-column;
+                                        cursor:grab;
+                                        .oldPrice{
+                                            text-decoration: line-through;
+                                            color: $color_icon;
+                                            font-size: $font_size_list;
+                                            font-family: $font_family;
+                                        }
+                                        .newPrice{
+                                            color: $color_icon_tag;
+                                            font-size: $font_price_size;
+                                            font-weight: 600;
+                                            font-family: $font_family;
+                                            margin-left: 19px;
+                                        }
+                                    }
+                                    .boxSlideTag{
+                                        width: 46%;
+                                        height: 60px;
+                                        @include d-flex-center;
+                                        .click{
+                                            width: 50%;
+                                            height: 45px;
+                                            border: 1px solid $color_orange;
+                                            background: $color_orange;
+                                            color: #fff;
+                                            padding: 3px 5px;
+                                            border-radius: 5px;
+                                            font-size: $font_size_placeholder;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                                background: #FFF;
+                                                color: $color_orange;
+                                            }
+
+                                        }
+                                        .box{
+                                            width: 27%;
+                                            height: 45px;
+                                            border: 1px solid $color_green;
+                                            padding: 3px 5px;
+                                            background: $color_green;
+                                            border-radius: 5px;
+                                            margin-left: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                                background: #fff;
+                                            }
+                                            &:hover .fa-cart-shopping{
+                                                color: $color_green;
+                                            }
+                                            .fa-cart-shopping{
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
             }
         }
         .adversitement_box{
             width: 100%;
             height: 158px;
-            border: 1px solid black;
+            border: 1px solid transparent;
+            background: $color_bg_grey;
+            border-radius: 12px;
+            @include d-flex-center;
+            .flover{
+                width: 23%;
+                height: 86px;
+                border-right: 1px solid $color_flag_border;
+                @include d-flex-column;
+                gap: 10px;
+                .fa-arrows-spin{
+                    color: $color_green;
+                    font-size: $font_icon_big;
+                }
+                a{
+                    h3{
+                        color:$color_icon_tag;
+                        font-size: $font_text;
+                        font-family: $font_family;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .location{
+                width: 18%;
+                height: 86px;
+                border-right: 1px solid $color_flag_border;
+                @include d-flex-column;
+                gap: 10px;
+                .fa-location-dot{
+                    color: $color_green;
+                    font-size: $font_icon_big;
+                }
+                a{
+                    h3{
+                        color:$color_icon_tag;
+                        font-size: $font_text;
+                        font-family: $font_family;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .money{
+                width: 29%;
+                height: 86px;
+                border-right: 1px solid $color_flag_border;
+                @include d-flex-column;
+                gap: 10px;
+                .fa-wallet{
+                    color: $color_green;
+                    font-size: $font_icon_big;
+                }
+                
+                    h3{
+                        color:$color_icon_tag;
+                        font-size: $font_text;
+                        font-family: $font_family;
+                        font-weight: 700;
+                    }
+            }
+            .service{
+                width: 30%;
+                height: 86px;
+                @include d-flex-column;
+                gap: 10px;
+                .fa-shield{
+                    color: $color_green;
+                    font-size: $font_icon_big;
+                }
+                a{
+                    h3{
+                        color:$color_icon_tag;
+                        font-size: $font_text;
+                        font-family: $font_family;
+                        font-weight: 700;
+                    }
+                }
+            }
         }
     }
 }
