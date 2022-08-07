@@ -1692,4 +1692,429 @@
   font-family: "Rokkitt", serif;
   font-weight: 700;
 }
+
+.productList {
+  width: 100%;
+  height: 1120px;
+  margin-top: 50px;
+}
+
+.productList .product_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.productList .product_box .popularList {
+  width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.productList .product_box .popularList a h2 {
+  color: #212529;
+  font-size: 36px;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+}
+
+.productList .product_box .popularList a .grey {
+  color: #e1e2e7;
+}
+
+.productList .product_box .productSlide {
+  width: 100%;
+  height: 906px;
+  border: 1px solid #e1e2e7;
+  border-radius: 12px;
+  -webkit-box-shadow: 1px 0 0 0 #e3e5eb,  0 1px 0 0 #e3e5eb,  1px 1px 0 0 #e3e5eb,  1px 0 0 0 #e3e5eb inset, 0 1px 0 0 #e3e5eb inset;
+          box-shadow: 1px 0 0 0 #e3e5eb,  0 1px 0 0 #e3e5eb,  1px 1px 0 0 #e3e5eb,  1px 0 0 0 #e3e5eb inset, 0 1px 0 0 #e3e5eb inset;
+}
+
+.productList .product_box .productSlide .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox {
+  width: 100%;
+  height: 906px;
+  border-right: 1px solid #e1e2e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productLiked {
+  width: 96%;
+  height: 25px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productLiked a .fa-binoculars {
+  color: #95979c;
+  font-size: 22px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productLiked a .fa-heart {
+  color: #95979c;
+  font-size: 22px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productImage {
+  width: 65%;
+  height: 188px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productImage img {
+  width: 100%;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo {
+  width: 96%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 7px;
+  text-align: left;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo h5 {
+  color: #95979c;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo a {
+  width: 93%;
+  height: 20px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo a h4 {
+  color: #212529;
+  font-size: 18px;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo .rate .rate_icon .fa-star {
+  color: #e1e2e7;
+  font-size: 16px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo .rate span {
+  font-family: "Rokkitt", serif;
+  color: #212529;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo .rate span .fa-comment {
+  color: #232d40;
+  font-size: 16px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 {
+  width: 96%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 7px;
+  text-align: left;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 h5 {
+  color: #95979c;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 a {
+  width: 93%;
+  height: 40px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 a h4 {
+  color: #212529;
+  font-size: 18px;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 .rate .rate_icon .fa-star {
+  color: #e1e2e7;
+  font-size: 16px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 .rate span {
+  font-family: "Rokkitt", serif;
+  color: #212529;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productInfo2 .rate span .fa-comment {
+  color: #232d40;
+  font-size: 16px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productChallange {
+  width: 96%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productChallange .stock {
+  width: 60%;
+  height: 30px;
+  padding: 6px 5px;
+  background: rgba(23, 67, 223, 0.07);
+  color: #1743df;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  border: 1px solid rgba(23, 67, 223, 0.07);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productChallange .stock .fa-envelope-open {
+  font-size: 15px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productChallange .azn {
+  width: 92%;
+  height: 30px;
+  background: rgba(246, 134, 31, 0.07);
+  color: #f6861f;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Rokkitt", serif;
+  padding: 6px 5px;
+  border-radius: 5px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productChallange .noPercent {
+  width: 45%;
+  height: 30px;
+  padding: 6px 5px;
+  background: rgba(23, 67, 223, 0.07);
+  color: #1743df;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  border: 1px solid rgba(23, 67, 223, 0.07);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productChallange .chalange {
+  width: 80%;
+  height: 30px;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 6px 5px;
+  font-size: 16px;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productChallange .visa {
+  width: 98%;
+  height: 30px;
+  padding: 6px 5px;
+  color: #1743df;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  border: 1px solid #1743df;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart {
+  width: 96%;
+  height: 135px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart .productPrice {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart .productPrice span {
+  color: #212529;
+  font-family: "Rokkitt", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart .productPrice button {
+  width: 40%;
+  height: 64px;
+  outline: none;
+  border: 1px solid #fafbfc;
+  background: #fafbfc;
+  border-radius: 6px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart a {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #40b659;
+  background: #40b659;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart a:hover {
+  background: #fff;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart a:hover .fa-cart-shopping {
+  color: #40b659;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart a:hover span {
+  color: #40b659;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart a .fa-cart-shopping {
+  color: #fff;
+  font-size: 16px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productAddToCart a span {
+  color: #fff;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */

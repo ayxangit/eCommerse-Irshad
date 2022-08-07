@@ -34,6 +34,7 @@ $font_size_stok:7px;
 $font_price_size:22px;
 $font_icon_big:40px;
 $font_text:25px;
+$font_product_size:36px;
 
 // mixinn
 @mixin d-flex-center {
@@ -1130,3 +1131,328 @@ $font_text:25px;
         }
     }
 }
+// end
+
+// start product section
+.productList{
+    width: 100%;
+    height: 1120px;
+    margin-top: 50px;
+    .product_box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .popularList{
+            width: 100%;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            a{
+                h2{
+                    color: $color_flag;
+                    font-size: $font_product_size;
+                    font-family: $font_family;
+                    font-weight: 600;
+                }
+                .grey{
+                    color: $color_flag_border;
+                }
+            }
+
+        }
+        .productSlide{
+            width: 100%;
+            height: 906px;
+            border: 1px solid $color_flag_border;
+            border-radius: 12px;
+            box-shadow: 1px 0 0 0 #e3e5eb, 
+            0 1px 0 0 #e3e5eb, 
+            1px 1px 0 0 #e3e5eb, 
+            1px 0 0 0 #e3e5eb inset,
+            0 1px 0 0 #e3e5eb inset;
+            .swiper {
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper{
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        .produtc_slideBox{
+                            width: 100%;
+                            height: 906px;
+                            border-right: 1px solid $color_flag_border;
+                            @include d-flex-column;
+                            gap: 40px;
+                            .productLiked{
+                                width: 96%;
+                                height: 25px;
+                                margin-top: 20px;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                gap: 10px;
+                                a{
+                                    .fa-binoculars{
+                                        color: $color_icon;
+                                        font-size: $font_price_size;
+                                    }
+                                    .fa-heart{
+                                        color: $color_icon;
+                                        font-size: $font_price_size;
+                                    }
+                                }
+                            }
+                            .productImage{
+                                width: 65%;
+                                height: 188px;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .productInfo{
+                                width: 96%;
+                                height: 120px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: flex-start;
+                                gap: 7px;
+                                text-align: left;
+                                h5{
+                                    color: $color_icon;
+                                    font-family: $font_family;
+                                    font-size: $font_size_placeholder;
+                                    font-weight: 500;
+                                    line-height: 1.5;
+                                }
+                                a{
+                                    width: 93%;
+                                    height: 20px;
+                                    h4{
+                                        color: $color_flag;
+                                        font-size: $font_size_text;
+                                        font-family: $font_family;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .rate{
+                                    display: flex;
+                                    gap: 10px;
+                                    .rate_icon{
+                                        .fa-star{
+                                            color: $color_flag_border;
+                                            font-size: $font_size_placeholder;
+                                        }
+                                    }
+                                    span{
+                                        font-family: $font_family;
+                                        color: $color_flag;
+                                        font-size: $font_size_icon;
+                                        font-weight: 200;
+                                        .fa-comment{
+                                            color: $color_icon_tag;
+                                            font-size: $font_size_placeholder;
+                                        }
+                                    }
+                                }
+                            }
+                            .productInfo2{
+                                width: 96%;
+                                height: 120px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: flex-start;
+                                gap: 7px;
+                                text-align: left;
+                                h5{
+                                    color: $color_icon;
+                                    font-family: $font_family;
+                                    font-size: $font_size_placeholder;
+                                    font-weight: 500;
+                                    line-height: 1.5;
+                                }
+                                a{
+                                    width: 93%;
+                                    height: 40px;
+                                    h4{
+                                        color: $color_flag;
+                                        font-size: $font_size_text;
+                                        font-family: $font_family;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .rate{
+                                    display: flex;
+                                    gap: 10px;
+                                    .rate_icon{
+                                        .fa-star{
+                                            color: $color_flag_border;
+                                            font-size: $font_size_placeholder;
+                                        }
+                                    }
+                                    span{
+                                        font-family: $font_family;
+                                        color: $color_flag;
+                                        font-size: $font_size_icon;
+                                        font-weight: 200;
+                                        .fa-comment{
+                                            color: $color_icon_tag;
+                                            font-size: $font_size_placeholder;
+                                        }
+                                    }
+                                }
+                            }
+                            .productChallange{
+                                width: 96%;
+                                height: 220px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 10px;
+                                cursor: grab;
+                                .stock{
+                                    width: 60%;
+                                    height: 30px;
+                                    padding: 6px 5px;
+                                    background: $color_stok_bg;
+                                    color: $color_stok;
+                                    font-family: $font_family;
+                                    font-size: $font_size_placeholder;
+                                    border: 1px solid $color_stok_bg;
+                                    font-weight: 600;
+                                    border-radius: 5px;
+                                    .fa-envelope-open{
+                                        font-size: $font_size_list;
+                                    }
+                                }
+                                .azn{
+                                    width: 92%;
+                                    height: 30px;
+                                    background: $color_azn_bg;
+                                    color: $color_orange;
+                                    font-weight: 600;
+                                    font-size: $font_size_placeholder;
+                                    font-family: $font_family;
+                                    padding: 6px 5px;
+                                    border-radius: 5px;
+
+                                }
+                                .noPercent{
+                                    width: 45%;
+                                    height: 30px;
+                                    padding: 6px 5px;
+                                    background: $color_stok_bg;
+                                    color: $color_stok;
+                                    font-family: $font_family;
+                                    font-size: $font_size_placeholder;
+                                    border: 1px solid $color_stok_bg;
+                                    font-weight: 600;
+                                    border-radius: 5px;
+                                }
+                                .chalange{
+                                    width: 80%;
+                                    height: 30px;
+                                    border: 1px solid #000000;
+                                    color: #000000;
+                                    padding: 6px 5px;
+                                    font-size: $font_size_placeholder;
+                                    font-family: $font_family;
+                                    font-weight: 600;
+                                    border-radius: 5px;
+                                }
+                                .visa{
+                                    width: 98%;
+                                    height: 30px;
+                                    padding: 6px 5px;
+                                    color: $color_stok;
+                                    font-family: $font_family;
+                                    font-size: $font_size_placeholder;
+                                    border: 1px solid $color_stok;
+                                    font-weight: 600;
+                                    border-radius: 5px;
+                                }
+                            }
+                            .productAddToCart{
+                                width: 96%;
+                                height: 135px;
+                                .productPrice{
+                                    width:100%;
+                                    height:65px;
+                                    @include d-justify-between;
+                                    span{
+                                        color: $color_flag;
+                                        font-family: $font_family;
+                                        font-size: $font_size_icon;
+                                        font-weight: 700;
+                                        margin-left: 10px;
+                                    }
+                                    button{
+                                        width: 40%;
+                                        height: 64px;
+                                        outline: none;
+                                        border: 1px solid $color_bg_grey;
+                                        background: $color_bg_grey;
+                                        border-radius: 6px;
+                                    }
+                                }
+                                a{
+                                    width: 100%;
+                                    height: 40px;
+                                    border: 1px solid $color_green;
+                                    background: $color_green;
+                                    border-radius: 6px;
+                                    @include d-flex-center;
+                                    gap: 10px;
+                                    transition: 0.3s all ease-in-out;
+                                    &:hover{
+                                        background: #fff;
+                                    }
+                                    &:hover .fa-cart-shopping{
+                                        color: $color_green;
+                                    }
+                                    &:hover span{
+                                        color: $color_green;
+                                    }
+                                    .fa-cart-shopping{
+                                        color: #fff;
+                                        font-size: $font_size_placeholder;
+                                    }
+                                    span{
+                                        color: #fff;
+                                        font-family: $font_family;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                    }
+                                }
+                            }
+                        }
+                      }
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          }
+                      }
+                }
+        }
+        }
+}
+// end
