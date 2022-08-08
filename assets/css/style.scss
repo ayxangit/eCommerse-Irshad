@@ -25,6 +25,7 @@ $color_stok_bg:rgba(23,67,223,.07);
 $color_stok:#1743df;
 $color_azn_bg:rgba(246,134,31,.07);
 $color_bg_grey:#fafbfc;
+$color_partnyor: #e3e5eb;
 // font size
 $font_size_list :  15px;
 $font_size_placeholder:16px;
@@ -1136,7 +1137,7 @@ $font_product_size:36px;
 // start product section
 .productList{
     width: 100%;
-    height: 1120px;
+    height: 1080px;
     margin-top: 50px;
     .product_box{
         display: flex;
@@ -1454,5 +1455,133 @@ $font_product_size:36px;
                 }
         }
         }
+}
+// end
+
+// start partnyor section
+.partnyor_box{
+    width: 100%;
+    height: 90px;
+    .partnyor{
+        @include d-flex-center;
+        .partnyorSwiper{
+            width: 100%;
+            height: 100%;
+            .swiper {
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper{
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        .partnyorSlide{
+                            width: 100%;
+                            height: 100%;
+                            @include d-flex-center;
+                            .partnyorImg{
+                                width: 100%;
+                                height: 90px;
+                                border: 1px solid $color_partnyor;
+                                border-radius: 8px;
+                                @include d-flex-center;
+                                img{
+                                    width: 81%;
+                                    height: 29%; 
+                                }
+                            }
+                            .partnyorImg2{
+                                width: 100%;
+                                height: 90px;
+                                border: 1px solid $color_partnyor;
+                                border-radius: 8px;
+                                @include d-flex-center;
+                                img{
+                                    width: 74%;
+                                    height: 37%; 
+                                }
+                            }
+                            .partnyorImg3{
+                                width: 100%;
+                                height: 90px;
+                                border: 1px solid $color_partnyor;
+                                border-radius: 8px;
+                                @include d-flex-center;
+                                img{
+                                    width: 60%;
+                                    height: 56%; 
+                                }
+                            }
+                            .partnyorImg4{
+                                width: 100%;
+                                height: 90px;
+                                border: 1px solid $color_partnyor;
+                                border-radius: 8px;
+                                @include d-flex-center;
+                                img{
+                                    width: 68%;
+                                    height: 27%; 
+                                }
+                            }
+                            .partnyorImg5{
+                                width: 100%;
+                                height: 90px;
+                                border: 1px solid $color_partnyor;
+                                border-radius: 8px;
+                                @include d-flex-center;
+                                img{
+                                    width: 68%;
+                                    height: 29%; 
+                                }
+                            }
+                            .partnyorImg6{
+                                width: 100%;
+                                height: 90px;
+                                border: 1px solid $color_partnyor;
+                                border-radius: 8px;
+                                @include d-flex-center;
+                                img{
+                                    width: 53%;
+                                    height: 63%; 
+                                }
+                            }
+                            .partnyorImg7{
+                                width: 100%;
+                                height: 90px;
+                                border: 1px solid $color_partnyor;
+                                border-radius: 8px;
+                                @include d-flex-center;
+                                img{
+                                    width: 36%;
+                                    height: 77%; 
+                                }
+                            }
+                        }
+                         img {
+                          display: block;
+                          width: 100%;
+                          height: 100%;
+                          object-fit: cover;
+                        }
+                      }
+                
+                }
+            }
+        }
+    }
 }
 // end

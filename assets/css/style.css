@@ -1695,7 +1695,7 @@
 
 .productList {
   width: 100%;
-  height: 1120px;
+  height: 1080px;
   margin-top: 50px;
 }
 
@@ -2111,6 +2111,218 @@
 }
 
 .productList .product_box .productSlide .swiper .swiper-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.partnyor_box {
+  width: 100%;
+  height: 90px;
+}
+
+.partnyor_box .partnyor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e3e5eb;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg img {
+  width: 81%;
+  height: 29%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg2 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e3e5eb;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg2 img {
+  width: 74%;
+  height: 37%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg3 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e3e5eb;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg3 img {
+  width: 60%;
+  height: 56%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg4 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e3e5eb;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg4 img {
+  width: 68%;
+  height: 27%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg5 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e3e5eb;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg5 img {
+  width: 68%;
+  height: 29%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg6 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e3e5eb;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg6 img {
+  width: 53%;
+  height: 63%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg7 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e3e5eb;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide .partnyorSlide .partnyorImg7 img {
+  width: 36%;
+  height: 77%;
+}
+
+.partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;

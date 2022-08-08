@@ -29,3 +29,12 @@ let swiperProduct = new Swiper(".mySwiper3", {
  
 });
 // end
+
+// start partnyor slide
+let swiperPartnyor = new Swiper(".mySwiper4", {
+  slidesPerView:6,
+  spaceBetween:10,
+  autoplay:true,
+  loop:true
+});
+// end
