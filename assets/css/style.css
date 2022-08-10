@@ -292,18 +292,11 @@
 }
 
 .header .header_down .down .catalog {
-  width: 12%;
+  width: 5%;
   height: 50px;
   border: 1px solid #40b659;
   border-radius: 0.8rem;
   background: #40b659;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .header .header_down .down .catalog .hamburger_menu #menu_toggle {
@@ -332,8 +325,9 @@
 }
 
 .header .header_down .down .catalog .hamburger_menu .menu_btn {
-  position: fixed;
+  position: absolute;
   top: 123px;
+  left: 398px;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -380,7 +374,7 @@
   z-index: 999;
   top: 151px;
   left: -100%;
-  width: 355px;
+  width: 491px;
   margin: 0;
   padding: 35px 32px;
   background: #fff;
