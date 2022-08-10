@@ -1696,7 +1696,7 @@
 .productList {
   width: 100%;
   height: 1080px;
-  margin-top: 50px;
+  margin-top: 83px;
 }
 
 .productList .product_box {
@@ -1802,11 +1802,23 @@
 .productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productLiked a .fa-binoculars {
   color: #95979c;
   font-size: 22px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productLiked a .fa-binoculars:hover {
+  color: #f6861f;
 }
 
 .productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productLiked a .fa-heart {
   color: #95979c;
   font-size: 22px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productLiked a .fa-heart:hover {
+  color: red;
 }
 
 .productList .product_box .productSlide .swiper .swiper-wrapper .swiper-slide .produtc_slideBox .productImage {
@@ -2072,6 +2084,7 @@
   border: 1px solid #40b659;
   background: #40b659;
   border-radius: 6px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2328,5 +2341,368 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.miniSlide {
+  width: 100%;
+  height: 223px;
+}
+
+.miniSlide .slideMini .mini_slide .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.miniSlide .slideMini .mini_slide .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.miniSlide .slideMini .mini_slide .swiper .swiper-wrapper .swiper-slide .mini_frozen {
+  width: 100%;
+  height: 223px;
+  background: url(/assets/image/background/fullbg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.miniSlide .slideMini .mini_slide .swiper .swiper-wrapper .swiper-slide .mini_velo {
+  width: 100%;
+  height: 223px;
+  background: url(/assets/image/background/fullvl.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.miniSlide .slideMini .mini_slide .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+  height: 623px;
+  background: #18181a;
+  margin-top: 30px;
+}
+
+.footer .line {
+  width: 100%;
+  height: 8px;
+  background: #40b659;
+  position: relative;
+}
+
+.footer .footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.footer .footer_list .footerComunication {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin-top: 80px;
+}
+
+.footer .footer_list .footerComunication h4 {
+  color: #f8f8f8;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.footer .footer_list .footerComunication ul {
+  margin-top: 18px;
+}
+
+.footer .footer_list .footerComunication ul li {
+  margin-top: 10px;
+}
+
+.footer .footer_list .footerComunication ul li a {
+  color: #95979c;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.footer .footer_list .footerComunication .footerLogo {
+  width: 15%;
+  height: 352px;
+}
+
+.footer .footer_list .footerComunication .footerLogo .logo_irshad {
+  width: 50%;
+  height: 40px;
+}
+
+.footer .footer_list .footerComunication .footerLogo .logo_irshad img {
+  width: 100%;
+}
+
+.footer .footer_list .footerComunication .footerBusiness {
+  width: 22%;
+  height: 352px;
+}
+
+.footer .footer_list .footerComunication .footerCustomer {
+  width: 24%;
+  height: 352px;
+}
+
+.footer .footer_list .footerComunication .footerContact {
+  width: 32%;
+  height: 352px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerLocation {
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerLocation .footerCall {
+  width: 44%;
+  height: 28px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerLocation .footerCall img {
+  width: 100%;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerLocation .footerHome {
+  width: 22%;
+  height: 45px;
+  border: 1px solid #585858;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerLocation .footerHome .fa-house {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerLocation p {
+  font-family: "Rokkitt", serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial {
+  width: 100%;
+  height: 86px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial h5 {
+  font-family: "Rokkitt", serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-facebook {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-instagram {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-youtube {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-telegram {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-whatsapp {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-youtube {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-twitter {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a:hover .fa-tiktok {
+  color: #fff;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-facebook {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-instagram {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-youtube {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-linkedin {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-twitter {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-tiktok {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-whatsapp {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerComunication .footerContact .footerSocial .iconFooter a .fa-telegram {
+  color: #c2c5ca;
+  font-size: 22px;
+}
+
+.footer .footer_list .footerPreview {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.footer .footer_list .footerPreview .endOFFooter {
+  width: 40%;
+  height: 22px;
+}
+
+.footer .footer_list .footerPreview .endOFFooter p {
+  color: #95979c;
+  font-size: 16px;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.footer .footer_list .footerPreview .footerImgLogo {
+  width: 40%;
+  height: 25px;
+}
+
+.footer .footer_list .footerPreview .footerImgLogo p {
+  color: #95979c;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer .footer_list .footerPreview .footerImgLogo p a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+}
+
+.footer .footer_list .footerPreview .footerImgLogo p .jis {
+  width: 19px;
+  height: 18px;
+}
+
+.footer .footer_list .footerPreview .footerImgLogo p .jis img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

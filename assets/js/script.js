@@ -38,3 +38,9 @@ let swiperPartnyor = new Swiper(".mySwiper4", {
   loop:true
 });
 // end
+
+// start mini slayd section
+let swiperSlide = new Swiper(".mySwiper5", {
+  slidesPerView:2,
+  spaceBetween:25
+});

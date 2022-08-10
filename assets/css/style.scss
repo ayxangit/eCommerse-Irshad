@@ -26,6 +26,10 @@ $color_stok:#1743df;
 $color_azn_bg:rgba(246,134,31,.07);
 $color_bg_grey:#fafbfc;
 $color_partnyor: #e3e5eb;
+$color_footer:#18181a;
+$color_bottom_border:rgba(255,255,255,.2);
+$color_icon_footer_border:#585858;
+$color_icon_footer:#c2c5ca;
 // font size
 $font_size_list :  15px;
 $font_size_placeholder:16px;
@@ -1138,7 +1142,7 @@ $font_product_size:36px;
 .productList{
     width: 100%;
     height: 1080px;
-    margin-top: 50px;
+    margin-top: 83px;
     .product_box{
         display: flex;
         flex-direction: column;
@@ -1212,10 +1216,18 @@ $font_product_size:36px;
                                     .fa-binoculars{
                                         color: $color_icon;
                                         font-size: $font_price_size;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover{
+                                            color: $color_orange;
+                                        }
                                     }
                                     .fa-heart{
                                         color: $color_icon;
                                         font-size: $font_price_size;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover{
+                                            color: red;
+                                        }
                                     }
                                 }
                             }
@@ -1419,6 +1431,7 @@ $font_product_size:36px;
                                     border: 1px solid $color_green;
                                     background: $color_green;
                                     border-radius: 6px;
+                                    margin-top: 25px;
                                     @include d-flex-center;
                                     gap: 10px;
                                     transition: 0.3s all ease-in-out;
@@ -1454,7 +1467,7 @@ $font_product_size:36px;
                       }
                 }
         }
-        }
+    }
 }
 // end
 
@@ -1583,5 +1596,287 @@ $font_product_size:36px;
             }
         }
     }
+}
+// end
+
+// start mini slayd section
+.miniSlide{
+    width: 100%;
+    height: 223px;
+    .slideMini{
+        .mini_slide{
+            .swiper {
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper{
+                    .swiper-slide {
+                      text-align: center;
+                      font-size: 18px;
+                      background: #fff;
+              
+                      /* Center slide text vertically */
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: -webkit-flex;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      -webkit-align-items: center;
+                      align-items: center;
+                      .mini_frozen{
+                        width: 100%;
+                        height: 223px;
+                        background: url(/assets/image/background/fullbg.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                      }
+                      .mini_velo{
+                        width: 100%;
+                        height: 223px;
+                        background: url(/assets/image/background/fullvl.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                      }
+                       img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                      }
+                    }
+                }
+              }
+        
+        
+        }
+    }
+}
+// end
+
+// start footer
+.footer{
+    width: 100%;
+    height: 623px;
+    background: $color_footer;
+    margin-top: 30px;
+.line{
+        width: 100%;
+        height: 8px;
+        background: $color_green;
+        position: relative;
+}
+   .footer_list{
+    @include d-flex-column;
+    gap: 40px;
+    .footerComunication{
+        width: 100%;
+        height: 400px;
+        @include d-flex-center;
+        gap: 12px;
+        margin-top: 80px;
+        h4{
+            color: #f8f8f8;
+            font-family: $font_family;
+            font-weight: 400;
+            font-size: $font_text;
+            line-height: 1.2;
+        }
+        ul{
+            margin-top: 18px;
+            li{
+                margin-top: 10px;
+                a{
+                    color: $color_icon;
+                    font-family: $font_family;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    font-size: $font_size_placeholder;
+                }
+            }
+        }
+        .footerLogo{
+            width: 15%;
+            height: 352px;
+            .logo_irshad{
+                width: 50%;
+                height: 40px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .footerBusiness{
+            width: 22%;
+            height: 352px;
+        }
+        .footerCustomer{
+            width: 24%;
+            height: 352px;
+        }
+        .footerContact{
+            width: 32%;
+            height: 352px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .footerLocation{
+                width: 100%;
+                height: 69px;
+                border-bottom: 1px solid $color_bottom_border;
+                @include d-flex-center;
+                gap: 18px;
+                .footerCall{
+                    width: 44%;
+                    height: 28px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .footerHome{
+                    width: 22%;
+                    height: 45px;
+                    border: 1px solid $color_icon_footer_border;
+                    border-radius: 50%;
+                    @include d-flex-center;
+                    .fa-house{
+                        color: #fff;
+                        font-size: $font_size_placeholder;
+                    }
+                }
+                p{
+                    font-family: $font_family;
+                    color: #fff;
+                    font-size: $font_size_icon;
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+            }
+            .footerSocial{
+                width: 100%;
+                height: 86px;
+                h5{
+                    font-family: $font_family;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: $font_size_text;
+                    line-height: 1.2;
+                }
+                .iconFooter{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    gap: 15px;
+                    margin-top: 20px;
+                    transition: 0.5s all ease-in-out;
+                    a{
+                        &:hover .fa-facebook{
+                            color: #fff;
+                        }
+                        &:hover .fa-instagram{
+                            color: #fff;
+                        }
+                        &:hover .fa-youtube{
+                            color: #fff;
+                        }
+                        &:hover .fa-telegram{
+                            color: #fff;
+                        }
+                        &:hover .fa-whatsapp{
+                            color: #fff;
+                        }
+                        &:hover .fa-youtube{
+                            color: #fff;
+                        }
+                        &:hover .fa-twitter{
+                            color: #fff;
+                        }
+                        &:hover .fa-tiktok{
+                            color: #fff;
+                        }
+                        .fa-facebook{
+                           color: $color_icon_footer;
+                           font-size: $font_price_size;
+                        }
+                         .fa-instagram{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-youtube{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-linkedin{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-twitter{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-tiktok{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-whatsapp{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-telegram{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                    }
+                }
+            }
+        }
+    }
+    .footerPreview{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .endOFFooter{
+            width: 40%;
+            height: 22px;
+            p{
+                color: $color_icon;
+                font-size: $font_size_placeholder;
+                font-family: $font_family;
+                font-weight: 400;
+                line-height: 1.2;
+            }
+        }
+        .footerImgLogo{
+            width: 40%;
+            height: 25px;
+            p{
+                color: $color_icon;
+                font-family: $font_family;
+                font-weight: 400;
+                font-size: $font_size_placeholder;
+                line-height: 1.5;
+                a{
+                   color: #fff;
+                   font-size: $font_size_text;
+                   font-family: $font_family;
+                   font-weight: 400;
+                }
+                .jis{
+                    width: 19px;
+                    height: 18px;
+                        img{
+                            width: 100%;
+                        }
+                    
+                }
+            }
+        }
+    }
+   }
 }
 // end
