@@ -81,6 +81,29 @@ $font_product_size:36px;
                 display: flex;
                 li{
                     margin-left: 15px;
+                    .tagLineUner{
+                        color: $color_list;
+                        font-family: $font_family;
+                        font-size: $font_size_list;
+                        line-height: 2rem;
+                        font-weight: 400;
+                        cursor: pointer;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background: $color_orange;
+                            height: 1.5px;
+                            width: 0;
+                            left: 0;
+                            bottom: -10px;
+                            transition: 0.3s all ease-in-out;
+
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
                 }
                 .condisioner{
                     width: 94px;
@@ -125,14 +148,6 @@ $font_product_size:36px;
                         font-weight: bold;
                         cursor: pointer;
                     }
-                }
-                a{
-                    color: $color_list;
-                    font-family: $font_family;
-                    font-size: $font_size_list;
-                    line-height: 2rem;
-                    font-weight: 400;
-                    cursor: pointer;
                 }
             }
            } 
@@ -287,13 +302,14 @@ $font_product_size:36px;
                         z-index: 999;
                         top: 151px;
                         left: -100%;
-                        width: 491px;
+                        width: 506px;
                         // height: 100%;
                         margin: 0;
                         padding: 35px 32px;
                         background: #fff;
                         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                        transition-duration: .25s;
+                        // transition-duration: .25s;
+                        transition: 0.3s all ease-in-out;
                         .menu_item{
                             margin-top: 15px;
                             transition: 0.3s all ease-in-out;
@@ -309,6 +325,12 @@ $font_product_size:36px;
                                 font-family: $font_family;
                                 font-weight: 400;
                                 line-height: 1.5;
+                                margin-left: 15px;
+                                transition: 0.2s all ease-in-out;
+                                &:hover{
+                                    color: $color_orange;
+                                    font-weight: 500;
+                                }
                             }
                             .androinPhone{
                                 width: 24px;
@@ -1793,6 +1815,20 @@ $font_product_size:36px;
                     font-weight: 400;
                     line-height: 1.5;
                     font-size: $font_size_placeholder;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 1.5px;
+                        width: 0;
+                        background: $color_orange;
+                        left: 0;
+                        bottom: -10px;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
                 }
             }
         }

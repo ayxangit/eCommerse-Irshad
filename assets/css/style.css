@@ -59,6 +59,32 @@
   margin-left: 15px;
 }
 
+.header .header_up .up .list ul li .tagLineUner {
+  color: #5b5f66;
+  font-family: "Rokkitt", serif;
+  font-size: 15px;
+  line-height: 2rem;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.header .header_up .up .list ul li .tagLineUner::after {
+  content: "";
+  position: absolute;
+  background: #f6861f;
+  height: 1.5px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_up .up .list ul li .tagLineUner:hover::after {
+  width: 100%;
+}
+
 .header .header_up .up .list ul .condisioner {
   width: 94px;
   height: 30px;
@@ -126,15 +152,6 @@
   font-size: 15px;
   line-height: 1.5;
   font-weight: bold;
-  cursor: pointer;
-}
-
-.header .header_up .up .list ul a {
-  color: #5b5f66;
-  font-family: "Rokkitt", serif;
-  font-size: 15px;
-  line-height: 2rem;
-  font-weight: 400;
   cursor: pointer;
 }
 
@@ -374,14 +391,14 @@
   z-index: 999;
   top: 151px;
   left: -100%;
-  width: 491px;
+  width: 506px;
   margin: 0;
   padding: 35px 32px;
   background: #fff;
   -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .header .header_down .down .catalog .hamburger_menu .menu_box .menu_item {
@@ -405,6 +422,14 @@
   font-family: "Rokkitt", serif;
   font-weight: 400;
   line-height: 1.5;
+  margin-left: 15px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item span:hover {
+  color: #f6861f;
+  font-weight: 500;
 }
 
 .header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .androinPhone {
@@ -2589,6 +2614,23 @@
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
+  position: relative;
+}
+
+.footer .footer_list .footerComunication ul li a::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 0;
+  background: #f6861f;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.footer .footer_list .footerComunication ul li a:hover::after {
+  width: 100%;
 }
 
 .footer .footer_list .footerComunication .footerLogo {
