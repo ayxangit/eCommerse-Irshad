@@ -112,6 +112,77 @@
   width: 100%;
 }
 
+.videoCard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  height: 576px;
+  background: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+  z-index: 999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  visibility: hidden;
+}
+
+.videoCard .video_card {
+  width: 88%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.videoCard .video_card h4 {
+  font-family: "Rokkitt", serif;
+  font-size: 20px;
+  color: #18181a;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.videoCard .video_card .pay_icon {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #e1e2e7;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.videoCard .videOBoxs {
+  width: 88%;
+  height: 400px;
+}
+
 .header {
   width: 100%;
   height: 184px;
@@ -2651,6 +2722,456 @@
 }
 
 .partnyor_box .partnyor .partnyorSwiper .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video_slayd_box {
+  width: 100%;
+  height: 604px;
+}
+
+.video_slayd_box .videoCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_slayd_box .videoCon .video_text {
+  width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_slayd_box .videoCon .video_text .tag_text {
+  width: 40%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.video_slayd_box .videoCon .video_text .tag_text a {
+  cursor: pointer;
+}
+
+.video_slayd_box .videoCon .video_text .tag_text a h2 {
+  color: #212529;
+  font-size: 36px;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+}
+
+.video_slayd_box .videoCon .video_text .tag_text .grey {
+  color: #e1e2e7;
+}
+
+.video_slayd_box .videoCon .video_text .youtube_tag {
+  width: 23%;
+  height: 48px;
+  background: #f23620;
+  border: 1px solid #f23620;
+  border-radius: 6px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.video_slayd_box .videoCon .video_text .youtube_tag:hover {
+  background: #fff;
+}
+
+.video_slayd_box .videoCon .video_text .youtube_tag:hover a {
+  color: #f23620;
+  font-weight: 600;
+}
+
+.video_slayd_box .videoCon .video_text .youtube_tag a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Rokkitt", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.video_slayd_box .videoCon .video_text .youtube_tag a .fa-youtube {
+  font-size: 22px;
+}
+
+.video_slayd_box .videoCon .video_slayd {
+  width: 100%;
+  height: 542px;
+  margin-top: 15px;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd {
+  width: 100%;
+  height: 472px;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad {
+  width: 100%;
+  height: 280px;
+  background: url(/assets/image/background/maxresdefault.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad:hover .overlay {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
+  background: greenyellow;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad:hover a {
+  width: 175px;
+  height: 80px;
+  gap: 10px;
+  border-radius: 35px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad:hover a .button_img {
+  width: 30px;
+  height: 34px;
+  background: url(/assets/image/background/play-btn.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad:hover a h4 {
+  display: block;
+  opacity: 1;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad .overlay {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad a {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad a .button_img {
+  width: 28px;
+  height: 31px;
+  background: url(/assets/image/background/play-btn.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshad a h4 {
+  display: none;
+  opacity: 0;
+  color: #18181a;
+  font-family: "Rokkitt", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshadText {
+  width: 100%;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshadText a h3 {
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #18181a;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd .videoIrshadText p {
+  text-align: left;
+  color: #95979c;
+  font-weight: 400;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 {
+  width: 100%;
+  height: 472px;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad {
+  width: 100%;
+  height: 280px;
+  background: url(/assets/image/background/oglan.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad:hover .overlay {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
+  background: greenyellow;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad:hover a {
+  width: 175px;
+  height: 80px;
+  gap: 10px;
+  border-radius: 35px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad:hover a .button_img {
+  width: 30px;
+  height: 34px;
+  background: url(/assets/image/background/play-btn.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad:hover a h4 {
+  display: block;
+  opacity: 1;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad .overlay {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad a {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad a .button_img {
+  width: 28px;
+  height: 31px;
+  background: url(/assets/image/background/play-btn.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshad a h4 {
+  display: none;
+  opacity: 0;
+  color: #18181a;
+  font-family: "Rokkitt", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshadText {
+  width: 100%;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshadText a h3 {
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #18181a;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide .videoSlayd2 .videoIrshadText p {
+  text-align: left;
+  color: #95979c;
+  font-weight: 400;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.video_slayd_box .videoCon .video_slayd .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;

@@ -46,13 +46,32 @@ let swiperSlide = new Swiper(".mySwiper5", {
 });
 // end
 
+// start video slayd section
+let swiperVideo = new Swiper(".mySwiper6", {
+    slidesPerView:3,
+    spaceBetween:20
+});
+// end
+
 // paying function
 document.querySelector(".mothly").addEventListener("click",()=>{
    document.querySelector(".content").style.visibility="visible";
+   
 })
 
 document.querySelector(".pay_icon").addEventListener("click",()=>{
   document.querySelector(".content").style.visibility="hidden";
+})
+// end
+
+// vide0 card
+document.querySelector(".videoSlayd").addEventListener("click",()=>{
+  document.querySelector(".videoCard").style.visibility="visible";
+  
+})
+
+document.querySelector(".pay_icon").addEventListener("click",()=>{
+ document.querySelector(".videoCard").style.visibility="hidden";
 })
 // end
 
