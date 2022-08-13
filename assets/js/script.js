@@ -94,30 +94,61 @@ document.querySelector(".video_icon3").addEventListener("click",()=>{
 // end
 
 // start countdown reason section
+const days = document.querySelector("#days");
+const hours = document.querySelector("#hours");
+const minutes = document.querySelector("#minutes");
+const seconds = document.querySelector("#seconds");
 
+const day = document.querySelector("#day");
+const hour = document.querySelector("#hour");
+const minute = document.querySelector("#minute");
+const second = document.querySelector("#second");
 
+const dayss = document.querySelector("#dayss");
+const hourss = document.querySelector("#hourss");
+const minutess = document.querySelector("#minutess");
+const secondss = document.querySelector("#secondss");
 
-const days = document.querySelector("#days")
-const hours = document.querySelector("#hours")
-const minutes = document.querySelector("#minutes")
-const seconds = document.querySelector("#seconds")
+const dayses = document.querySelector("#dayses");
+const hourses = document.querySelector("#hourses");
+const minuteses = document.querySelector("#minuteses");
+const secondses = document.querySelector("#secondses");
 
+const currentYear = new Date().getFullYear();
 
-const currentDate = new Date().getFullYear();
+const saleYear = new Date(`September 01 ${currentYear+1} 00:00:00`);
 
-const saleDate = new Date(` January 01 ${currentDate+1} 00:00:00`);
-
-function saleTimeReason() {
+function saleTime() {
     const currentTime = new Date();
-    const diffrent = saleDate-currentTime;
+    const diff = saleYear-currentTime;
 
+    const d = Math.floor(diff/1000/60/60/24)%30;
+    const h = Math.floor(diff/1000/60/60)%24;
+    const m = Math.floor(diff/1000/60)%60;
+    const s = Math.floor(diff/1000)%60;
+
+    days.innerHTML=d + " " + "Gün";
+    hours.innerHTML= h<10 ? '0' +  h + ":" : h;
+    minutes.innerHTML= m<10 ? '0' + m  : m + ":";
+    seconds.innerHTML= s<10 ?  '0' +  s  : s;
+
+    day.innerHTML=d + " " + "Gün";
+    hour.innerHTML= h<10 ? '0' +  h + ":" : h;
+    minute.innerHTML= m<10 ? '0' + m : m + ":";
+    second.innerHTML= s<10 ?  '0' +  s  : s;
+
+    dayss.innerHTML=d + " " + "Gün";
+    hourss.innerHTML= h<10 ? '0' +  h + ":" : h;
+    minutess.innerHTML= m<10 ? '0' + m  : m + ":";
+    secondss.innerHTML= s<10 ?  '0' +  s  : s;
+
+    dayses.innerHTML=d + " " + "Gün";
+    hourses.innerHTML= h<10 ? '0' +  h + ":" : h;
+    minuteses.innerHTML= m<10 ? '0' + m  : m + ":";
+    secondses.innerHTML= s<10 ?  '0' +  s  : s;
     
-    const d = Math.floor(diffrent/1000/60/60/24)%30;
-    const h = Math.floor(diffrent/1000/60/60)%24;
-    const m = Math.floor(diffrent/1000/60)%60;
-    const s = Math.floor(diffrent/1000)%60;
-
-   days.innerHTML=d;
 }
 
-setInterval(saleTimeReason,1000)
+setInterval(saleTime,1000)
+
+// end

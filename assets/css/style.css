@@ -1788,7 +1788,7 @@
   gap: 2px;
 }
 
-.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .seasonTime .timer p {
+.reason_sale .slideBox .slide_box .time_slide .swiper .swiper-wrapper .swiper-slide .timeSlide .seasonTime .timer .time p {
   color: #18181a;
   font-family: "Rokkitt", serif;
   font-size: 18px;

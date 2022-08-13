@@ -1191,12 +1191,14 @@ $font_product_size:36px;
                                     .timer{
                                         display: flex;
                                         gap: 2px;
-                                        p{
-                                            color: $color_footer;
-                                            font-family: $font_family;
-                                            font-size: $font_size_text;
-                                            font-weight: 600;
-                                            line-height: 1.2;
+                                        .time{
+                                            p{
+                                                color: $color_footer;
+                                                font-family: $font_family;
+                                                font-size: $font_size_text;
+                                                font-weight: 600;
+                                                line-height: 1.2;
+                                            }
                                         }
                                     }
                                 }
