@@ -125,6 +125,7 @@ $font_product_size:36px;
     }
 }
 // end
+
 // video card
  .videoCard{
     position: fixed;
@@ -153,7 +154,7 @@ $font_product_size:36px;
             line-height: 1.5;
             font-weight: 600;
         }
-        .pay_icon{
+        .video_icon{
             width: 56px;
             height: 56px;
             border: 1px solid $color_flag_border;
@@ -167,6 +168,90 @@ $font_product_size:36px;
         height: 400px;
     }
  }
+ .videoCard2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 576px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    visibility: hidden;
+    .video_card{
+        width: 88%;
+        height: 120px;
+        @include d-justify-between;
+        h4{
+            font-family: $font_family;
+            font-size: $font_size_icon;
+            color: $color_footer;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .video_icon2{
+            width: 56px;
+            height: 56px;
+            border: 1px solid $color_flag_border;
+            border-radius: 50%;
+            @include d-flex-center;
+            cursor: pointer;
+        }
+    }
+    .videOBoxs{
+        width: 88%;
+        height: 400px;
+    }
+ }
+ .videoCard3{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 576px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    visibility: hidden;
+    .video_card{
+        width: 88%;
+        height: 120px;
+        @include d-justify-between;
+        h4{
+            font-family: $font_family;
+            font-size: $font_size_icon;
+            color: $color_footer;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .video_icon3{
+            width: 56px;
+            height: 56px;
+            border: 1px solid $color_flag_border;
+            border-radius: 50%;
+            @include d-flex-center;
+            cursor: pointer;
+        }
+    }
+    .videOBoxs{
+        width: 88%;
+        height: 400px;
+    }
+ }
+//  end
+
 // start header
 .header{
     width: 100%;
@@ -1102,6 +1187,18 @@ $font_product_size:36px;
                                     background-color: $color_bg_slide;
                                     border: 1px solid transparent;
                                     border-radius: 12px 12px 0 0;
+                                    @include d-justify-around;
+                                    .timer{
+                                        display: flex;
+                                        gap: 2px;
+                                        p{
+                                            color: $color_footer;
+                                            font-family: $font_family;
+                                            font-size: $font_size_text;
+                                            font-weight: 600;
+                                            line-height: 1.2;
+                                        }
+                                    }
                                 }
                                 a{
                                     width: 96%;
@@ -2045,6 +2142,10 @@ $font_product_size:36px;
                                     font-size: $font_price_size;
                                     line-height: 1.5;
                                     color: $color_footer;
+                                    transition: 0.3s all ease-in-out;
+                                    &:hover{
+                                        color: $color_green;
+                                    }
                                 }
                             }
                             p{
@@ -2150,11 +2251,134 @@ $font_product_size:36px;
                             gap: 8px;
                             a{
                                 h3{
+                                    width: 100%;
                                     font-family: $font_family;
                                     font-weight: 600;
                                     font-size: $font_price_size;
                                     line-height: 1.5;
+                                    text-align: left;
+                                    margin-top: 5px;
                                     color: $color_footer;
+                                    transition: 0.3s all ease-in-out;
+                                    &:hover{
+                                        color: $color_green;
+                                    }
+                                }
+                            }
+                            p{
+                                text-align: left;
+                                color: $color_icon;
+                                font-weight: 400;
+                                font-family: $font_family;
+                                font-size: $font_size_placeholder;
+                                line-height: 1.2;
+                            }
+                        }
+                      }
+                      .videoSlayd3{
+                        width: 100%;
+                        height: 472px;
+                        .videoIrshad{
+                            width: 100%;
+                            height: 280px;
+                            background: url(/assets/image/background/samsunggirl.jpg);
+                            background-size:cover;
+                            background-position: 50% 50%;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            position: relative;
+                            transition: 0.3s all ease-in-out;
+                            &:hover .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    opacity: 0.4;
+                                    background: greenyellow;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a{
+                                    width: 175px;
+                                    height: 80px;
+                                    gap: 10px;
+                                    border-radius: 35px;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a .button_img{
+                                    width: 30px;
+                                    height: 34px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                }
+                                &:hover a h4{
+                                    display: block;
+                                    opacity: 1;
+                                }
+                            .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    background: rgba(0, 0, 0, 0.4);
+                                    transition: 0.3s all ease-in-out
+                            }
+                            @include d-flex-center;
+                            a{
+                                width: 80px;
+                                height: 80px;
+                                background: #fff;
+                                border: 1px solid transparent;
+                                border-radius: 50%;
+                                 @include d-flex-center;
+                                transition: 0.3s all ease-in-out;
+                                position: relative;
+                                z-index: 3;
+                                .button_img{
+                                    width: 28px;
+                                    height: 31px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                h4{
+                                   display: none;
+                                   opacity: 0;
+                                   color: $color_footer;
+                                   font-family: $font_family;
+                                   font-size: $font_size_text;
+                                   font-weight: 600;
+                                   line-height: 1.2;
+                                   transition: 0.3s all ease-in-out;
+                                }
+                            }
+                        }
+                        .videoIrshadText{
+                            width: 100%;
+                            height: 180px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            gap: 8px;
+                            a{
+                                h3{
+                                    width: 100%;
+                                    font-family: $font_family;
+                                    font-weight: 600;
+                                    font-size: $font_price_size;
+                                    line-height: 1.5;
+                                    text-align: left;
+                                    color: $color_footer;
+                                    transition: 0.3s all ease-in-out;
+                                    &:hover{
+                                        color: $color_green;
+                                    }
                                 }
                             }
                             p{
@@ -2182,11 +2406,13 @@ $font_product_size:36px;
         
     }
 }
+// end
 
 // start mini slayd section
 .miniSlide{
     width: 100%;
     height: 223px;
+    margin-top: 50px;
     .slideMini{
         .mini_slide{
             .swiper {
@@ -2246,7 +2472,7 @@ $font_product_size:36px;
     width: 100%;
     height: 623px;
     background: $color_footer;
-    margin-top: 30px;
+    margin-top: 50px;
 .line{
         width: 100%;
         height: 8px;
