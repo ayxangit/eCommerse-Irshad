@@ -15,7 +15,7 @@
 // start time slide
 let swiperTime = new Swiper(".mySwiper2", {
     autoplay:true,
-    loop:true,
+    // loop:true,
     speed:300
 });
 // end
@@ -109,10 +109,10 @@ const hourss = document.querySelector("#hourss");
 const minutess = document.querySelector("#minutess");
 const secondss = document.querySelector("#secondss");
 
-const dayses = document.querySelector("#dayses");
-const hourses = document.querySelector("#hourses");
-const minuteses = document.querySelector("#minuteses");
-const secondses = document.querySelector("#secondses");
+const dy = document.querySelector("#dy");
+const hr = document.querySelector("#hr");
+const mt = document.querySelector("#mt");
+const sd = document.querySelector("#sd");
 
 const currentYear = new Date().getFullYear();
 
@@ -129,23 +129,23 @@ function saleTime() {
 
     days.innerHTML=d + " " + "Gün";
     hours.innerHTML= h<10 ? '0' +  h + ":" : h;
-    minutes.innerHTML= m<10 ? '0' + m  : m + ":";
+    minutes.innerHTML= m<10 ? '0' +  m + ":"  : m ;
     seconds.innerHTML= s<10 ?  '0' +  s  : s;
 
     day.innerHTML=d + " " + "Gün";
     hour.innerHTML= h<10 ? '0' +  h + ":" : h;
-    minute.innerHTML= m<10 ? '0' + m : m + ":";
+    minute.innerHTML= m<10 ? '0' + m + ":" : m ;
     second.innerHTML= s<10 ?  '0' +  s  : s;
 
     dayss.innerHTML=d + " " + "Gün";
     hourss.innerHTML= h<10 ? '0' +  h + ":" : h;
-    minutess.innerHTML= m<10 ? '0' + m  : m + ":";
+    minutess.innerHTML= m<10 ? '0' + m + ":" : m ;
     secondss.innerHTML= s<10 ?  '0' +  s  : s;
 
-    dayses.innerHTML=d + " " + "Gün";
-    hourses.innerHTML= h<10 ? '0' +  h + ":" : h;
-    minuteses.innerHTML= m<10 ? '0' + m  : m + ":";
-    secondses.innerHTML= s<10 ?  '0' +  s  : s;
+    dy.innerHTML=d + " " + "Gün";
+    hr.innerHTML= h<10 ? '0' +  h + ":" : h;
+    mt.innerHTML= m<10 ? '0' + m + ":" : m ;
+    sd.innerHTML= s<10 ?  '0' +  s  : s;
     
 }
 
