@@ -1,6 +1,6 @@
 
 // start sale slide 
-      let swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         autoplay:true,
         loop:true,
@@ -9,8 +9,8 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-      });
-    // end
+});
+// end
 
 // start time slide
 let swiperTime = new Swiper(".mySwiper2", {
@@ -116,7 +116,7 @@ const sd = document.querySelector("#sd");
 
 const currentYear = new Date().getFullYear();
 
-const saleYear = new Date(`September 01 ${currentYear+1} 00:00:00`);
+const saleYear = new Date(`September 01 ${currentYear+2} 00:00:00`);
 
 function saleTime() {
     const currentTime = new Date();
@@ -128,7 +128,7 @@ function saleTime() {
     const s = Math.floor(diff/1000)%60;
 
     days.innerHTML=d + " " + "Gün";
-    hours.innerHTML= h<10 ? '0' +  h + ":" : h;
+    hours.innerHTML= h<10 ? '0' +  h  + ':' : h;
     minutes.innerHTML= m<10 ? '0' +  m + ":"  : m ;
     seconds.innerHTML= s<10 ?  '0' +  s  : s;
 

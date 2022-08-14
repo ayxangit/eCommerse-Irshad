@@ -767,6 +767,467 @@
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  position: relative;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item:hover .dropdownList {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item:hover .dropdownList2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item:hover .dropdownList3 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item:hover .dropdownList4 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList {
+  width: 750px;
+  height: 599px;
+  position: absolute;
+  top: -51px;
+  left: 0;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-left: 474px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList a h3 {
+  font-family: "Rokkitt", serif;
+  color: #18181a;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList ul li {
+  margin-top: 10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList ul li:hover ::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList ul li a {
+  color: #5b5f66;
+  font-weight: 400;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList ul li a:hover {
+  color: red;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList .dropdown_app {
+  width: 24%;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList .aksesuar_mobil {
+  width: 24%;
+  height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList .airPods_list {
+  width: 24%;
+  height: 1150px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList .othersList {
+  width: 24%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 {
+  width: 750px;
+  height: 599px;
+  position: absolute;
+  top: -99px;
+  left: 0;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-left: 474px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 a h3 {
+  font-family: "Rokkitt", serif;
+  color: #18181a;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 ul li {
+  margin-top: 10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 ul li:hover ::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 ul li a {
+  color: #5b5f66;
+  font-weight: 400;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 ul li a:hover {
+  color: red;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 .dropdown_app {
+  width: 24%;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 .aksesuar_mobil {
+  width: 24%;
+  height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 .airPods_list {
+  width: 24%;
+  height: 1150px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList2 .othersList {
+  width: 24%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 {
+  width: 750px;
+  height: 599px;
+  position: absolute;
+  top: -147px;
+  left: 0;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-left: 474px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 a h3 {
+  font-family: "Rokkitt", serif;
+  color: #18181a;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 ul li {
+  margin-top: 10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 ul li:hover ::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 ul li a {
+  color: #5b5f66;
+  font-weight: 400;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 ul li a:hover {
+  color: red;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 .dropdown_app {
+  width: 24%;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 .aksesuar_mobil {
+  width: 24%;
+  height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 .airPods_list {
+  width: 24%;
+  height: 1150px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList3 .othersList {
+  width: 24%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 {
+  width: 750px;
+  height: 599px;
+  position: absolute;
+  top: -195px;
+  left: 0;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-left: 474px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 a h3 {
+  font-family: "Rokkitt", serif;
+  color: #18181a;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 ul li {
+  margin-top: 10px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 ul li:hover ::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 ul li a {
+  color: #5b5f66;
+  font-weight: 400;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 ul li a:hover {
+  color: red;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 .dropdown_app {
+  width: 24%;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 .aksesuar_mobil {
+  width: 24%;
+  height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 .airPods_list {
+  width: 24%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+}
+
+.header .header_down .down .catalog .hamburger_menu .menu_box .menu_item .dropdownList4 .othersList {
+  width: 24%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
 }
 
 .header .header_down .down .catalog .hamburger_menu .menu_box .menu_item:hover {

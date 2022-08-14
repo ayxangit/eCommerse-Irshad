@@ -535,6 +535,342 @@ $font_product_size:36px;
                             cursor: pointer;
                             display: flex;
                             gap: 15px;
+                            position: relative;
+                            &:hover .dropdownList{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList2{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList3{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList4{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            .dropdownList{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -51px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 1150px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList2{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -99px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 1150px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList3{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -147px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 1150px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList4{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -195px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 800px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 35px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
                             &:hover {
                                 color: $color_orange;
                             }
