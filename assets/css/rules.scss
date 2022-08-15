@@ -1,0 +1,1770 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+// font family
+$font_family:'Rokkitt', serif;
+
+// colors
+$color_border_bottom : #ecedf0;
+$color_list : #5b5f66;
+$color_orange: #f6861f; 
+$color_flag:#212529;
+$color_flag_border:#e1e2e7;
+$color_green:#40b659;
+$color_input:#f9f9f9;
+$color_input_border:#dadbdd;
+$color_icon:#95979c;
+$color_icon_tag:#232d40;
+$color_bg_slide:#ffd436;
+$color_stok_bg:rgba(23,67,223,.07);
+$color_stok:#1743df;
+$color_azn_bg:rgba(246,134,31,.07);
+$color_bg_grey:#fafbfc;
+$color_partnyor: #e3e5eb;
+$color_footer:#18181a;
+$color_bottom_border:rgba(255,255,255,.2);
+$color_icon_footer_border:#585858;
+$color_icon_footer:#c2c5ca;
+$color_body:rgba(0,0,0,.6);
+$color_yt:#f23620;
+$color_rule:#232d40;
+// font size
+$font_size_list :  15px;
+$font_size_placeholder:16px;
+$font_size_icon:20px;
+$font_size_text:18px;
+$font_size_stok:7px;
+$font_price_size:22px;
+$font_icon_big:40px;
+$font_text:25px;
+$font_product_size:36px;
+
+// mixinn
+@mixin d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin  d-justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin  d-justify-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+// monthly price card
+.content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 320px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    visibility: hidden;
+    .pay_text{
+        width: 88%;
+        height: 80px;
+        @include d-justify-between;
+        h4{
+            font-family: $font_family;
+            font-size: $font_size_icon;
+            color: $color_footer;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .pay_icon{
+            width: 56px;
+            height: 56px;
+            border: 1px solid $color_flag_border;
+            border-radius: 50%;
+            @include d-flex-center;
+            cursor: pointer;
+        }
+    }
+    .pay_box{
+        width: 88%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        .pay_image{
+            width: 30%;
+            height: 96px;
+            @include d-flex-center;
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+// end
+
+// start header
+.header{
+    width: 100%;
+    height: 184px;
+    .header_up{
+        width: 100%;
+        height: 67px;
+        border-bottom: 1px solid $color_border_bottom;
+        @include d-flex-center;
+        .up{
+            @include d-justify-between;
+           .list{
+            width: 55%;
+            height: 30px;
+            ul{
+                display: flex;
+                li{
+                    margin-left: 15px;
+                    .tagLineUner{
+                        color: $color_list;
+                        font-family: $font_family;
+                        font-size: $font_size_list;
+                        line-height: 2rem;
+                        font-weight: 400;
+                        cursor: pointer;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background: $color_orange;
+                            height: 1.5px;
+                            width: 0;
+                            left: 0;
+                            bottom: -10px;
+                            transition: 0.3s all ease-in-out;
+
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
+                }
+                .condisioner{
+                    width: 94px;
+                    height: 30px;
+                    border: 1px solid $color_orange;
+                    border-radius: 6px;
+                    @include d-flex-center;
+                    transition: 0.5s all ease-in-out;
+                    &:hover{
+                        background: $color_orange;
+                    }
+                    &:hover a{
+                        color: #ffff;
+                    }
+                    a{
+                        color: $color_orange;
+                        font-family: $font_family;
+                        font-size: $font_size_list;
+                        line-height: 1.5;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+                .velo{
+                    width: 94px;
+                    height: 30px;
+                    border: 1px solid $color_orange;
+                    border-radius: 6px;
+                    @include d-flex-center;
+                    transition: 0.5s all ease-in-out;
+                    &:hover{
+                       background: $color_orange;
+                    }
+                    &:hover a{
+                        color: #fff;
+                    }
+                    a{
+                        color: $color_orange;
+                        font-family: $font_family;
+                        font-size: $font_size_list;
+                        line-height: 1.5;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+            }
+           } 
+           .language{
+                width: 40%;
+                height: 30px;
+                @include d-flex-center;
+                gap: 18px;
+                .call_fast{
+                    width: 25%;
+                    height: 24px;
+                    border-right: 1px solid $color_border_bottom;
+                    a{
+                        img{
+                            width: 70%;
+                        }
+                    }
+                }
+                .choose_language{
+                    width: 40%;
+                    height: 24px;
+                    border-right: 1px solid $color_border_bottom;
+                    @include d-flex-center;
+                    cursor: pointer;
+                    position: relative;
+                    transition: 0.3s all ease-in-out;
+                    &:hover .dropdown-content{
+                        visibility: visible;
+                        opacity: 1;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    .flag{
+                        width: 16%;
+                        height: 24px;
+                        margin-right: 12px;
+                        @include d-flex-center;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        color: $color_flag;
+                        font-size: $font_size_list;
+                        font-weight: 400;
+                        font-family: $font_family;
+                        line-height: 1.5;
+                        margin-right: 12px;
+                        position: relative;
+                        .fa-angle-down{
+                           position: relative;
+                           top: 2px;
+                           left: 6px;
+                        }
+                    }
+                    .dropdown-content {
+                        visibility: hidden;
+                        opacity: 0;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        border: 1px solid $color_flag_border;
+                        width: 100%;
+                        border-radius: 6px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        height: 50px;
+                        @include d-flex-center;
+                        z-index: 1;
+                        transition: 0.3s all ease-in-out;
+                        margin-top: 80px;
+                        right: 8px;
+                        p{
+                            color: $color_flag;
+                            font-size: $font_size_list;
+                            font-family: $font_family;
+                            font-weight: 400;
+                        }
+                        
+                    }
+                }
+                .personal_cabinet{
+                    width: 23%;
+                    height: 24px;
+                    @include d-flex-center;
+                    a{
+                        color: $color_flag;
+                        font-size: $font_size_list;
+                        font-family: $font_family;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        position: relative;
+                        .fa-user{
+                            position: relative;
+                            top: 1px;
+                            right: 6px;
+                        }
+                    }
+                }
+           }
+        }
+    }
+    .header_down{
+        width: 100%;
+        height: 117px;
+        @include d-flex-center;
+        .down{
+            @include d-flex-center;
+            gap: 10px;
+            .logo{
+                width: 15%;
+                height: 49px;
+               a{
+                @include d-flex-center;
+                img{
+                    width: 60%;
+                }
+               }
+                
+            }
+            .catalog{
+                width: 5%;
+                height: 50px;
+                border: 1px solid $color_green;
+                border-radius: 0.8rem;
+                background: $color_green;
+                .hamburger_menu{
+                    #menu_toggle{
+                        opacity: 0;
+                        &:checked + .menu_btn>span{
+                            transform: rotate(45deg);
+                        }
+                        &:checked + .menu_btn>span::before{
+                            top: 0;
+                            transform: rotate(0deg);
+                        }
+                        &:checked + .menu_btn>span::after{
+                            top: 0;
+                            transform: rotate(90deg);
+                        }
+                        &:checked ~ .menu_box{
+                            left: 207px !important;
+                        }
+                    }
+                    .menu_btn{
+                        position: absolute;
+                        top: 123px;
+                        left: 398px;
+                        width: 26px;
+                        height: 26px;
+                        cursor: pointer;
+                        z-index: 1;
+                        span{
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            background: #fff;
+                            transition-duration: .25s;
+                            &::before{
+                                display: block;
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                content: '';
+                                top: -8px;
+                                background: #fff;
+                                transition-duration: .25s;
+                            }
+                            &::after{
+                                display: block;
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                background: #fff;
+                                transition-duration: .25s;
+                                content: '';
+                                top: 8px;
+                            }
+                        }
+                    }
+                    .menu_box{
+                        display: block;
+                        position: absolute;
+                        z-index: 999;
+                        top: 151px;
+                        left: -100%;
+                        width: 506px;
+                        // height: 100%;
+                        margin: 0;
+                        padding: 35px 32px;
+                        background: #fff;
+                        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                        // transition-duration: .25s;
+                        transition: 0.3s all ease-in-out;
+                        .menu_item{
+                            margin-top: 15px;
+                            transition: 0.3s all ease-in-out;
+                            cursor: pointer;
+                            display: flex;
+                            gap: 15px;
+                            position: relative;
+                            &:hover .dropdownList{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList2{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList3{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList4{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList5{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList6{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList7{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList8{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList9{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList10{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            &:hover .dropdownList11{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.3s all ease-in-out;
+                            }
+                            .dropdownList{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -51px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 1150px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList2{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -99px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 1150px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList3{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -147px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 1150px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList4{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -195px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 800px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 35px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList5{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -243px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 800px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 35px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList6{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -291px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 24%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 800px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 35px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList7{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -339px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                overflow-y: scroll;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 27%;
+                                    height: 650px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 740px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 800px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 35px;
+                                }
+                                .othersList{
+                                    width: 24%;
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                }
+                            }
+                            .dropdownList8{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -387px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 27%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 24%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .airPods_list{
+                                    width: 24%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 35px;
+                                }
+                            }
+                            .dropdownList9{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -435px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 27%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                            }
+                            .dropdownList10{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -483px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 45%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                                .aksesuar_mobil{
+                                    width: 35%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                            }
+                            .dropdownList11{
+                                width: 750px;
+                                height: 599px;
+                                position: absolute;
+                                top: -531px;
+                                left: 0;
+                                background: #fff; 
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                margin-left: 474px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s all ease-in-out;
+                                display: flex;
+                                gap: 30px;
+                                padding: 40px;
+                                a{
+                                    h3{
+                                        font-family: $font_family;
+                                        color: $color_footer;
+                                        font-weight: 600;
+                                        font-size: $font_size_placeholder;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s all ease-in-out;
+                                        &:hover ::before {
+                                            content: "\2022";
+                                            color: red;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                            width: 1em;
+                                            margin-left: -1em;
+                                            transition: 0.3s all ease-in-out;
+                                          }
+                                        a{
+                                            color: $color_list;
+                                            font-weight: 400;
+                                            font-family: $font_family;
+                                            font-weight: 400;
+                                            font-size: $font_size_placeholder;
+                                            line-height: 1.2;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover{
+                                               color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown_app{
+                                    width: 27%;
+                                    height: 400px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 55px;
+                                }
+                            }
+                            &:hover {
+                                color: $color_orange;
+                            }
+                            span{
+                                color: $color_footer;
+                                font-size: $font_price_size;
+                                font-family: $font_family;
+                                font-weight: 400;
+                                line-height: 1.5;
+                                margin-left: 15px;
+                                transition: 0.2s all ease-in-out;
+                                &:hover{
+                                    color: $color_orange;
+                                    font-weight: 500;
+                                }
+                            }
+                            .androinPhone{
+                                width: 24px;
+                                height: 24px;
+                                display: inline-block;
+                                @include d-flex-center;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        
+
+                    }
+                }
+
+            }
+            }
+            .form{
+                position: relative;
+                width: 35%;
+                height: 50px;
+                form{
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        background: $color_input;
+                        outline: none;
+                        border: 1px solid $color_input_border;
+                        border-radius: 0.8rem;
+                        padding: 1.4rem 2rem;
+                        &::placeholder{
+                            font-size: $font_size_placeholder;
+                            font-family: $font_family;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                a{
+                    position: relative;
+                    left: 340px;
+                    bottom: 33px;
+                    border-left: 1px solid $color_flag_border;
+                    .fa-magnifying-glass{
+                        color: $color_icon;
+                        margin-left: 13px;
+                        
+                    }
+                }
+            }
+            .equality{
+                width: 8%;
+                height: 46px;
+                @include d-flex-center;
+                transition: 0.4s all ease-in-out;
+                &:hover a .fa-binoculars{
+                   color: $color_orange;
+                }
+                &:hover a span{
+                    color: $color_orange;
+                 }
+                a{
+                    @include d-flex-column;
+                    gap: 3px;
+                    transition: 0.4s all ease-in-out;
+                    .fa-binoculars{
+                        color: $color_icon_tag;
+                        transition: 0.4s all ease-in-out;
+                    }
+                    span{
+                        color: $color_flag;
+                        transition: 0.4s all ease-in-out;
+                    }
+                }
+            }
+            .liked{
+                width: 8%;
+                height: 46px;
+                @include d-flex-center;
+                transition: 0.4s all ease-in-out;
+                &:hover a .fa-heart{
+                   color: $color_orange;
+                }
+                &:hover a span{
+                    color: $color_orange;
+                 }
+                a{
+                    @include d-flex-column;
+                    gap: 3px;
+                    transition: 0.4s all ease-in-out;
+                    .fa-heart{
+                        color: red;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    span{
+                        color: $color_flag;
+                        transition: 0.4s all ease-in-out;
+                    }
+                }
+            }
+            .addTo_cart{
+                width: 8%;
+                height: 46px;
+                @include d-flex-center;
+                transition: 0.4s all ease-in-out;
+                &:hover a .fa-cart-shopping{
+                   color: $color_orange;
+                }
+                &:hover a span{
+                    color: $color_orange;
+                 }
+                a{
+                    @include d-flex-column;
+                    gap: 3px;
+                    transition: 0.4s all ease-in-out;
+                    .fa-cart-shopping{
+                        color: green;
+                        transition: 0.4s all ease-in-out;
+                    }
+                    span{
+                        color: $color_flag;
+                        transition: 0.4s all ease-in-out;
+                    }
+                }
+            }
+            .mothly{
+                 width: 12%;
+                 height: 77px;
+                 border: 1px solid $color_green;
+                 @include d-flex-column;
+                 gap: 7px;
+                 cursor: pointer;
+                 border-radius: 6px;
+                 transition: 0.3s all ease-in-out;
+                 position: relative;
+                 &:hover{
+                    background: $color_green;
+                 }
+                 &:hover .fa-hand-holding-dollar{
+                    color: #fff;
+                 }
+                 &:hover span{
+                    color: #fff;
+                 }
+                 .fa-hand-holding-dollar{
+                    color: $color_green;
+                    font-size: $font_size_icon;
+                 }
+                 span{
+                    color: $color_green;
+                    font-size: $font_size_text;
+                    font-family: $font_family;
+                    line-height: 1.5;
+                    font-weight: 600;
+
+                 }
+            }
+        }
+
+    }
+}
+// end
+
+// start rules section
+.rules{
+    width: 100%;
+    height: 2593px;
+    border-top: 1px solid $color_flag_border;
+    margin-top: 40px;
+    .rulesCon{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h4{
+            font-family: $font_family;
+            font-size: $font_price_size;
+            color: $color_rule;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        h5{
+            font-family: $font_family;
+            font-size: $font_size_icon;
+            color: $color_rule;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        p{
+            font-family: $font_family;
+            font-size: $font_price_size;
+            color:$color_flag;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        .rule_box{
+            width: 90%;
+            height: 48px;
+            @include d-flex-center;
+            margin-top: 20px;
+            h3{
+                font-family: $font_family;
+                font-size: $font_product_size;
+                color: $color_rule;
+                font-weight: 700;
+                line-height: 1.5;
+            }
+        }
+        .special_box{
+            width: 100%;
+            height: 680px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+        .special_box2{
+            width: 100%;
+            height: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+        .special_box3{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+    }
+}
+// end
+
+// start footer
+.footer{
+    width: 100%;
+    height: 623px;
+    background: $color_footer;
+    margin-top: 50px;
+.line{
+        width: 100%;
+        height: 8px;
+        background: $color_green;
+        position: relative;
+}
+   .footer_list{
+    @include d-flex-column;
+    gap: 40px;
+    .footerComunication{
+        width: 100%;
+        height: 400px;
+        @include d-flex-center;
+        gap: 12px;
+        margin-top: 80px;
+        h4{
+            color: #f8f8f8;
+            font-family: $font_family;
+            font-weight: 400;
+            font-size: $font_text;
+            line-height: 1.2;
+        }
+        ul{
+            margin-top: 18px;
+            li{
+                margin-top: 10px;
+                a{
+                    color: $color_icon;
+                    font-family: $font_family;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    font-size: $font_size_placeholder;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 1.5px;
+                        width: 0;
+                        background: $color_orange;
+                        left: 0;
+                        bottom: -10px;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .footerLogo{
+            width: 15%;
+            height: 352px;
+            .logo_irshad{
+                width: 50%;
+                height: 40px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .footerBusiness{
+            width: 22%;
+            height: 352px;
+        }
+        .footerCustomer{
+            width: 24%;
+            height: 352px;
+        }
+        .footerContact{
+            width: 32%;
+            height: 352px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .footerLocation{
+                width: 100%;
+                height: 69px;
+                border-bottom: 1px solid $color_bottom_border;
+                @include d-flex-center;
+                gap: 18px;
+                .footerCall{
+                    width: 44%;
+                    height: 28px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .footerHome{
+                    width: 22%;
+                    height: 45px;
+                    border: 1px solid $color_icon_footer_border;
+                    border-radius: 50%;
+                    @include d-flex-center;
+                    .fa-house{
+                        color: #fff;
+                        font-size: $font_size_placeholder;
+                    }
+                }
+                p{
+                    font-family: $font_family;
+                    color: #fff;
+                    font-size: $font_size_icon;
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+            }
+            .footerSocial{
+                width: 100%;
+                height: 86px;
+                h5{
+                    font-family: $font_family;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: $font_size_text;
+                    line-height: 1.2;
+                }
+                .iconFooter{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    gap: 15px;
+                    margin-top: 20px;
+                    transition: 0.5s all ease-in-out;
+                    a{
+                        &:hover .fa-facebook{
+                            color: #fff;
+                        }
+                        &:hover .fa-instagram{
+                            color: #fff;
+                        }
+                        &:hover .fa-youtube{
+                            color: #fff;
+                        }
+                        &:hover .fa-telegram{
+                            color: #fff;
+                        }
+                        &:hover .fa-whatsapp{
+                            color: #fff;
+                        }
+                        &:hover .fa-youtube{
+                            color: #fff;
+                        }
+                        &:hover .fa-twitter{
+                            color: #fff;
+                        }
+                        &:hover .fa-tiktok{
+                            color: #fff;
+                        }
+                        .fa-facebook{
+                           color: $color_icon_footer;
+                           font-size: $font_price_size;
+                        }
+                         .fa-instagram{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-youtube{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-linkedin{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-twitter{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-tiktok{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-whatsapp{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                         .fa-telegram{
+                            color: $color_icon_footer;
+                            font-size: $font_price_size;
+                         }
+                    }
+                }
+            }
+        }
+    }
+    .footerPreview{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .endOFFooter{
+            width: 40%;
+            height: 22px;
+            p{
+                color: $color_icon;
+                font-size: $font_size_placeholder;
+                font-family: $font_family;
+                font-weight: 400;
+                line-height: 1.2;
+            }
+        }
+        .footerImgLogo{
+            width: 40%;
+            height: 25px;
+            p{
+                color: $color_icon;
+                font-family: $font_family;
+                font-weight: 400;
+                font-size: $font_size_placeholder;
+                line-height: 1.5;
+                a{
+                   color: #fff;
+                   font-size: $font_size_text;
+                   font-family: $font_family;
+                   font-weight: 400;
+                }
+                .jis{
+                    width: 19px;
+                    height: 18px;
+                        img{
+                            width: 100%;
+                        }
+                    
+                }
+            }
+        }
+    }
+   }
+}
+// end
