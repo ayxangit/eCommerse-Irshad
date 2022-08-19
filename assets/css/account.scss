@@ -172,23 +172,23 @@ $font_product_size:36px;
 // start login section
 .login{
     width: 100%;
-    height: 800px;
+    height: 949px;
     display: flex;
     position: relative;
     .loginImg{
         width: 40%;
-        height: 800px;
+        height: 949px;
         background: url(https://irshad.az/resized/resize672/center/pages/200/kabinet-cover.jpg);
         background-position: 50% 50%;
         background-size: cover;
     }
     .login_box{
         width: 60%;
-        height: 800px;
+        height: 949px;
         @include d-flex-center;
         .form{
             width: 50%;
-            height: 650px;
+            height: 750px;
             display: flex;
             flex-direction: column;
             gap: 40px;
@@ -199,42 +199,56 @@ $font_product_size:36px;
                 color: #000000;
                 font-weight: 700;
                 line-height: 1.5;
-                font-size: $font_text;
+                font-size: $font_product_size;
             }
             form{
                 width: 100%;
-                height: 450px;
+                height: 700px;
                 display: flex;
                 flex-direction: column;
-                gap: 7px;
+                margin-top: 20px;
                 .customerCode{
                     display: flex;
                     width: 98%;
-                    height: 52px;
+                    height: 80px;
                     gap: 10px;
-                    label{
-                        font-size: $font_size_placeholder;
-                        font-family: $font_family;
-                        line-height: 1.2;
-                        font-weight: 500;
-                        color: $color_icon;
-                    }
-                    input{
-                        width: 98%;
-                        height: 52px;
-                        outline: none;
-                        border: 1px solid $color_inputBorder;
-                        border-radius: 0.6rem;
-                        padding: 14px 20px;
-                        margin-top: 10px;
-                    }
                     .personalNumber{
                         width: 55%;
                         height: 52px;
+                        label{
+                            font-size: $font_size_placeholder;
+                            font-family: $font_family;
+                            line-height: 1.2;
+                            font-weight: 500;
+                            color: $color_icon;
+                        }
+                        input{
+                            width: 98%;
+                            height: 52px;
+                            outline: none;
+                            border: 1px solid $color_inputBorder;
+                            border-radius: 0.6rem;
+                            padding: 14px 20px;
+                        }
                     }
                     .personalCode{
                         width: 45%;
                         height: 52px;
+                        label{
+                            font-size: $font_size_placeholder;
+                            font-family: $font_family;
+                            line-height: 1.2;
+                            font-weight: 500;
+                            color: $color_icon;
+                        }
+                        input{
+                            width: 98%;
+                            height: 52px;
+                            outline: none;
+                            border: 1px solid $color_inputBorder;
+                            border-radius: 0.6rem;
+                            padding: 14px 20px;
+                        }
                     }
                 }
                 label{
@@ -243,6 +257,7 @@ $font_product_size:36px;
                      line-height: 1.2;
                      font-weight: 500;
                      color: $color_icon;
+                     margin-top: 7px;
                 }
                 input{
                     width: 98%;
