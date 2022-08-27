@@ -25,8 +25,16 @@ let swiperProduct = new Swiper(".mySwiper3", {
   slidesPerView:4,
   speed:500,
   autoplay:true,
-  loop:true
- 
+  loop:true,
+});
+// end
+
+// start more slide
+let swiperMoreSlide = new Swiper(".mySwipers", {
+  slidesPerView:4,
+  speed:500,
+  autoplay:true,
+  loop:true,
 });
 // end
 
@@ -151,4 +159,37 @@ function saleTime() {
 
 setInterval(saleTime,1000)
 
+// end
+
+
+//  start tab js
+let tabs = document.querySelectorAll(".tab_toggle");
+let  text = document.querySelectorAll(".tabText");
+tabs.forEach(( tab, index)=>{
+        tab.addEventListener("click",()=>{
+           text.forEach((texts)=>{
+            texts.classList.remove("is-active")
+           });
+           tabs.forEach((tab)=>{
+            tab.classList.remove("opacity")
+           });
+           text[index].classList.add("is-active");
+           tabs[index].classList.add("opacity");
+        })
+})
+
+let tab = document.querySelectorAll(".tab_toggles");
+let  texts = document.querySelectorAll(".tabTexts");
+tab.forEach(( tabs, index)=>{
+        tabs.addEventListener("click",()=>{
+           texts.forEach((text)=>{
+            text.classList.remove("is-actives")
+           });
+           tab.forEach((tabss)=>{
+            tabss.classList.remove("opacitys")
+           });
+           texts[index].classList.add("is-actives");
+           tab[index].classList.add("opacitys");
+        })
+})
 // end

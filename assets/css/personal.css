@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
@@ -17,125 +16,70 @@
   height: 99px;
   position: absolute;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .header .headCon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header .headCon .logo {
   width: 12%;
   height: 59px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .header .headCon .logo img {
   width: 100%;
 }
-
 .header .headCon .language {
   width: 30%;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .header .headCon .language .call_fast {
   width: 30%;
   height: 24px;
   border-right: 1px solid #ecedf0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .header .headCon .language .call_fast a img {
   width: 70%;
 }
-
 .header .headCon .language .choose_language {
   width: 60%;
   height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   position: relative;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   padding: 10px 10px;
 }
-
 .header .headCon .language .choose_language:hover .dropdown-content {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-
 .header .headCon .language .choose_language .flag {
   width: 16%;
   height: 24px;
   margin-right: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .header .headCon .language .choose_language .flag img {
   width: 100%;
 }
-
 .header .headCon .language .choose_language p {
   color: #212529;
   font-size: 15px;
@@ -145,13 +89,11 @@
   margin-right: 12px;
   position: relative;
 }
-
 .header .headCon .language .choose_language p .fa-angle-down {
   position: relative;
   top: 2px;
   left: 6px;
 }
-
 .header .headCon .language .choose_language .dropdown-content {
   visibility: hidden;
   opacity: 0;
@@ -160,25 +102,16 @@
   border: 1px solid #e1e2e7;
   width: 89%;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   margin-top: 80px;
   right: 17px;
 }
-
 .header .headCon .language .choose_language .dropdown-content p {
   color: #212529;
   font-size: 15px;
@@ -189,12 +122,9 @@
 .login {
   width: 100%;
   height: 722px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-
 .login .loginImg {
   width: 40%;
   height: 722px;
@@ -202,34 +132,20 @@
   background-position: 50% 50%;
   background-size: cover;
 }
-
 .login .login_box {
   width: 60%;
   height: 722px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .login .login_box .form {
   width: 50%;
   height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 40px;
 }
-
 .login .login_box .form h3 {
   width: 100%;
   height: 20px;
@@ -239,20 +155,13 @@
   line-height: 1.5;
   font-size: 25px;
 }
-
 .login .login_box .form form {
   width: 100%;
   height: 310px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 7px;
 }
-
 .login .login_box .form form label {
   font-size: 16px;
   font-family: "Rokkitt", serif;
@@ -260,7 +169,6 @@
   font-weight: 500;
   color: #95979c;
 }
-
 .login .login_box .form form input {
   width: 98%;
   height: 52px;
@@ -270,19 +178,12 @@
   padding: 14px 20px;
   margin-top: 10px;
 }
-
 .login .login_box .form form button {
   width: 99%;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 15px;
   background: #40b659;
   border: 1px solid #40b659;
@@ -293,79 +194,57 @@
   font-weight: 500;
   line-height: 1.2;
   cursor: pointer;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-
 .login .login_box .form form button:hover {
   background: #fff;
   color: #40b659;
 }
-
 .login .login_box .form form .loginPage {
   width: 100%;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
 }
-
 .login .login_box .form form .loginPage a {
   color: #f6861f;
   font-family: "Rokkitt", serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-
 .login .login_box .form form .loginPage a:hover {
   color: #18181a;
 }
-
 .login .login_box .form form .loginPage a:hover .fa-user {
   color: #18181a;
 }
-
 .login .login_box .form form .loginPage a .fa-user {
   color: #f6861f;
   font-size: 16px;
   margin-right: 8px;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-
 .login .login_box .form form .loginPage .key {
   color: #95979c;
   font-family: "Rokkitt", serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-
 .login .login_box .form form .loginPage .key:hover {
   color: #18181a;
 }
-
 .login .login_box .form form .loginPage .key:hover .fa-key {
   color: #18181a;
 }
-
 .login .login_box .form form .loginPage .key .fa-key {
   color: #95979c;
   font-size: 16px;
   margin-right: 8px;
-  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-}
-/*# sourceMappingURL=personal.css.map */
+}/*# sourceMappingURL=personal.css.map */
