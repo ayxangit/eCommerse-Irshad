@@ -99,6 +99,34 @@ document.querySelector(".videoSlayd3").addEventListener("click",()=>{
 document.querySelector(".video_icon3").addEventListener("click",()=>{
  document.querySelector(".videoCard3").style.visibility="hidden";
 })
+
+
+document.querySelector(".videoSlayd4").addEventListener("click",()=>{
+  document.querySelector(".videoCard4").style.visibility="visible";
+  
+})
+
+document.querySelector(".video_icon4").addEventListener("click",()=>{
+ document.querySelector(".videoCard4").style.visibility="hidden";
+})
+
+document.querySelector(".videoSlayd5").addEventListener("click",()=>{
+  document.querySelector(".videoCard5").style.visibility="visible";
+  
+})
+
+document.querySelector(".video_icon5").addEventListener("click",()=>{
+ document.querySelector(".videoCard5").style.visibility="hidden";
+})
+
+document.querySelector(".videoSlayd6").addEventListener("click",()=>{
+  document.querySelector(".videoCard6").style.visibility="visible";
+  
+})
+
+document.querySelector(".video_icon6").addEventListener("click",()=>{
+ document.querySelector(".videoCard6").style.visibility="hidden";
+})
 // end
 
 // start countdown reason section
@@ -192,4 +220,20 @@ tab.forEach(( tabs, index)=>{
            tab[index].classList.add("opacitys");
         })
 })
+
+let toggle = document.querySelectorAll(".toggle");
+let  textt = document.querySelectorAll(".text");
+toggle.forEach(( tab, index)=>{
+        tab.addEventListener("click",()=>{
+           textt.forEach((texts)=>{
+            texts.classList.remove("is-active")
+           });
+           toggle.forEach((tab)=>{
+            tab.classList.remove("colors")
+           });
+           textt[index].classList.add("is-active");
+           toggle[index].classList.add("colors");
+        })
+})
+
 // end

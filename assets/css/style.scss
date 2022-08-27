@@ -250,6 +250,129 @@ $font_product_size:36px;
         height: 400px;
     }
  }
+ .videoCard4{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 576px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    visibility: hidden;
+    .video_card{
+        width: 88%;
+        height: 120px;
+        @include d-justify-between;
+        h4{
+            font-family: $font_family;
+            font-size: $font_size_icon;
+            color: $color_footer;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .video_icon4{
+            width: 56px;
+            height: 56px;
+            border: 1px solid $color_flag_border;
+            border-radius: 50%;
+            @include d-flex-center;
+            cursor: pointer;
+        }
+    }
+    .videOBoxs{
+        width: 88%;
+        height: 400px;
+    }
+ }
+ .videoCard5{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 576px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    visibility: hidden;
+    .video_card{
+        width: 88%;
+        height: 120px;
+        @include d-justify-between;
+        h4{
+            font-family: $font_family;
+            font-size: $font_size_icon;
+            color: $color_footer;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .video_icon5{
+            width: 56px;
+            height: 56px;
+            border: 1px solid $color_flag_border;
+            border-radius: 50%;
+            @include d-flex-center;
+            cursor: pointer;
+        }
+    }
+    .videOBoxs{
+        width: 88%;
+        height: 400px;
+    }
+ }
+ .videoCard6{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 576px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    visibility: hidden;
+    .video_card{
+        width: 88%;
+        height: 120px;
+        @include d-justify-between;
+        h4{
+            font-family: $font_family;
+            font-size: $font_size_icon;
+            color: $color_footer;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .video_icon6{
+            width: 56px;
+            height: 56px;
+            border: 1px solid $color_flag_border;
+            border-radius: 50%;
+            @include d-flex-center;
+            cursor: pointer;
+        }
+    }
+    .videOBoxs{
+        width: 88%;
+        height: 400px;
+    }
+ }
 //  end
 
 // start header
@@ -2875,17 +2998,16 @@ $font_product_size:36px;
                 height: 48px;
                 display: flex;
                 gap: 20px;
-                a{
+                .toggle{
+                    color: $color_flag;
+                    font-size: $font_product_size;
+                    font-family: $font_family;
+                    font-weight: 600;
                     cursor: pointer;
-                    h2{
-                        color: $color_flag;
-                        font-size: $font_product_size;
-                        font-family: $font_family;
-                        font-weight: 600;
-                    }
+                    opacity: 0.5;
                 }
-                .grey{
-                    color: $color_flag_border;
+                .toggle.colors{
+                    opacity: 1;
                 }
             }
             .youtube_tag{
@@ -3290,6 +3412,357 @@ $font_product_size:36px;
                             }
                         }
                       }
+                      .videoSlayd4{
+                        width: 100%;
+                        height: 472px;
+                        .videoIrshad{
+                            width: 100%;
+                            height: 280px;
+                            background: url(/assets/image/background/maxresdefaultttt.jpg);
+                            background-size:cover;
+                            background-position: 50% 50%;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            position: relative;
+                            transition: 0.3s all ease-in-out;
+                            &:hover .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    opacity: 0.4;
+                                    background: greenyellow;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a{
+                                    width: 175px;
+                                    height: 80px;
+                                    gap: 10px;
+                                    border-radius: 35px;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a .button_img{
+                                    width: 30px;
+                                    height: 34px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                }
+                                &:hover a h4{
+                                    display: block;
+                                    opacity: 1;
+                                }
+                            .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    background: rgba(0, 0, 0, 0.4);
+                                    transition: 0.3s all ease-in-out
+                            }
+                            @include d-flex-center;
+                            a{
+                                width: 80px;
+                                height: 80px;
+                                background: #fff;
+                                border: 1px solid transparent;
+                                border-radius: 50%;
+                                 @include d-flex-center;
+                                transition: 0.3s all ease-in-out;
+                                position: relative;
+                                z-index: 3;
+                                .button_img{
+                                    width: 28px;
+                                    height: 31px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                h4{
+                                   display: none;
+                                   opacity: 0;
+                                   color: $color_footer;
+                                   font-family: $font_family;
+                                   font-size: $font_size_text;
+                                   font-weight: 600;
+                                   line-height: 1.2;
+                                   transition: 0.3s all ease-in-out;
+                                }
+                            }
+                        }
+                        .videoIrshadText{
+                            width: 100%;
+                            height: 180px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            gap: 8px;
+                            a{
+                                h3{
+                                    width: 100%;
+                                    font-family: $font_family;
+                                    font-weight: 600;
+                                    font-size: $font_price_size;
+                                    line-height: 1.5;
+                                    text-align: left;
+                                    margin-top: 5px;
+                                    color: $color_footer;
+                                    transition: 0.3s all ease-in-out;
+                                    &:hover{
+                                        color: $color_green;
+                                    }
+                                }
+                            }
+                            p{
+                                text-align: left;
+                                color: $color_icon;
+                                font-weight: 400;
+                                font-family: $font_family;
+                                font-size: $font_size_placeholder;
+                                line-height: 1.2;
+                            }
+                        }
+                      }
+                      .videoSlayd5{
+                        width: 100%;
+                        height: 472px;
+                        .videoIrshad{
+                            width: 100%;
+                            height: 280px;
+                            background: url(/assets/image/background/carx.jpg);
+                            background-size:cover;
+                            background-position: 50% 50%;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            position: relative;
+                            transition: 0.3s all ease-in-out;
+                            &:hover .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    opacity: 0.4;
+                                    background: greenyellow;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a{
+                                    width: 175px;
+                                    height: 80px;
+                                    gap: 10px;
+                                    border-radius: 35px;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a .button_img{
+                                    width: 30px;
+                                    height: 34px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                }
+                                &:hover a h4{
+                                    display: block;
+                                    opacity: 1;
+                                }
+                            .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    background: rgba(0, 0, 0, 0.4);
+                                    transition: 0.3s all ease-in-out
+                            }
+                            @include d-flex-center;
+                            a{
+                                width: 80px;
+                                height: 80px;
+                                background: #fff;
+                                border: 1px solid transparent;
+                                border-radius: 50%;
+                                 @include d-flex-center;
+                                transition: 0.3s all ease-in-out;
+                                position: relative;
+                                z-index: 3;
+                                .button_img{
+                                    width: 28px;
+                                    height: 31px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                h4{
+                                   display: none;
+                                   opacity: 0;
+                                   color: $color_footer;
+                                   font-family: $font_family;
+                                   font-size: $font_size_text;
+                                   font-weight: 600;
+                                   line-height: 1.2;
+                                   transition: 0.3s all ease-in-out;
+                                }
+                            }
+                        }
+                        .videoIrshadText{
+                            width: 100%;
+                            height: 180px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            gap: 8px;
+                            a{
+                                h3{
+                                    width: 100%;
+                                    font-family: $font_family;
+                                    font-weight: 600;
+                                    font-size: $font_price_size;
+                                    line-height: 1.5;
+                                    text-align: left;
+                                    margin-top: 5px;
+                                    color: $color_footer;
+                                    transition: 0.3s all ease-in-out;
+                                    &:hover{
+                                        color: $color_green;
+                                    }
+                                }
+                            }
+                            p{
+                                text-align: left;
+                                color: $color_icon;
+                                font-weight: 400;
+                                font-family: $font_family;
+                                font-size: $font_size_placeholder;
+                                line-height: 1.2;
+                            }
+                        }
+                      }
+                      .videoSlayd6{
+                        width: 100%;
+                        height: 472px;
+                        .videoIrshad{
+                            width: 100%;
+                            height: 280px;
+                            background: url(/assets/image/background/usaqmasin.jpg);
+                            background-size:cover;
+                            background-position: 50% 50%;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            position: relative;
+                            transition: 0.3s all ease-in-out;
+                            &:hover .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    opacity: 0.4;
+                                    background: greenyellow;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a{
+                                    width: 175px;
+                                    height: 80px;
+                                    gap: 10px;
+                                    border-radius: 35px;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover a .button_img{
+                                    width: 30px;
+                                    height: 34px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                }
+                                &:hover a h4{
+                                    display: block;
+                                    opacity: 1;
+                                }
+                            .overlay{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    top: 0;
+                                    background: rgba(0, 0, 0, 0.4);
+                                    transition: 0.3s all ease-in-out
+                            }
+                            @include d-flex-center;
+                            a{
+                                width: 80px;
+                                height: 80px;
+                                background: #fff;
+                                border: 1px solid transparent;
+                                border-radius: 50%;
+                                 @include d-flex-center;
+                                transition: 0.3s all ease-in-out;
+                                position: relative;
+                                z-index: 3;
+                                .button_img{
+                                    width: 28px;
+                                    height: 31px;
+                                    background: url(/assets/image/background/play-btn.svg);
+                                    background-size: cover;
+                                    background-position: 50% 50%;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                h4{
+                                   display: none;
+                                   opacity: 0;
+                                   color: $color_footer;
+                                   font-family: $font_family;
+                                   font-size: $font_size_text;
+                                   font-weight: 600;
+                                   line-height: 1.2;
+                                   transition: 0.3s all ease-in-out;
+                                }
+                            }
+                        }
+                        .videoIrshadText{
+                            width: 100%;
+                            height: 180px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            gap: 8px;
+                            a{
+                                h3{
+                                    width: 100%;
+                                    font-family: $font_family;
+                                    font-weight: 600;
+                                    font-size: $font_price_size;
+                                    line-height: 1.5;
+                                    text-align: left;
+                                    margin-top: 5px;
+                                    color: $color_footer;
+                                    transition: 0.3s all ease-in-out;
+                                    &:hover{
+                                        color: $color_green;
+                                    }
+                                }
+                            }
+                            p{
+                                text-align: left;
+                                color: $color_icon;
+                                font-weight: 400;
+                                font-family: $font_family;
+                                font-size: $font_size_placeholder;
+                                line-height: 1.2;
+                            }
+                        }
+                      }
                        img {
                         display: block;
                         width: 100%;
@@ -3298,7 +3771,13 @@ $font_product_size:36px;
                       }
                     }
                 }
-              }
+            }
+            .text{
+                display: none;
+            }
+            .text.is-active{
+                display: block;
+            }
         
         
         }
