@@ -161,6 +161,7 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+  position: relative;
 }
 .login .login_box .form form label {
   font-size: 16px;
@@ -177,6 +178,60 @@
   border-radius: 0.6rem;
   padding: 14px 20px;
   margin-top: 10px;
+}
+.login .login_box .form form .green {
+  border: 1px solid #40b659;
+}
+.login .login_box .form form .red {
+  border: 1px solid red;
+}
+.login .login_box .form form .iconEmail {
+  position: absolute;
+  top: 54px;
+  right: 38px;
+}
+.login .login_box .form form .iconEmail .fa-check {
+  color: #40b659;
+  display: none;
+}
+.login .login_box .form form .iconEmail .fa-exclamation {
+  color: red;
+  display: none;
+  position: relative;
+  top: -2px;
+}
+.login .login_box .form form .iconpasword {
+  position: absolute;
+  top: 149px;
+  right: 38px;
+}
+.login .login_box .form form .iconpasword .fa-check {
+  color: #40b659;
+  display: none;
+}
+.login .login_box .form form .iconpasword .fa-exclamation {
+  color: red;
+  display: none;
+  position: relative;
+  top: 16px;
+}
+.login .login_box .form form .message {
+  color: red;
+  font-size: 16px;
+  position: relative;
+  bottom: 6px;
+  left: 6px;
+  font-family: "Rokkitt", serif;
+  display: none;
+}
+.login .login_box .form form .parol {
+  color: red;
+  font-size: 16px;
+  position: relative;
+  bottom: 6px;
+  left: 6px;
+  font-family: "Rokkitt", serif;
+  display: none;
 }
 .login .login_box .form form button {
   width: 99%;

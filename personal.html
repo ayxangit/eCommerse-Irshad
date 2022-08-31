@@ -11,10 +11,12 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="assets/css/personal.css">
+     <link rel="stylesheet" href="sweetalert2.min.css">
     <title>Document</title>
 </head>
 <body>
     
+
 
     <!-- start header -->
       <header>
@@ -65,10 +67,24 @@
                         </h3>
                         <form action="">
                             <label for="">E-mail</label>
-                            <input type="email">
+                            <input type="email" id="email">
+                            <div class="iconEmail">
+                                <i class="fa-solid fa-check" id="mcheck"></i>
+                                <i class="fa-solid fa-exclamation" id="mexc"></i>
+                            </div>
+                            <span class="message">
+                                Email ünvanınızı daxil edin
+                            </span>
                             <label for="">Şifrə</label>
-                            <input type="password">
-                            <button>Daxil ol</button>
+                            <input type="password" id="password">
+                            <div class="iconpasword">
+                                <i class="fa-solid fa-check" id="check"></i>
+                                <i class="fa-solid fa-exclamation" id="exc"></i>
+                            </div>
+                            <span class="parol">
+                                Parolunuzu daxil edin
+                            </span>
+                            <button id="btn">Daxil ol</button>
                             <div class="loginPage">
                                 <a href="account.html"><i class="fa-solid fa-user"></i>Hesab aç</a>
                                 <a href="forget.html" class="key"><i class="fa-solid fa-key"></i>Şifrəni unutmusan?</a>
@@ -83,10 +99,10 @@
     <!-- end -->
 
 
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <!-- scrip icon -->
      <script src="https://kit.fontawesome.com/29bca2939f.js" crossorigin="anonymous"></script>
      <!-- scrip js -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/personal.js"></script>
 </body>
 </html>

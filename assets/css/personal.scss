@@ -71,6 +71,7 @@ $font_product_size:36px;
     margin: 0 auto;
 }
 
+
 // start header
 .header{
     width: 100%;
@@ -207,6 +208,7 @@ $font_product_size:36px;
                 display: flex;
                 flex-direction: column;
                 gap: 7px;
+                position: relative;
                 label{
                      font-size: $font_size_placeholder;
                      font-family: $font_family;
@@ -222,6 +224,62 @@ $font_product_size:36px;
                     border-radius: 0.6rem;
                     padding: 14px 20px;
                     margin-top: 10px;
+                }
+                .green{
+                    border: 1px solid $color_green;
+                }
+                .red{
+                    border: 1px solid red;
+                }
+                .iconEmail{
+                    position: absolute;
+                    top: 54px;
+                    right: 38px;
+                    .fa-check{
+                        color: $color_green;
+                        display: none;
+                    }
+                    .fa-exclamation{
+                        color: red;
+                        display: none;
+                        position: relative;
+                        top: -2px;
+                    }
+
+                }
+                .iconpasword{
+                    position: absolute;
+                    top: 149px;
+                    right: 38px;
+                    .fa-check{
+                        color: $color_green;
+                        display: none;
+                    }
+                    .fa-exclamation{
+                        color: red;
+                        display: none;
+                        position: relative;
+                        top: 16px;
+                    }
+
+                }
+                .message{
+                    color: red;
+                    font-size: $font_size_placeholder;
+                    position: relative;
+                    bottom: 6px;
+                    left: 6px;
+                    font-family: $font_family;
+                    display: none;
+                }
+                .parol{
+                    color: red;
+                    font-size: $font_size_placeholder;
+                    position: relative;
+                    bottom: 6px;
+                    left: 6px;
+                    font-family: $font_family;
+                    display: none;
                 }
                 button{
                     width: 99%;

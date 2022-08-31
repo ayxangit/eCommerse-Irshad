@@ -1631,6 +1631,22 @@
 .header .header_down .down .addTo_cart a .fa-cart-shopping {
   color: green;
   transition: 0.4s all ease-in-out;
+  position: relative;
+}
+.header .header_down .down .addTo_cart a .fa-cart-shopping small {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f6861f;
+  border-radius: 50%;
+  background: #f6861f;
+  color: white;
+  font-size: 8px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 11px;
+  left: 9px;
 }
 .header .header_down .down .addTo_cart a span {
   color: #212529;
