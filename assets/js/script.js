@@ -26,6 +26,14 @@ let swiperProduct = new Swiper(".mySwiper3", {
   speed:500,
   autoplay:true,
   loop:true,
+  breakpoints: {
+    1500: {
+      slidesPerView: 4,
+    },
+    375: {
+      slidesPerView: 1,
+    },
+}
 });
 // end
 
@@ -35,13 +43,21 @@ let swiperMoreSlide = new Swiper(".mySwipers", {
   speed:500,
   autoplay:true,
   loop:true,
+  breakpoints: {
+    1500: {
+      slidesPerView: 4,
+    },
+    375: {
+      slidesPerView: 1,
+    },
+}
 });
 // end
 
 // start partnyor slide
 let swiperPartnyor = new Swiper(".mySwiper4", {
-  // slidesPerView:6,
-  // spaceBetween:10,
+  slidesPerView:6,
+  spaceBetween:10,
   autoplay:true,
   loop:true,
 
@@ -54,6 +70,10 @@ let swiperPartnyor = new Swiper(".mySwiper4", {
       slidesPerView: 4,
       spaceBetween: 10
     },
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
 }
 });
 // end
@@ -61,14 +81,38 @@ let swiperPartnyor = new Swiper(".mySwiper4", {
 // start mini slayd section
 let swiperSlide = new Swiper(".mySwiper5", {
   slidesPerView:2,
-  spaceBetween:25
+  spaceBetween:25,
+  breakpoints: {
+    1500: {
+      slidesPerView: 2,
+      spaceBetween: 25
+    },
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 25,
+      autoplay:true,
+      loop:true,
+    },
+}
 });
 // end
 
 // start video slayd section
 let swiperVideo = new Swiper(".mySwiper6", {
     slidesPerView:3,
-    spaceBetween:20
+    spaceBetween:20,
+    breakpoints: {
+      1500: {
+        slidesPerView: 3,
+        spaceBetween:20
+      },
+      375: {
+        slidesPerView: 1,
+        spaceBetween:20,
+        loop:true,
+        autoplay:true
+      },
+  }
 });
 // end
 
