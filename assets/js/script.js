@@ -30,6 +30,9 @@ let swiperProduct = new Swiper(".mySwiper3", {
     1500: {
       slidesPerView: 4,
     },
+    768: {
+      slidesPerView: 4,
+    },
     375: {
       slidesPerView: 1,
     },
@@ -45,6 +48,9 @@ let swiperMoreSlide = new Swiper(".mySwipers", {
   loop:true,
   breakpoints: {
     1500: {
+      slidesPerView: 4,
+    },
+    768: {
       slidesPerView: 4,
     },
     375: {
@@ -87,6 +93,10 @@ let swiperSlide = new Swiper(".mySwiper5", {
       slidesPerView: 2,
       spaceBetween: 25
     },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 25
+    },
     375: {
       slidesPerView: 1,
       spaceBetween: 25,
@@ -103,6 +113,10 @@ let swiperVideo = new Swiper(".mySwiper6", {
     spaceBetween:20,
     breakpoints: {
       1500: {
+        slidesPerView: 3,
+        spaceBetween:20
+      },
+      768: {
         slidesPerView: 3,
         spaceBetween:20
       },
