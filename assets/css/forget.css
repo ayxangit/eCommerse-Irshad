@@ -193,6 +193,18 @@
   padding: 14px 20px;
   margin-top: 10px;
 }
+.login .login_box .form form .color {
+  border-color: red;
+}
+.login .login_box .form form .content {
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: red;
+  line-height: 1.2;
+  position: relative;
+  left: 3px;
+}
 .login .login_box .form form button {
   width: 99%;
   height: 52px;

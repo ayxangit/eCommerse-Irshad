@@ -238,6 +238,18 @@ $font_product_size:36px;
                     padding: 14px 20px;
                     margin-top: 10px;
                 }
+                .color{
+                    border-color: red;
+                }
+                .content{
+                    font-family: $font_family;
+                    font-size: $font_size_placeholder;
+                    font-weight: 600;
+                    color: red;
+                    line-height: 1.2;
+                    position: relative;
+                    left: 3px;
+                }
                 button{
                     width: 99%;
                     height: 52px;

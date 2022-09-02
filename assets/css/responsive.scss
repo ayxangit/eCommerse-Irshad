@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -65,17 +66,19 @@ $font_product_size:36px;
     justify-content: space-around;
     align-items: center;
 }
-.container{
-    width: 1170px;
-    margin: 0 auto;
-}
+
+@media screen and (device-width:768px) {
+    .container{
+        width: 750px;
+        margin: 0 auto;
+    }
 // monthly price card
 .content{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 75%;
     height: 320px;
     background: #fff;
     border-radius: 12px;
@@ -127,12 +130,12 @@ $font_product_size:36px;
 // end
 
 // video card
- .videoCard{
+.videoCard{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 96%;
     height: 576px;
     background: #fff;
     border-radius: 12px;
@@ -173,7 +176,7 @@ $font_product_size:36px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 96%;
     height: 576px;
     background: #fff;
     border-radius: 12px;
@@ -214,7 +217,7 @@ $font_product_size:36px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 96%;
     height: 576px;
     background: #fff;
     border-radius: 12px;
@@ -255,7 +258,7 @@ $font_product_size:36px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 96%;
     height: 576px;
     background: #fff;
     border-radius: 12px;
@@ -296,7 +299,7 @@ $font_product_size:36px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 96%;
     height: 576px;
     background: #fff;
     border-radius: 12px;
@@ -337,7 +340,7 @@ $font_product_size:36px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 96%;
     height: 576px;
     background: #fff;
     border-radius: 12px;
@@ -375,1365 +378,1382 @@ $font_product_size:36px;
  }
 //  end
 
-// start header
+//  start header
 .header{
-    width: 100%;
-    height: 184px;
-    .header_up{
         width: 100%;
-        height: 67px;
-        border-bottom: 1px solid $color_border_bottom;
-        @include d-flex-center;
-        .up{
-            @include d-justify-between;
-           .list{
-            width: 55%;
-            height: 30px;
-            ul{
-                display: flex;
-                li{
-                    margin-left: 15px;
-                    .tagLineUner{
-                        color: $color_list;
-                        font-family: $font_family;
-                        font-size: $font_size_list;
-                        line-height: 2rem;
-                        font-weight: 400;
-                        cursor: pointer;
-                        position: relative;
-                        &::after{
-                            content: "";
-                            position: absolute;
-                            background: $color_orange;
-                            height: 1.5px;
-                            width: 0;
-                            left: 0;
-                            bottom: -10px;
-                            transition: 0.3s all ease-in-out;
-
-                        }
-                        &:hover::after{
-                            width: 100%;
-                        }
-                    }
-                }
-                .condisioner{
-                    width: 94px;
-                    height: 30px;
-                    border: 1px solid $color_orange;
-                    border-radius: 6px;
-                    @include d-flex-center;
-                    transition: 0.5s all ease-in-out;
-                    &:hover{
-                        background: $color_orange;
-                    }
-                    &:hover a{
-                        color: #ffff;
-                    }
-                    a{
-                        color: $color_orange;
-                        font-family: $font_family;
-                        font-size: $font_size_list;
-                        line-height: 1.5;
-                        font-weight: bold;
-                        cursor: pointer;
-                    }
-                }
-                .velo{
-                    width: 94px;
-                    height: 30px;
-                    border: 1px solid $color_orange;
-                    border-radius: 6px;
-                    @include d-flex-center;
-                    transition: 0.5s all ease-in-out;
-                    &:hover{
-                       background: $color_orange;
-                    }
-                    &:hover a{
-                        color: #fff;
-                    }
-                    a{
-                        color: $color_orange;
-                        font-family: $font_family;
-                        font-size: $font_size_list;
-                        line-height: 1.5;
-                        font-weight: bold;
-                        cursor: pointer;
-                    }
-                }
-            }
-           } 
-           .language{
-                width: 40%;
+        height: 184px;
+        .header_up{
+            width: 100%;
+            height: 41px;
+            border-bottom: 1px solid $color_border_bottom;
+            @include d-flex-center;
+            .up{
+                @include d-justify-between;
+               .list{
+                width: 55%;
                 height: 30px;
-                @include d-flex-center;
-                gap: 18px;
-                .call_fast{
-                    width: 25%;
-                    height: 24px;
-                    border-right: 1px solid $color_border_bottom;
-                    a{
-                        img{
-                            width: 70%;
+                ul{
+                    display: flex;
+                    li{
+                        margin-left: 8px;
+                        .tagLineUner{
+                            color: $color_list;
+                            font-family: $font_family;
+                            font-size: 10px;
+                            line-height: 2rem;
+                            font-weight: 400;
+                            cursor: pointer;
+                            position: relative;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                background: $color_orange;
+                                height: 1.5px;
+                                width: 0;
+                                left: 0;
+                                bottom: -10px;
+                                transition: 0.3s all ease-in-out;
+    
+                            }
+                            &:hover::after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .condisioner{
+                        width: 55px;
+                        height: 30px;
+                        border: 1px solid $color_orange;
+                        border-radius: 6px;
+                        @include d-flex-center;
+                        transition: 0.5s all ease-in-out;
+                        &:hover{
+                            background: $color_orange;
+                        }
+                        &:hover a{
+                            color: #ffff;
+                        }
+                        a{
+                            color: $color_orange;
+                            font-family: $font_family;
+                            font-size: 10px;
+                            line-height: 1.5;
+                            font-weight: bold;
+                            cursor: pointer;
+                        }
+                    }
+                    .velo{
+                        width: 55px;
+                        height: 30px;
+                        border: 1px solid $color_orange;
+                        border-radius: 6px;
+                        @include d-flex-center;
+                        transition: 0.5s all ease-in-out;
+                        &:hover{
+                           background: $color_orange;
+                        }
+                        &:hover a{
+                            color: #fff;
+                        }
+                        a{
+                            color: $color_orange;
+                            font-family: $font_family;
+                            font-size: 10px;
+                            line-height: 1.5;
+                            font-weight: bold;
+                            cursor: pointer;
                         }
                     }
                 }
-                .choose_language{
+               } 
+               .language{
                     width: 40%;
-                    height: 24px;
-                    border-right: 1px solid $color_border_bottom;
+                    height: 30px;
                     @include d-flex-center;
-                    cursor: pointer;
-                    position: relative;
-                    transition: 0.3s all ease-in-out;
-                    &:hover .dropdown-content{
-                        visibility: visible;
-                        opacity: 1;
-                        transition: 0.3s all ease-in-out;
-                    }
-                    .flag{
-                        width: 16%;
+                    gap: 18px;
+                    .call_fast{
+                        width: 12%;
                         height: 24px;
-                        margin-right: 12px;
-                        @include d-flex-center;
-                        img{
-                            width: 100%;
+                        border-right: 1px solid $color_border_bottom;
+                        a{
+                            img{
+                                width: 85%;
+                            }
                         }
                     }
-                    p{
-                        color: $color_flag;
-                        font-size: $font_size_list;
-                        font-weight: 400;
-                        font-family: $font_family;
-                        line-height: 1.5;
-                        margin-right: 12px;
+                    .choose_language{
+                        width: 45%;
+                        height: 24px;
+                        border-right: 1px solid $color_border_bottom;
+                        @include d-flex-center;
+                        cursor: pointer;
                         position: relative;
-                        .fa-angle-down{
-                           position: relative;
-                           top: 2px;
-                           left: 6px;
-                        }
-                    }
-                    .dropdown-content {
-                        visibility: hidden;
-                        opacity: 0;
-                        position: absolute;
-                        background-color: #f9f9f9;
-                        border: 1px solid $color_flag_border;
-                        width: 100%;
-                        border-radius: 6px;
-                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                        height: 50px;
-                        @include d-flex-center;
-                        z-index: 1;
                         transition: 0.3s all ease-in-out;
-                        margin-top: 80px;
-                        right: 8px;
+                        &:hover .dropdown-content{
+                            visibility: visible;
+                            opacity: 1;
+                            transition: 0.3s all ease-in-out;
+                        }
+                        .flag{
+                            width: 15%;
+                            height: 24px;
+                            margin-right: 12px;
+                            @include d-flex-center;
+                            img{
+                                width: 100%;
+                            }
+                        }
                         p{
                             color: $color_flag;
-                            font-size: $font_size_list;
-                            font-family: $font_family;
+                            font-size: 11px;
                             font-weight: 400;
-                        }
-                        
-                    }
-                }
-                .personal_cabinet{
-                    width: 23%;
-                    height: 24px;
-                    @include d-flex-center;
-                    a{
-                        color: $color_flag;
-                        font-size: $font_size_list;
-                        font-family: $font_family;
-                        font-weight: 400;
-                        line-height: 1.5;
-                        position: relative;
-                        .fa-user{
-                            position: relative;
-                            top: 1px;
-                            right: 6px;
-                        }
-                    }
-                }
-           }
-        }
-    }
-    .header_down{
-        width: 100%;
-        height: 117px;
-        @include d-flex-center;
-        .down{
-            @include d-flex-center;
-            gap: 10px;
-            .logo{
-                width: 15%;
-                height: 49px;
-               a{
-                @include d-flex-center;
-                img{
-                    width: 60%;
-                }
-               }
-                
-            }
-            .catalog{
-                width: 5%;
-                height: 50px;
-                border: 1px solid $color_green;
-                border-radius: 0.8rem;
-                background: $color_green;
-                .hamburger_menu{
-                    #menu_toggle{
-                        opacity: 0;
-                        &:checked + .menu_btn>span{
-                            transform: rotate(45deg);
-                        }
-                        &:checked + .menu_btn>span::before{
-                            top: 0;
-                            transform: rotate(0deg);
-                        }
-                        &:checked + .menu_btn>span::after{
-                            top: 0;
-                            transform: rotate(90deg);
-                        }
-                        &:checked ~ .menu_box{
-                            left: 207px !important;
-                        }
-                    }
-                    .menu_btn{
-                        position: absolute;
-                        top: 123px;
-                        left: 398px;
-                        width: 26px;
-                        height: 26px;
-                        cursor: pointer;
-                        z-index: 1;
-                        span{
-                            display: block;
-                            position: absolute;
-                            width: 100%;
-                            height: 2px;
-                            background: #fff;
-                            transition-duration: .25s;
-                            &::before{
-                                display: block;
-                                position: absolute;
-                                width: 100%;
-                                height: 2px;
-                                content: '';
-                                top: -8px;
-                                background: #fff;
-                                transition-duration: .25s;
-                            }
-                            &::after{
-                                display: block;
-                                position: absolute;
-                                width: 100%;
-                                height: 2px;
-                                background: #fff;
-                                transition-duration: .25s;
-                                content: '';
-                                top: 8px;
-                            }
-                        }
-                    }
-                    .menu_box{
-                        display: block;
-                        position: absolute;
-                        z-index: 999;
-                        top: 151px;
-                        left: -100%;
-                        width: 506px;
-                        // height: 100%;
-                        margin: 0;
-                        padding: 35px 32px;
-                        background: #fff;
-                        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                        // transition-duration: .25s;
-                        transition: 0.3s all ease-in-out;
-                        .menu_item{
-                            margin-top: 15px;
-                            transition: 0.3s all ease-in-out;
-                            cursor: pointer;
-                            display: flex;
-                            gap: 15px;
-                            position: relative;
-                            &:hover .dropdownList{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList2{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList3{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList4{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList5{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList6{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList7{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList8{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList9{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList10{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            &:hover .dropdownList11{
-                                visibility: visible;
-                                opacity: 1;
-                                transition: 0.3s all ease-in-out;
-                            }
-                            .dropdownList{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -51px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                overflow-y: scroll;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 24%;
-                                    height: 650px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 740px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 1150px;
-                                }
-                                .othersList{
-                                    width: 24%;
-                                    height: 500px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                }
-                            }
-                            .dropdownList2{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -99px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                overflow-y: scroll;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 24%;
-                                    height: 650px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 740px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 1150px;
-                                }
-                                .othersList{
-                                    width: 24%;
-                                    height: 500px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                }
-                            }
-                            .dropdownList3{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -147px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                overflow-y: scroll;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 24%;
-                                    height: 650px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 740px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 1150px;
-                                }
-                                .othersList{
-                                    width: 24%;
-                                    height: 500px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                }
-                            }
-                            .dropdownList4{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -195px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                overflow-y: scroll;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 24%;
-                                    height: 650px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 740px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 800px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 35px;
-                                }
-                                .othersList{
-                                    width: 24%;
-                                    height: 500px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                }
-                            }
-                            .dropdownList5{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -243px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                overflow-y: scroll;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 24%;
-                                    height: 650px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 740px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 800px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 35px;
-                                }
-                                .othersList{
-                                    width: 24%;
-                                    height: 500px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                }
-                            }
-                            .dropdownList6{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -291px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                overflow-y: scroll;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 24%;
-                                    height: 650px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 740px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 800px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 35px;
-                                }
-                                .othersList{
-                                    width: 24%;
-                                    height: 500px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                }
-                            }
-                            .dropdownList7{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -339px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                overflow-y: scroll;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 27%;
-                                    height: 650px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 740px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 800px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 35px;
-                                }
-                                .othersList{
-                                    width: 24%;
-                                    height: 500px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                }
-                            }
-                            .dropdownList8{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -387px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 27%;
-                                    height: 400px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 24%;
-                                    height: 400px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .airPods_list{
-                                    width: 24%;
-                                    height: 400px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 35px;
-                                }
-                            }
-                            .dropdownList9{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -435px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 27%;
-                                    height: 400px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                            }
-                            .dropdownList10{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -483px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 45%;
-                                    height: 400px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                                .aksesuar_mobil{
-                                    width: 35%;
-                                    height: 400px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                            }
-                            .dropdownList11{
-                                width: 750px;
-                                height: 599px;
-                                position: absolute;
-                                top: -531px;
-                                left: 0;
-                                background: #fff; 
-                                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                                margin-left: 474px;
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: 0.3s all ease-in-out;
-                                display: flex;
-                                gap: 30px;
-                                padding: 40px;
-                                a{
-                                    h3{
-                                        font-family: $font_family;
-                                        color: $color_footer;
-                                        font-weight: 600;
-                                        font-size: $font_size_placeholder;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                ul{
-                                    li{
-                                        margin-top: 10px;
-                                        transition: 0.3s all ease-in-out;
-                                        &:hover ::before {
-                                            content: "\2022";
-                                            color: red;
-                                            font-weight: bold;
-                                            display: inline-block;
-                                            width: 1em;
-                                            margin-left: -1em;
-                                            transition: 0.3s all ease-in-out;
-                                          }
-                                        a{
-                                            color: $color_list;
-                                            font-weight: 400;
-                                            font-family: $font_family;
-                                            font-weight: 400;
-                                            font-size: $font_size_placeholder;
-                                            line-height: 1.2;
-                                            transition: 0.3s all ease-in-out;
-                                            &:hover{
-                                               color: red;
-                                            }
-                                        }
-                                    }
-                                }
-                                .dropdown_app{
-                                    width: 27%;
-                                    height: 400px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 55px;
-                                }
-                            }
-                            &:hover {
-                                color: $color_orange;
-                            }
-                            span{
-                                color: $color_footer;
-                                font-size: $font_price_size;
-                                font-family: $font_family;
-                                font-weight: 400;
-                                line-height: 1.5;
-                                margin-left: 15px;
-                                transition: 0.2s all ease-in-out;
-                                &:hover{
-                                    color: $color_orange;
-                                    font-weight: 500;
-                                }
-                            }
-                            .androinPhone{
-                                width: 24px;
-                                height: 24px;
-                                display: inline-block;
-                                @include d-flex-center;
-                                img{
-                                    width: 100%;
-                                }
-                            }
-                        
-
-                    }
-                }
-
-            }
-            }
-            .form{
-                position: relative;
-                width: 35%;
-                height: 50px;
-                form{
-                    input{
-                        width: 100%;
-                        height: 50px;
-                        background: $color_input;
-                        outline: none;
-                        border: 1px solid $color_input_border;
-                        border-radius: 0.8rem;
-                        padding: 1.4rem 2rem;
-                        &::placeholder{
-                            font-size: $font_size_placeholder;
                             font-family: $font_family;
                             line-height: 1.5;
+                            margin-right: 12px;
+                            position: relative;
+                            .fa-angle-down{
+                               position: relative;
+                               top: 2px;
+                               left: 6px;
+                            }
                         }
-                    }
-                }
-                a{
-                    position: relative;
-                    left: 340px;
-                    bottom: 33px;
-                    border-left: 1px solid $color_flag_border;
-                    .fa-magnifying-glass{
-                        color: $color_icon;
-                        margin-left: 13px;
-                        
-                    }
-                }
-            }
-            .equality{
-                width: 8%;
-                height: 46px;
-                @include d-flex-center;
-                transition: 0.4s all ease-in-out;
-                &:hover a .fa-binoculars{
-                   color: $color_orange;
-                }
-                &:hover a span{
-                    color: $color_orange;
-                 }
-                a{
-                    @include d-flex-column;
-                    gap: 3px;
-                    transition: 0.4s all ease-in-out;
-                    .fa-binoculars{
-                        color: $color_icon_tag;
-                        transition: 0.4s all ease-in-out;
-                    }
-                    span{
-                        color: $color_flag;
-                        transition: 0.4s all ease-in-out;
-                    }
-                }
-            }
-            .liked{
-                width: 8%;
-                height: 46px;
-                @include d-flex-center;
-                transition: 0.4s all ease-in-out;
-                &:hover a .fa-heart{
-                   color: $color_orange;
-                }
-                &:hover a span{
-                    color: $color_orange;
-                 }
-                a{
-                    @include d-flex-column;
-                    gap: 3px;
-                    transition: 0.4s all ease-in-out;
-                    .fa-heart{
-                        color: red;
-                        transition: 0.3s all ease-in-out;
-                    }
-                    span{
-                        color: $color_flag;
-                        transition: 0.4s all ease-in-out;
-                    }
-                }
-            }
-            .addTo_cart{
-                width: 8%;
-                height: 46px;
-                @include d-flex-center;
-                transition: 0.4s all ease-in-out;
-                &:hover a .fa-cart-shopping{
-                   color: $color_orange;
-                }
-                &:hover a span{
-                    color: $color_orange;
-                 }
-                a{
-                    @include d-flex-column;
-                    gap: 3px;
-                    transition: 0.4s all ease-in-out;
-                    .fa-cart-shopping{
-                        color: green;
-                        transition: 0.4s all ease-in-out;
-                        position: relative;
-                        small{
-                            width: 15px;
-                            height: 15px;
-                            border: 1px solid $color_orange;
-                            border-radius: 50%;
-                            background: $color_orange;
-                            color: #ffff;
-                            font-size: 8px;
+                        .dropdown-content {
+                            visibility: hidden;
+                            opacity: 0;
                             position: absolute;
+                            background-color: #f9f9f9;
+                            border: 1px solid $color_flag_border;
+                            width: 100%;
+                            border-radius: 6px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            height: 50px;
                             @include d-flex-center;
-                            bottom: 11px;
-                            left: 9px;
+                            z-index: 1;
+                            transition: 0.3s all ease-in-out;
+                            margin-top: 80px;
+                            right: 8px;
+                            p{
+                                color: $color_flag;
+                                font-size: 11px;
+                                font-family: $font_family;
+                                font-weight: 400;
+                            }
+                            
                         }
                     }
-                    span{
-                        color: $color_flag;
-                        transition: 0.4s all ease-in-out;
+                    .personal_cabinet{
+                        width: 25%;
+                        height: 24px;
+                        @include d-flex-center;
+                        a{
+                            color: $color_flag;
+                            font-size: 11px;
+                            font-family: $font_family;
+                            font-weight: 400;
+                            line-height: 1.5;
+                            position: relative;
+                            .fa-user{
+                                position: relative;
+                                top: 1px;
+                                right: 6px;
+                            }
+                        }
                     }
-                }
-            }
-            .mothly{
-                 width: 12%;
-                 height: 77px;
-                 border: 1px solid $color_green;
-                 @include d-flex-column;
-                 gap: 7px;
-                 cursor: pointer;
-                 border-radius: 6px;
-                 transition: 0.3s all ease-in-out;
-                 position: relative;
-                 &:hover{
-                    background: $color_green;
-                 }
-                 &:hover .fa-hand-holding-dollar{
-                    color: #fff;
-                 }
-                 &:hover span{
-                    color: #fff;
-                 }
-                 .fa-hand-holding-dollar{
-                    color: $color_green;
-                    font-size: $font_size_icon;
-                 }
-                 span{
-                    color: $color_green;
-                    font-size: $font_size_text;
-                    font-family: $font_family;
-                    line-height: 1.5;
-                    font-weight: 600;
-
-                 }
+               }
             }
         }
-
-    }
+        .header_down{
+            width: 100%;
+            height: 70px;
+            @include d-flex-center;
+            .down{
+                @include d-flex-center;
+                gap: 10px;
+                .logo{
+                    width: 10%;
+                    height: 30px;
+                   a{
+                    @include d-flex-center;
+                    img{
+                        width: 80%;
+                    }
+                   }
+                    
+                }
+                .catalog{
+                    width: 7%;
+                    height: 50px;
+                    border: 1px solid $color_green;
+                    border-radius: 0.8rem;
+                    background: $color_green;
+                    .hamburger_menu{
+                        #menu_toggle{
+                            opacity: 0;
+                            &:checked + .menu_btn>span{
+                                transform: rotate(45deg);
+                            }
+                            &:checked + .menu_btn>span::before{
+                                top: 0;
+                                transform: rotate(0deg);
+                            }
+                            &:checked + .menu_btn>span::after{
+                                top: 0;
+                                transform: rotate(90deg);
+                            }
+                            &:checked ~ .menu_box{
+                                left: 0 !important;
+                            }
+                        }
+                        .menu_btn{
+                            position: absolute;
+                            top: 73px;
+                            left: 118px;
+                            width: 26px;
+                            height: 26px;
+                            cursor: pointer;
+                            z-index: 1;
+                            span{
+                                display: block;
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                background: #fff;
+                                transition-duration: .25s;
+                                &::before{
+                                    display: block;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 2px;
+                                    content: '';
+                                    top: -8px;
+                                    background: #fff;
+                                    transition-duration: .25s;
+                                }
+                                &::after{
+                                    display: block;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 2px;
+                                    background: #fff;
+                                    transition-duration: .25s;
+                                    content: '';
+                                    top: 8px;
+                                }
+                            }
+                        }
+                        .menu_box{
+                            display: block;
+                            position: absolute;
+                            z-index: 999;
+                            top: 101px;
+                            left: -100%;
+                            width: 404px;
+                            // height: 100%;
+                            margin: 0;
+                            padding: 35px 32px;
+                            background: #fff;
+                            box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                            // transition-duration: .25s;
+                            transition: 0.3s all ease-in-out;
+                            .menu_item{
+                                margin-top: 15px;
+                                transition: 0.3s all ease-in-out;
+                                cursor: pointer;
+                                display: flex;
+                                gap: 15px;
+                                position: relative;
+                                &:hover .dropdownList{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList2{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList3{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList4{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList5{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList6{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList7{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList8{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList9{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList10{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                &:hover .dropdownList11{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transition: 0.3s all ease-in-out;
+                                }
+                                .dropdownList{
+                                    width: 364px;
+                                    height: 599px;
+                                    position: absolute;
+                                    top: -50px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 650px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 740px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 1150px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList2{
+                                    width: 364px;
+                                    height: 599px;
+                                    position: absolute;
+                                    top: -89px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 650px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 740px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 1150px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList3{
+                                    width: 364px;
+                                    height: 599px;
+                                    position: absolute;
+                                    top: -128px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 428px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 428px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 868px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList4{
+                                    width: 364px;
+                                    height: 599px;
+                                    position: absolute;
+                                    top: -167px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 565px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 565px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 868px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList5{
+                                    width: 364px;
+                                    height: 599px;
+                                    position: absolute;
+                                    top: -206px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 565px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 565px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 868px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList6{
+                                    width: 364px;
+                                    height: 599px;
+                                    position: absolute;
+                                    top: -245px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 624px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 565px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 868px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList7{
+                                    width: 364px;
+                                    height: 599px;
+                                    position: absolute;
+                                    top: -284px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 381px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 369px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 868px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList8{
+                                    width: 364px;
+                                    height: 498px;
+                                    position: absolute;
+                                    top: -323px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    overflow-y: scroll;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 12px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 45%;
+                                        height: 200px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 45%;
+                                        height: 200px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .airPods_list{
+                                        width: 45%;
+                                        height: 184px;
+                                    }
+                                    .othersList{
+                                        width: 45%;
+                                        height: 500px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 25px;
+                                    }
+                                }
+                                .dropdownList9{
+                                    width: 364px;
+                                    height: 498px;
+                                    position: absolute;
+                                    top: -362px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    display: flex;
+                                    gap: 30px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 80%;
+                                        height: 400px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                }
+                                .dropdownList10{
+                                    width: 364px;
+                                    height: 499px;
+                                    position: absolute;
+                                    top: -401px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    gap: 30px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 80%;
+                                        height: 194px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                    .aksesuar_mobil{
+                                        width: 85%;
+                                        height: 93px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                }
+                                .dropdownList11{
+                                    width: 364px;
+                                    height: 498px;
+                                    position: absolute;
+                                    top: -439px;
+                                    left: -102px;
+                                    background: #fff; 
+                                    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+                                    margin-left: 474px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: 0.3s all ease-in-out;
+                                    display: flex;
+                                    gap: 30px;
+                                    padding: 40px;
+                                    a{
+                                        h3{
+                                            font-family: $font_family;
+                                            color: $color_footer;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 10px;
+                                            transition: 0.3s all ease-in-out;
+                                            &:hover ::before {
+                                                content: "\2022";
+                                                color: red;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                width: 1em;
+                                                margin-left: -1em;
+                                                transition: 0.3s all ease-in-out;
+                                              }
+                                            a{
+                                                color: $color_list;
+                                                font-weight: 400;
+                                                font-family: $font_family;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.2;
+                                                transition: 0.3s all ease-in-out;
+                                                &:hover{
+                                                   color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown_app{
+                                        width: 80%;
+                                        height: 100px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 55px;
+                                    }
+                                }
+                                &:hover {
+                                    color: $color_orange;
+                                }
+                                span{
+                                    color: $color_footer;
+                                    font-size: 16px;
+                                    font-family: $font_family;
+                                    font-weight: 400;
+                                    line-height: 1.5;
+                                    margin-left: 15px;
+                                    transition: 0.2s all ease-in-out;
+                                    &:hover{
+                                        color: $color_orange;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .androinPhone{
+                                    width: 24px;
+                                    height: 24px;
+                                    display: inline-block;
+                                    @include d-flex-center;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            
+    
+                        }
+                    }
+    
+                }
+                }
+                .form{
+                    position: relative;
+                    width: 35%;
+                    height: 50px;
+                    form{
+                        input{
+                            width: 100%;
+                            height: 50px;
+                            background: $color_input;
+                            outline: none;
+                            border: 1px solid $color_input_border;
+                            border-radius: 0.8rem;
+                            padding: 1.4rem 2rem;
+                            &::placeholder{
+                                font-size: $font_size_placeholder;
+                                font-family: $font_family;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                    a{
+                        position: relative;
+                        left: 210px;
+                        bottom: 33px;
+                        border-left: 1px solid $color_flag_border;
+                        .fa-magnifying-glass{
+                            color: $color_icon;
+                            margin-left: 13px;
+                            
+                        }
+                    }
+                }
+                .equality{
+                    width: 8%;
+                    height: 46px;
+                    @include d-flex-center;
+                    transition: 0.4s all ease-in-out;
+                    &:hover a .fa-binoculars{
+                       color: $color_orange;
+                    }
+                    &:hover a span{
+                        color: $color_orange;
+                     }
+                    a{
+                        @include d-flex-column;
+                        gap: 3px;
+                        transition: 0.4s all ease-in-out;
+                        .fa-binoculars{
+                            color: $color_icon_tag;
+                            transition: 0.4s all ease-in-out;
+                            font-size: 10px;
+                        }
+                        span{
+                            color: $color_flag;
+                            font-size: 13px;
+                            transition: 0.4s all ease-in-out;
+                        }
+                    }
+                }
+                .liked{
+                    width: 8%;
+                    height: 46px;
+                    @include d-flex-center;
+                    transition: 0.4s all ease-in-out;
+                    &:hover a .fa-heart{
+                       color: $color_orange;
+                    }
+                    &:hover a span{
+                        color: $color_orange;
+                     }
+                    a{
+                        @include d-flex-column;
+                        gap: 3px;
+                        transition: 0.4s all ease-in-out;
+                        .fa-heart{
+                            color: red;
+                            transition: 0.3s all ease-in-out;
+                            font-size: 13px;
+                        }
+                        span{
+                            color: $color_flag;
+                            transition: 0.4s all ease-in-out;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .addTo_cart{
+                    width: 8%;
+                    height: 46px;
+                    @include d-flex-center;
+                    transition: 0.4s all ease-in-out;
+                    &:hover a .fa-cart-shopping{
+                       color: $color_orange;
+                    }
+                    &:hover a span{
+                        color: $color_orange;
+                     }
+                    a{
+                        @include d-flex-column;
+                        gap: 3px;
+                        transition: 0.4s all ease-in-out;
+                        .fa-cart-shopping{
+                            color: green;
+                            transition: 0.4s all ease-in-out;
+                            position: relative;
+                            font-size: 13px;
+                            small{
+                                width: 15px;
+                                height: 15px;
+                                border: 1px solid $color_orange;
+                                border-radius: 50%;
+                                background: $color_orange;
+                                color: #ffff;
+                                font-size: 5px;
+                                position: absolute;
+                                @include d-flex-center;
+                                bottom: 11px;
+                                left: 9px;
+                            }
+                        }
+                        span{
+                            color: $color_flag;
+                            transition: 0.4s all ease-in-out;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .mothly{
+                     width: 13%;
+                     height: 55px;
+                     border: 1px solid $color_green;
+                     @include d-flex-column;
+                     gap: 7px;
+                     cursor: pointer;
+                     border-radius: 6px;
+                     transition: 0.3s all ease-in-out;
+                     position: relative;
+                     &:hover{
+                        background: $color_green;
+                     }
+                     &:hover .fa-hand-holding-dollar{
+                        color: #fff;
+                     }
+                     &:hover span{
+                        color: #fff;
+                     }
+                     .fa-hand-holding-dollar{
+                        color: $color_green;
+                        font-size: $font_size_placeholder;
+                     }
+                     span{
+                        color: $color_green;
+                        font-size: $font_size_placeholder;
+                        font-family: $font_family;
+                        line-height: 1.5;
+                        font-weight: 600;
+    
+                     }
+                }
+            }
+    
+        }
 }
 // end
 
-// start reason sale section
+ // start reason sale section
 .reason_sale{
     width: 100%;
-    height: 600px;
+    height: 360px;
     .slideBox{
         @include d-flex-column;
-        gap: 18px;
+        gap: 50px;
         .slide_box{
             width: 100%;
-            height: 422px;
+            height: 250px;
             @include d-justify-between;
             .animate_slide{
                 width: 62%;
-                height: 421px;
+                height: 300px;
                 .swiper {
                     width: 100%;
                     height: 100%;
@@ -1837,7 +1857,7 @@ $font_product_size:36px;
             }
             .time_slide{
                 width: 35%;
-                height: 422px;
+                height: 300px;
                 .swiper{
                     width: 100%;
                     height: 100%;
@@ -1875,6 +1895,12 @@ $font_product_size:36px;
                                     border: 1px solid transparent;
                                     border-radius: 12px 12px 0 0;
                                     @include d-justify-around;
+                                    p{
+                                        font-family: $font_family;
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                        line-height: 1.2;
+                                    }
                                     .timer{
                                         display: flex;
                                         gap: 2px;
@@ -1882,7 +1908,7 @@ $font_product_size:36px;
                                             p{
                                                 color: $color_footer;
                                                 font-family: $font_family;
-                                                font-size: $font_size_text;
+                                                font-size: 12px;
                                                 font-weight: 600;
                                                 line-height: 1.2;
                                             }
@@ -1891,7 +1917,7 @@ $font_product_size:36px;
                                 }
                                 a{
                                     width: 96%;
-                                    height: 160px;
+                                    height: 45px;
                                     @include d-flex-column;
                                     position: relative;
                                     .logo_text{
@@ -1902,7 +1928,7 @@ $font_product_size:36px;
                                             width: 58%;
                                             height: 34px;
                                             font-family: $font_family;
-                                            font-size: $font_size_icon;
+                                            font-size: 13px;
                                             color: $color_icon_tag;
                                             font-weight: 700;
                                             line-height: 1.4rem;
@@ -1912,16 +1938,16 @@ $font_product_size:36px;
 
                                         }
                                         .logoBrend{
-                                            width: 9%;
-                                            height: 34px;
+                                            width: 15%;
+                                            height: 39px;
                                             margin-top: 30px;
                                             img{
                                                 width: 100%;
                                             }
                                         }
                                         .logoBrends{
-                                            width: 24%;
-                                            height: 34px;
+                                            width: 27%;
+                                            height: 27px;
                                             margin-top: 30px;
                                             img{
                                                 width: 100%;
@@ -1936,7 +1962,7 @@ $font_product_size:36px;
                                         top: 55px;
                                         .imageBrend{
                                             width: 35%;
-                                            height: 150px;
+                                            height: 94px;
                                             position: relative;
                                             left: 10px;
                                             img{
@@ -1945,39 +1971,39 @@ $font_product_size:36px;
                                         }
                                         .buttonSlide{
                                             width: 60%;
-                                            height: 180px;
+                                            height: 90px;
                                             display: flex;
                                             flex-direction: column;
                                             justify-content: center;
                                             align-items: flex-end;
-                                            gap: 15px;
+                                            gap: 9px;
                                             position: relative;
                                             left: 17px;
                                             
                                             .stock{
                                                 width: 60%;
-                                                height: 30px;
+                                                height: 17px;
                                                 padding: 3px 5px;
                                                 background: $color_stok_bg;
                                                 color: $color_stok;
                                                 font-family: $font_family;
-                                                font-size: $font_size_placeholder;
+                                                font-size: 11px;
                                                 border: 1px solid $color_stok_bg;
                                                 font-weight: 600;
                                                 border-radius: 5px;
                                                 // position: relative;
                                                 // left: 37px;
                                                 .fa-envelope-open{
-                                                    font-size: $font_size_list;
+                                                    font-size: 10px;
                                                 }
                                             }
                                             .azn{
-                                                width: 92%;
-                                                height: 30px;
+                                                width: 100%;
+                                                height: 17px;
                                                 background: $color_azn_bg;
                                                 color: $color_orange;
                                                 font-weight: 600;
-                                                font-size: $font_size_placeholder;
+                                                font-size: 11px;
                                                 font-family: $font_family;
                                                 padding: 3px 5px;
                                                 border-radius: 5px;
@@ -1986,13 +2012,13 @@ $font_product_size:36px;
 
                                             }
                                             .noPercent{
-                                                width: 45%;
-                                                height: 30px;
+                                                width: 60%;
+                                                height: 17px;
                                                 padding: 3px 5px;
                                                 background: $color_stok_bg;
                                                 color: $color_stok;
                                                 font-family: $font_family;
-                                                font-size: $font_size_placeholder;
+                                                font-size: 11px;
                                                 border: 1px solid $color_stok_bg;
                                                 font-weight: 600;
                                                 border-radius: 5px;
@@ -2000,12 +2026,12 @@ $font_product_size:36px;
                                                 // left: 58px;
                                             }
                                             .chalange{
-                                                width: 80%;
-                                                height: 30px;
+                                                width: 90%;
+                                                height: 17px;
                                                 border: 1px solid #000000;
                                                 color: #000000;
                                                 padding: 3px 5px;
-                                                font-size: $font_size_placeholder;
+                                                font-size: 11px;
                                                 font-family: $font_family;
                                                 font-weight: 600;
                                                 border-radius: 5px;
@@ -2013,12 +2039,12 @@ $font_product_size:36px;
                                                 // left: 19px;
                                             }
                                             .visa{
-                                                width: 98%;
-                                                height: 30px;
+                                                width: 100%;
+                                                height: 17px;
                                                 padding: 3px 5px;
                                                 color: $color_stok;
                                                 font-family: $font_family;
-                                                font-size: $font_size_placeholder;
+                                                font-size: 10px;
                                                 border: 1px solid $color_stok;
                                                 font-weight: 600;
                                                 border-radius: 5px;
@@ -2033,18 +2059,18 @@ $font_product_size:36px;
                                     margin-top: 100px;
                                     .price_text{
                                         width: 30%;
-                                        height: 30px;
+                                        height: 15px;
                                         @include d-flex-column;
                                         cursor:grab;
                                         .oldPrice{
                                             text-decoration: line-through;
                                             color: $color_icon;
-                                            font-size: $font_size_list;
+                                            font-size: 10px;
                                             font-family: $font_family;
                                         }
                                         .newPrice{
                                             color: $color_icon_tag;
-                                            font-size: $font_price_size;
+                                            font-size: 12px;
                                             font-weight: 600;
                                             font-family: $font_family;
                                             margin-left: 19px;
@@ -2055,14 +2081,14 @@ $font_product_size:36px;
                                         height: 60px;
                                         @include d-flex-center;
                                         .click{
-                                            width: 50%;
-                                            height: 45px;
+                                            width: 46%;
+                                            height: 42px;
                                             border: 1px solid $color_orange;
                                             background: $color_orange;
                                             color: #fff;
                                             padding: 3px 5px;
                                             border-radius: 5px;
-                                            font-size: $font_size_placeholder;
+                                            font-size: 9px;
                                             font-family: $font_family;
                                             font-weight: 400;
                                             transition: 0.3s all ease-in-out;
@@ -2073,8 +2099,8 @@ $font_product_size:36px;
 
                                         }
                                         .box{
-                                            width: 27%;
-                                            height: 45px;
+                                            width: 32%;
+                                            height: 37px;
                                             border: 1px solid $color_green;
                                             padding: 3px 5px;
                                             background: $color_green;
@@ -2107,7 +2133,7 @@ $font_product_size:36px;
         }
         .adversitement_box{
             width: 100%;
-            height: 158px;
+            height: 94px;
             border: 1px solid transparent;
             background: $color_bg_grey;
             border-radius: 12px;
@@ -2120,12 +2146,12 @@ $font_product_size:36px;
                 gap: 10px;
                 .fa-arrows-spin{
                     color: $color_green;
-                    font-size: $font_icon_big;
+                    font-size: 22px;
                 }
                 a{
                     h3{
                         color:$color_icon_tag;
-                        font-size: $font_text;
+                        font-size: 17px;
                         font-family: $font_family;
                         font-weight: 700;
                     }
@@ -2139,12 +2165,12 @@ $font_product_size:36px;
                 gap: 10px;
                 .fa-location-dot{
                     color: $color_green;
-                    font-size: $font_icon_big;
+                    font-size: 22px;
                 }
                 a{
                     h3{
                         color:$color_icon_tag;
-                        font-size: $font_text;
+                        font-size: 17px;
                         font-family: $font_family;
                         font-weight: 700;
                     }
@@ -2158,12 +2184,12 @@ $font_product_size:36px;
                 gap: 10px;
                 .fa-wallet{
                     color: $color_green;
-                    font-size: $font_icon_big;
+                    font-size: 22px;
                 }
                 
                     h3{
                         color:$color_icon_tag;
-                        font-size: $font_text;
+                        font-size: 17px;
                         font-family: $font_family;
                         font-weight: 700;
                     }
@@ -2175,12 +2201,12 @@ $font_product_size:36px;
                 gap: 10px;
                 .fa-shield{
                     color: $color_green;
-                    font-size: $font_icon_big;
+                    font-size: 22px;
                 }
                 a{
                     h3{
                         color:$color_icon_tag;
-                        font-size: $font_text;
+                        font-size: 17px;
                         font-family: $font_family;
                         font-weight: 700;
                     }
@@ -2194,7 +2220,7 @@ $font_product_size:36px;
 // start product section
 .productList{
     width: 100%;
-    height: 1080px;
+    height: 1000px;
     margin-top: 83px;
     .product_box{
         display: flex;
@@ -2233,8 +2259,6 @@ $font_product_size:36px;
         .productSlide{
             width: 100%;
             height: 906px;
-            width: 100%;
-            height: 906px;
             border: 1px solid $color_flag_border;
             border-radius: 12px;
             box-shadow: 1px 0 0 0 #e3e5eb, 
@@ -2269,7 +2293,7 @@ $font_product_size:36px;
                                 height: 906px;
                                 border-right: 1px solid $color_flag_border;
                                 @include d-flex-column;
-                                gap: 40px;
+                                gap: 65px;
                                 .productLiked{
                                     width: 96%;
                                     height: 25px;
@@ -2298,20 +2322,20 @@ $font_product_size:36px;
                                     }
                                 }
                                 .productImage{
-                                    width: 65%;
-                                    height: 188px;
+                                    width: 61%;
+                                    height: 116px;
                                     img{
                                         width: 100%;
                                     }
                                 }
                                 .productInfo{
                                     width: 96%;
-                                    height: 120px;
+                                    height: 129px;
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: center;
                                     align-items: flex-start;
-                                    gap: 7px;
+                                    gap: 11px;
                                     text-align: left;
                                     h5{
                                         color: $color_icon;
@@ -2325,7 +2349,7 @@ $font_product_size:36px;
                                         height: 20px;
                                         h4{
                                             color: $color_flag;
-                                            font-size: $font_size_text;
+                                            font-size: 14px;
                                             font-family: $font_family;
                                             font-weight: 600;
                                         }
@@ -2358,7 +2382,7 @@ $font_product_size:36px;
                                     flex-direction: column;
                                     justify-content: center;
                                     align-items: flex-start;
-                                    gap: 7px;
+                                    gap: 11px;
                                     text-align: left;
                                     h5{
                                         color: $color_icon;
@@ -2372,7 +2396,7 @@ $font_product_size:36px;
                                         height: 40px;
                                         h4{
                                             color: $color_flag;
-                                            font-size: $font_size_text;
+                                            font-size: 14px;
                                             font-family: $font_family;
                                             font-weight: 600;
                                         }
@@ -2408,61 +2432,61 @@ $font_product_size:36px;
                                     cursor: grab;
                                     .stock{
                                         width: 60%;
-                                        height: 30px;
+                                        height: 25px;
                                         padding: 6px 5px;
                                         background: $color_stok_bg;
                                         color: $color_stok;
                                         font-family: $font_family;
-                                        font-size: $font_size_placeholder;
+                                        font-size: 12px;
                                         border: 1px solid $color_stok_bg;
                                         font-weight: 600;
                                         border-radius: 5px;
                                         .fa-envelope-open{
-                                            font-size: $font_size_list;
+                                            font-size: 10px;
                                         }
                                     }
                                     .azn{
-                                        width: 92%;
-                                        height: 30px;
+                                        width: 100%;
+                                        height: 25px;
                                         background: $color_azn_bg;
                                         color: $color_orange;
                                         font-weight: 600;
-                                        font-size: $font_size_placeholder;
+                                        font-size: 12px;
                                         font-family: $font_family;
                                         padding: 6px 5px;
                                         border-radius: 5px;
     
                                     }
                                     .noPercent{
-                                        width: 45%;
+                                        width: 55%;
                                         height: 30px;
                                         padding: 6px 5px;
                                         background: $color_stok_bg;
                                         color: $color_stok;
                                         font-family: $font_family;
-                                        font-size: $font_size_placeholder;
+                                        font-size: 12px;
                                         border: 1px solid $color_stok_bg;
                                         font-weight: 600;
                                         border-radius: 5px;
                                     }
                                     .chalange{
-                                        width: 80%;
-                                        height: 30px;
+                                        width: 100%;
+                                        height: 25px;
                                         border: 1px solid #000000;
                                         color: #000000;
                                         padding: 6px 5px;
-                                        font-size: $font_size_placeholder;
+                                        font-size: 12px;
                                         font-family: $font_family;
                                         font-weight: 600;
                                         border-radius: 5px;
                                     }
                                     .visa{
-                                        width: 98%;
-                                        height: 30px;
+                                        width: 100%;
+                                        height: 25px;
                                         padding: 6px 5px;
                                         color: $color_stok;
                                         font-family: $font_family;
-                                        font-size: $font_size_placeholder;
+                                        font-size: 12px;
                                         border: 1px solid $color_stok;
                                         font-weight: 600;
                                         border-radius: 5px;
@@ -2548,7 +2572,6 @@ $font_product_size:36px;
     }
 }
 // end
-
 
 // start partnyor section
 .partnyor_box{
@@ -2681,22 +2704,21 @@ $font_product_size:36px;
 // start video slayd section
 .video_slayd_box{
     width: 100%;
-    height: 604px;
+    height: 358px;
     .videoCon{
         @include d-flex-column;
         .video_text{
             width: 100%;
-            height: 48px;
-            
+            height: 29px;
             @include d-justify-between;
             .tag_text{
                 width: 40%;
-                height: 48px;
+                height: 29px;
                 display: flex;
                 gap: 20px;
                 .toggle{
                     color: $color_flag;
-                    font-size: $font_product_size;
+                    font-size: 22px;
                     font-family: $font_family;
                     font-weight: 600;
                     cursor: pointer;
@@ -2707,8 +2729,8 @@ $font_product_size:36px;
                 }
             }
             .youtube_tag{
-                width: 23%;
-                height: 48px;
+                width: 32%;
+                height: 32px;
                 background: $color_yt;
                 border: 1px solid $color_yt;
                 border-radius: 6px;
@@ -2737,7 +2759,7 @@ $font_product_size:36px;
         }
         .video_slayd{
             width: 100%;
-            height: 542px;
+            height: 400px;
             margin-top: 15px;
             .swiper {
                 width: 100%;
@@ -2763,10 +2785,10 @@ $font_product_size:36px;
                       align-items: center;
                       .videoSlayd{
                         width: 100%;
-                        height: 472px;
+                        height: 308px;
                         .videoIrshad{
                             width: 100%;
-                            height: 280px;
+                            height: 193px;
                             background: url(/assets/image/background/maxresdefault.jpg);
                             background-size:cover;
                             background-position: 50% 50%;
@@ -2837,7 +2859,7 @@ $font_product_size:36px;
                                    opacity: 0;
                                    color: $color_footer;
                                    font-family: $font_family;
-                                   font-size: $font_size_text;
+                                   font-size: 12px;
                                    font-weight: 600;
                                    line-height: 1.2;
                                    transition: 0.3s all ease-in-out;
@@ -2846,7 +2868,7 @@ $font_product_size:36px;
                         }
                         .videoIrshadText{
                             width: 100%;
-                            height: 180px;
+                            height: 100px;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -2856,7 +2878,7 @@ $font_product_size:36px;
                                 h3{
                                     font-family: $font_family;
                                     font-weight: 600;
-                                    font-size: $font_price_size;
+                                    font-size: 18px;
                                     line-height: 1.5;
                                     color: $color_footer;
                                     transition: 0.3s all ease-in-out;
@@ -2870,17 +2892,17 @@ $font_product_size:36px;
                                 color: $color_icon;
                                 font-weight: 400;
                                 font-family: $font_family;
-                                font-size: $font_size_placeholder;
+                                font-size: 12px;
                                 line-height: 1.2;
                             }
                         }
                       }
                       .videoSlayd2{
                         width: 100%;
-                        height: 472px;
+                        height: 308px;
                         .videoIrshad{
                             width: 100%;
-                            height: 280px;
+                            height: 193px;
                             background: url(/assets/image/background/oglan.jpg);
                             background-size:cover;
                             background-position: 50% 50%;
@@ -2951,7 +2973,7 @@ $font_product_size:36px;
                                    opacity: 0;
                                    color: $color_footer;
                                    font-family: $font_family;
-                                   font-size: $font_size_text;
+                                   font-size: 12px;
                                    font-weight: 600;
                                    line-height: 1.2;
                                    transition: 0.3s all ease-in-out;
@@ -2960,7 +2982,7 @@ $font_product_size:36px;
                         }
                         .videoIrshadText{
                             width: 100%;
-                            height: 180px;
+                            height: 150px;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -2971,7 +2993,7 @@ $font_product_size:36px;
                                     width: 100%;
                                     font-family: $font_family;
                                     font-weight: 600;
-                                    font-size: $font_price_size;
+                                    font-size: 18px;
                                     line-height: 1.5;
                                     text-align: left;
                                     margin-top: 5px;
@@ -2987,17 +3009,17 @@ $font_product_size:36px;
                                 color: $color_icon;
                                 font-weight: 400;
                                 font-family: $font_family;
-                                font-size: $font_size_placeholder;
+                                font-size: 12px;
                                 line-height: 1.2;
                             }
                         }
                       }
                       .videoSlayd3{
                         width: 100%;
-                        height: 472px;
+                        height: 308px;
                         .videoIrshad{
                             width: 100%;
-                            height: 280px;
+                            height: 193px;
                             background: url(/assets/image/background/samsunggirl.jpg);
                             background-size:cover;
                             background-position: 50% 50%;
@@ -3077,7 +3099,7 @@ $font_product_size:36px;
                         }
                         .videoIrshadText{
                             width: 100%;
-                            height: 180px;
+                            height: 120px;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -3088,7 +3110,7 @@ $font_product_size:36px;
                                     width: 100%;
                                     font-family: $font_family;
                                     font-weight: 600;
-                                    font-size: $font_price_size;
+                                    font-size: 18px;
                                     line-height: 1.5;
                                     text-align: left;
                                     color: $color_footer;
@@ -3103,17 +3125,17 @@ $font_product_size:36px;
                                 color: $color_icon;
                                 font-weight: 400;
                                 font-family: $font_family;
-                                font-size: $font_size_placeholder;
+                                font-size: 12px;
                                 line-height: 1.2;
                             }
                         }
                       }
                       .videoSlayd4{
                         width: 100%;
-                        height: 472px;
+                        height: 308px;
                         .videoIrshad{
                             width: 100%;
-                            height: 280px;
+                            height: 193px;
                             background: url(/assets/image/background/maxresdefaultttt.jpg);
                             background-size:cover;
                             background-position: 50% 50%;
@@ -3193,7 +3215,7 @@ $font_product_size:36px;
                         }
                         .videoIrshadText{
                             width: 100%;
-                            height: 180px;
+                            height: 170px;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -3204,7 +3226,7 @@ $font_product_size:36px;
                                     width: 100%;
                                     font-family: $font_family;
                                     font-weight: 600;
-                                    font-size: $font_price_size;
+                                    font-size: 18px;
                                     line-height: 1.5;
                                     text-align: left;
                                     margin-top: 5px;
@@ -3220,17 +3242,17 @@ $font_product_size:36px;
                                 color: $color_icon;
                                 font-weight: 400;
                                 font-family: $font_family;
-                                font-size: $font_size_placeholder;
+                                font-size: 12px;
                                 line-height: 1.2;
                             }
                         }
                       }
                       .videoSlayd5{
                         width: 100%;
-                        height: 472px;
+                        height: 308px;
                         .videoIrshad{
                             width: 100%;
-                            height: 280px;
+                            height: 193px;
                             background: url(/assets/image/background/carx.jpg);
                             background-size:cover;
                             background-position: 50% 50%;
@@ -3310,7 +3332,7 @@ $font_product_size:36px;
                         }
                         .videoIrshadText{
                             width: 100%;
-                            height: 180px;
+                            height: 120px;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -3321,7 +3343,7 @@ $font_product_size:36px;
                                     width: 100%;
                                     font-family: $font_family;
                                     font-weight: 600;
-                                    font-size: $font_price_size;
+                                    font-size: 18px;
                                     line-height: 1.5;
                                     text-align: left;
                                     margin-top: 5px;
@@ -3337,17 +3359,17 @@ $font_product_size:36px;
                                 color: $color_icon;
                                 font-weight: 400;
                                 font-family: $font_family;
-                                font-size: $font_size_placeholder;
+                                font-size: 12px;
                                 line-height: 1.2;
                             }
                         }
                       }
                       .videoSlayd6{
                         width: 100%;
-                        height: 472px;
+                        height: 308px;
                         .videoIrshad{
                             width: 100%;
-                            height: 280px;
+                            height: 193px;
                             background: url(/assets/image/background/usaqmasin.jpg);
                             background-size:cover;
                             background-position: 50% 50%;
@@ -3427,7 +3449,7 @@ $font_product_size:36px;
                         }
                         .videoIrshadText{
                             width: 100%;
-                            height: 180px;
+                            height: 150px;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -3438,7 +3460,7 @@ $font_product_size:36px;
                                     width: 100%;
                                     font-family: $font_family;
                                     font-weight: 600;
-                                    font-size: $font_price_size;
+                                    font-size: 18px;
                                     line-height: 1.5;
                                     text-align: left;
                                     margin-top: 5px;
@@ -3454,7 +3476,7 @@ $font_product_size:36px;
                                 color: $color_icon;
                                 font-weight: 400;
                                 font-family: $font_family;
-                                font-size: $font_size_placeholder;
+                                font-size: 12px;
                                 line-height: 1.2;
                             }
                         }
@@ -3486,7 +3508,7 @@ $font_product_size:36px;
 .miniSlide{
     width: 100%;
     height: 223px;
-    margin-top: 50px;
+    margin-top: 125px;
     .slideMini{
         .mini_slide{
             .swiper {
@@ -3544,7 +3566,7 @@ $font_product_size:36px;
 // start footer
 .footer{
     width: 100%;
-    height: 623px;
+    height: 620px;
     background: $color_footer;
     margin-top: 50px;
 .line{
@@ -3566,7 +3588,7 @@ $font_product_size:36px;
             color: #f8f8f8;
             font-family: $font_family;
             font-weight: 400;
-            font-size: $font_text;
+            font-size: 17px;
             line-height: 1.2;
         }
         ul{
@@ -3578,7 +3600,7 @@ $font_product_size:36px;
                     font-family: $font_family;
                     font-weight: 400;
                     line-height: 1.5;
-                    font-size: $font_size_placeholder;
+                    font-size: 13px;
                     position: relative;
                     &::after{
                         content: "";
@@ -3616,7 +3638,7 @@ $font_product_size:36px;
             height: 352px;
         }
         .footerContact{
-            width: 32%;
+            width: 55%;
             height: 352px;
             display: flex;
             flex-direction: column;
@@ -3648,7 +3670,7 @@ $font_product_size:36px;
                 p{
                     font-family: $font_family;
                     color: #fff;
-                    font-size: $font_size_icon;
+                    font-size: 17px;
                     font-weight: 400;
                     line-height: 1.2;
                 }
@@ -3660,7 +3682,7 @@ $font_product_size:36px;
                     font-family: $font_family;
                     color: #fff;
                     font-weight: 400;
-                    font-size: $font_size_text;
+                    font-size: 17px;
                     line-height: 1.2;
                 }
                 .iconFooter{
@@ -3739,7 +3761,7 @@ $font_product_size:36px;
         align-items: center;
         gap: 20px;
         .endOFFooter{
-            width: 40%;
+            width: 45%;
             height: 22px;
             p{
                 color: $color_icon;
@@ -3750,7 +3772,7 @@ $font_product_size:36px;
             }
         }
         .footerImgLogo{
-            width: 40%;
+            width: 45%;
             height: 25px;
             p{
                 color: $color_icon;
@@ -3778,3 +3800,4 @@ $font_product_size:36px;
    }
 }
 // end
+}

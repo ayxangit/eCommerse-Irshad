@@ -223,6 +223,60 @@
   padding: 14px 20px;
   margin-top: 10px;
 }
+.login .login_box .form form .show {
+  width: 10%;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 35px;
+  left: 385px;
+}
+.login .login_box .form form .show .fa-eye-slash {
+  color: #5b5f66;
+  cursor: pointer;
+}
+.login .login_box .form form .show .fa-eye {
+  color: #5b5f66;
+  display: none;
+  cursor: pointer;
+}
+.login .login_box .form form .restart {
+  width: 10%;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 35px;
+  left: 385px;
+}
+.login .login_box .form form .restart .fa-eye-slash {
+  color: #5b5f66;
+  cursor: pointer;
+}
+.login .login_box .form form .restart .fa-eye {
+  color: #5b5f66;
+  display: none;
+  cursor: pointer;
+}
+.login .login_box .form form .colorRestart {
+  border-color: red;
+}
+.login .login_box .form form .colorRestart1 {
+  border-color: red;
+}
+.login .login_box .form form .textContent {
+  position: relative;
+  bottom: 18px;
+  left: 3px;
+  font-family: "Rokkitt", serif;
+  font-size: 16px;
+  color: red;
+  line-height: 1.2;
+  font-weight: 600;
+}
 .login .login_box .form form button {
   width: 99%;
   height: 52px;

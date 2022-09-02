@@ -24,8 +24,8 @@ let swiperTime = new Swiper(".mySwiper2", {
 let swiperProduct = new Swiper(".mySwiper3", {
   slidesPerView:4,
   speed:500,
-  // autoplay:true,
-  // loop:true,
+  autoplay:true,
+  loop:true,
 });
 // end
 
@@ -40,10 +40,21 @@ let swiperMoreSlide = new Swiper(".mySwipers", {
 
 // start partnyor slide
 let swiperPartnyor = new Swiper(".mySwiper4", {
-  slidesPerView:6,
-  spaceBetween:10,
+  // slidesPerView:6,
+  // spaceBetween:10,
   autoplay:true,
-  loop:true
+  loop:true,
+
+  breakpoints: {
+    1500: {
+      slidesPerView: 6,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+}
 });
 // end
 
@@ -130,10 +141,10 @@ document.querySelector(".video_icon6").addEventListener("click",()=>{
 // end
 
 // start countdown reason section
-const days = document.querySelector("#days");
-const hours = document.querySelector("#hours");
-const minutes = document.querySelector("#minutes");
-const seconds = document.querySelector("#seconds");
+const dayy = document.querySelector("#dayy");
+const hourr = document.querySelector("#hourr");
+const minutee = document.querySelector("#minutee");
+const secondd = document.querySelector("#secondd");
 
 const day = document.querySelector("#day");
 const hour = document.querySelector("#hour");
@@ -152,7 +163,7 @@ const sd = document.querySelector("#sd");
 
 const currentYear = new Date().getFullYear();
 
-const saleYear = new Date(`September 01 ${currentYear+2} 00:00:00`);
+const saleYear = new Date(`September 31 ${currentYear+3} 00:00:00`);
 
 function saleTime() {
     const currentTime = new Date();
@@ -163,10 +174,10 @@ function saleTime() {
     const m = Math.floor(diff/1000/60)%60;
     const s = Math.floor(diff/1000)%60;
 
-    days.innerHTML=d + " " + "Gün";
-    hours.innerHTML= h<10 ? '0' +  h  + ':' : h;
-    minutes.innerHTML= m<10 ? '0' +  m + ":"  : m ;
-    seconds.innerHTML= s<10 ?  '0' +  s  : s;
+    dayy.innerHTML=d + " " + "Gün";
+    hourr.innerHTML= h<10 ? '0' +  h  + ':' : h;
+    minutee.innerHTML= m<10 ? '0' +  m + ":"  : m ;
+    secondd.innerHTML= s<10 ?  '0' +  s  : s;
 
     day.innerHTML=d + " " + "Gün";
     hour.innerHTML= h<10 ? '0' +  h + ":" : h;

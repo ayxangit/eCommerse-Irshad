@@ -10,7 +10,10 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+     <!-- link css -->
      <link rel="stylesheet" href="assets/css/account.css">
+     <!-- link sweet alert -->
+     <link rel="stylesheet" href="sweetalert2.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -65,26 +68,35 @@
                         </h3>
                         <form action="">
                             <label for="">Ad soyad</label>
-                            <input type="name">
+                            <input type="name" id="name">
                             <div class="customerCode">
                                 <div class="personalNumber">
                                     <label for="">Fərdi identifikasiya nömrəsi (FİN)</label>
-                                    <input type="text">
+                                    <input type="text" id="text">
                                 </div>
                                 <div class="personalCode">
                                     <label for="">Müştəri kodu</label>
-                                    <input type="text">
+                                    <input type="text" id="text1">
                                 </div>
                             </div>
                             <label for="">E-mail</label>
-                            <input type="email">
+                            <input type="email" id="email">
                             <label for="">Telefon</label>
-                            <input type="tel">
+                            <input type="tel" id="tel">
                             <label for="">Şifrə</label>
-                            <input type="password">
+                            <input type="password" id="password">
+                            <div class="show" onclick="showHide()">
+                                <i class="fa-solid fa-eye-slash" id="hide1"></i>
+                                <i class="fa-solid fa-eye" id="hide2"></i>
+                            </div>
                             <label for="">Şifrəni təkrarla</label>
-                            <input type="password">
-                            <button>Daxil ol</button>
+                            <input type="password" id="restart">
+                            <div class="restart" onclick="hideShow()">
+                                <i class="fa-solid fa-eye-slash" id="hide3"></i>
+                                <i class="fa-solid fa-eye" id="hide4"></i>
+                            </div>
+                            <span class="textContent"></span>
+                            <button id="btn">Daxil ol</button>
                             <div class="loginPage">
                                 <a href="personal.html"><i class="fa-solid fa-user"></i>Daxil ol</a>
                                 <a href="forget.html" class="key"><i class="fa-solid fa-key"></i>Şifrəni unutmusan?</a>
@@ -99,10 +111,11 @@
     <!-- end -->
 
 
-
+    <!-- script sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <!-- scrip icon -->
      <script src="https://kit.fontawesome.com/29bca2939f.js" crossorigin="anonymous"></script>
      <!-- scrip js -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/account.js"></script>
 </body>
 </html>
