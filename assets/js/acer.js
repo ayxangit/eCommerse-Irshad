@@ -28,113 +28,216 @@ square.forEach(( tab, index)=>{
 
 let carts = document.querySelectorAll(".add-cart");
 let product = [
-    {
-      name: "ASUS ProArt StudioBook H5600Q (90NB0UZ1-M001D0)",
+   {
+     name: "Acer A315-58-58UR (NXADDSG00J)",
+     tag:"Notbuk",
+     img:"acer1",
+     price:1499.99,
+     inCart:0
+   },
+   {
+     name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
+     tag:"Notbuk",
+     img:"acer2",
+     price:1099.99,
+     inCart:0
+   },
+   {
+     name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
+     tag:"Notbuk",
+     img:"acer3",
+     price:2349.99,
+     inCart:0
+   },
+   {
+     name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
+     tag:"Notbuk",
+     img:"acer4",
+     price:1209.99,
+     inCart:0
+   },
+   {
+     name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
+     tag:"Notbuk",
+     img:"acer5",
+     price:1899.99,
+     inCart:0
+   },
+   {
+     name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
+     tag:"Notbuk",
+     img:"acer6",
+     price:2199.99,
+     inCart:0
+   },
+   {
+     name: "Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
+     tag:"Notbuk",
+     img:"acer7",
+     price:1209.99,
+     inCart:0
+   },
+   {
+     name: " Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
+     tag:"Notbuk",
+     img:"acer7",
+     price:1209.99,
+     inCart:0
+   },
+   {
+     name: "Acer Aspire 3 A315-57G (NX.HZSER.00M)",
+     tag:"Notbuk",
+     img:"acer8",
+     price:1599.99,
+     inCart:0
+   },
+   {
+      name: "Acer A315-58-58UR (NXADDSG00J)",
       tag:"Notbuk",
-      img:"proart",
-      price:5073.99,
+      img:"acer1",
+      price:1499.99,
       inCart:0
     },
     {
-      name: "ASUS K513EA-L12236 (90NB0SG1-M00A50)",
+      name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
       tag:"Notbuk",
-      img:"90nb0we1-m00550",
-      price:2191.99,
+      img:"acer2",
+      price:1099.99,
       inCart:0
     },
     {
-      name: "ASUS TUF Gaming F15 FX506LHB-HN323",
+      name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
       tag:"Notbuk",
-      img:"90nr03u2-m007n0",
-      price:2089.99,
+      img:"acer3",
+      price:2349.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook S15 OLED M3205QA-MA117",
+      name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
       tag:"Notbuk",
-      img:"asusvivo",
-      price:2036.99,
+      img:"acer4",
+      price:1209.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook Pro 14  M3401QA-KM113",
+      name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
       tag:"Notbuk",
-      img:"asuusgreen",
-      price:1850.99,
+      img:"acer5",
+      price:1899.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook 15 K513EA-L12078",
+      name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
       tag:"Notbuk",
-      img:"dublasus",
-      price:1742.99,
+      img:"acer6",
+      price:2199.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook 15 X513EA-BQ686",
+      name: "Apple MacBook Air (MLY33RU)",
       tag:"Notbuk",
-      img:"colorasus",
-      price:1519.99,
+      img:"mcbookair1",
+      price:5859.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook 15 K513EA-L12875 ",
+      name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
       tag:"Notbuk",
-      img:"assuus",
-      price:1419.99,
+      img:"acer2",
+      price:1099.99,
       inCart:0
     },
     {
-      name: "Asus X515EA-BQ950 (90NB0TY2-M00M60)",
+      name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
       tag:"Notbuk",
-      img:"asusbalon",
-      price:1177.99,
+      img:"acer3",
+      price:2349.99,
       inCart:0
     },
     {
-      name: "ASUS ProArt StudioBook H5600Q (90NB0UZ1-M001D0)",
+      name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
       tag:"Notbuk",
-      img:"proart",
-      price:5073.99,
+      img:"acer4",
+      price:1209.99,
       inCart:0
     },
     {
-      name: "ASUS K513EA-L12236 (90NB0SG1-M00A50)",
+      name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
       tag:"Notbuk",
-      img:"90nb0we1-m00550",
-      price:2191.99,
+      img:"acer5",
+      price:1899.99,
       inCart:0
     },
     {
-      name: "ASUS TUF Gaming F15 FX506LHB-HN323",
+      name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
       tag:"Notbuk",
-      img:"90nr03u2-m007n0",
-      price:2089.99,
+      img:"acer6",
+      price:2199.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook S15 OLED M3205QA-MA117",
+      name: "Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
       tag:"Notbuk",
-      img:"asusvivo",
-      price:2036.99,
+      img:"acer7",
+      price:1209.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook Pro 14  M3401QA-KM113",
+      name: " Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
       tag:"Notbuk",
-      img:"asuusgreen",
-      price:1850.99,
+      img:"acer7",
+      price:1209.99,
       inCart:0
     },
     {
-      name: "ASUS VivoBook 15 K513EA-L12078",
+      name: "Acer Aspire 3 A315-57G (NX.HZSER.00M)",
       tag:"Notbuk",
-      img:"dublasus",
-      price:1742.99,
+      img:"acer8",
+      price:1599.99,
       inCart:0
     },
-  
-
+    {
+       name: "Acer A315-58-58UR (NXADDSG00J)",
+       tag:"Notbuk",
+       img:"acer1",
+       price:1499.99,
+       inCart:0
+     },
+     {
+       name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
+       tag:"Notbuk",
+       img:"acer2",
+       price:1099.99,
+       inCart:0
+     },
+     {
+       name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
+       tag:"Notbuk",
+       img:"acer3",
+       price:2349.99,
+       inCart:0
+     },
+     {
+       name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
+       tag:"Notbuk",
+       img:"acer4",
+       price:1209.99,
+       inCart:0
+     },
+     {
+       name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
+       tag:"Notbuk",
+       img:"acer5",
+       price:1899.99,
+       inCart:0
+     },
+     {
+       name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
+       tag:"Notbuk",
+       img:"acer6",
+       price:2199.99,
+       inCart:0
+     },
 ]
  
  for(let i=0; i<carts.length;i++){

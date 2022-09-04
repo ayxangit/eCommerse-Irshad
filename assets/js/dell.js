@@ -29,111 +29,111 @@ square.forEach(( tab, index)=>{
 let carts = document.querySelectorAll(".add-cart");
 let product = [
     {
-      name: "ASUS ProArt StudioBook H5600Q (90NB0UZ1-M001D0)",
+      name: "Dell Vostro 3510",
       tag:"Notbuk",
-      img:"proart",
-      price:5073.99,
+      img:"dell1",
+      price:2259.99,
       inCart:0
     },
     {
-      name: "ASUS K513EA-L12236 (90NB0SG1-M00A50)",
-      tag:"Notbuk",
-      img:"90nb0we1-m00550",
-      price:2191.99,
-      inCart:0
-    },
-    {
-      name: "ASUS TUF Gaming F15 FX506LHB-HN323",
-      tag:"Notbuk",
-      img:"90nr03u2-m007n0",
-      price:2089.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook S15 OLED M3205QA-MA117",
-      tag:"Notbuk",
-      img:"asusvivo",
-      price:2036.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook Pro 14  M3401QA-KM113",
-      tag:"Notbuk",
-      img:"asuusgreen",
-      price:1850.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 K513EA-L12078",
-      tag:"Notbuk",
-      img:"dublasus",
-      price:1742.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 X513EA-BQ686",
-      tag:"Notbuk",
-      img:"colorasus",
-      price:1519.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 K513EA-L12875 ",
-      tag:"Notbuk",
-      img:"assuus",
-      price:1419.99,
-      inCart:0
-    },
-    {
-      name: "Asus X515EA-BQ950 (90NB0TY2-M00M60)",
-      tag:"Notbuk",
-      img:"asusbalon",
-      price:1177.99,
-      inCart:0
-    },
-    {
-      name: "ASUS ProArt StudioBook H5600Q (90NB0UZ1-M001D0)",
-      tag:"Notbuk",
-      img:"proart",
-      price:5073.99,
-      inCart:0
-    },
-    {
-      name: "ASUS K513EA-L12236 (90NB0SG1-M00A50)",
-      tag:"Notbuk",
-      img:"90nb0we1-m00550",
-      price:2191.99,
-      inCart:0
-    },
-    {
-      name: "ASUS TUF Gaming F15 FX506LHB-HN323",
-      tag:"Notbuk",
-      img:"90nr03u2-m007n0",
-      price:2089.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook S15 OLED M3205QA-MA117",
-      tag:"Notbuk",
-      img:"asusvivo",
-      price:2036.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook Pro 14  M3401QA-KM113",
-      tag:"Notbuk",
-      img:"asuusgreen",
-      price:1850.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 K513EA-L12078",
-      tag:"Notbuk",
-      img:"dublasus",
-      price:1742.99,
-      inCart:0
-    },
-  
+        name: "Dell Vostro 3510",
+        tag:"Notbuk",
+        img:"dell1",
+        price:2259.99,
+        inCart:0
+      },
+      {
+        name: "Dell Vostro 3515-273664991",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1149.99,
+        inCart:0
+      },
+      {
+        name: "Dell Vostro 3515-273664996",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1179.99,
+        inCart:0
+      },
+      {
+        name: "Dell Vostro 3515-273665027",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1989.99,
+        inCart:0
+      },
+      {
+        name: " Dell Vostro 3515-273665002",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1599.99,
+        inCart:0
+      },
+      {
+        name: "Dell 5587-6588",
+        tag:"Notbuk",
+        img:"dell3",
+        price:4299.99,
+        inCart:0
+      },
+      {
+        name: "Dell 5587-6588",
+        tag:"Notbuk",
+        img:"dell4",
+        price:1209.99,
+        inCart:0
+      },
+      {
+        name: "Dell Latitude 3410 i5 (3410-273547357)",
+        tag:"Notbuk",
+        img:"dell5",
+        price:1599.99,
+        inCart:0
+      },
+      {
+        name: "Dell Vostro 3510",
+        tag:"Notbuk",
+        img:"dell1",
+        price:2259.99,
+        inCart:0
+      },
+      {
+          name: "Dell Vostro 3510",
+          tag:"Notbuk",
+          img:"dell1",
+          price:2259.99,
+          inCart:0
+        },
+        {
+          name: "Dell Vostro 3515-273664991",
+          tag:"Notbuk",
+          img:"dell2",
+          price:1149.99,
+          inCart:0
+        },
+        {
+          name: "Dell Vostro 3515-273664996",
+          tag:"Notbuk",
+          img:"dell2",
+          price:1179.99,
+          inCart:0
+        },
+        {
+          name: "Dell Vostro 3515-273665027",
+          tag:"Notbuk",
+          img:"dell2",
+          price:1989.99,
+          inCart:0
+        },
+        {
+          name: " Dell Vostro 3515-273665002",
+          tag:"Notbuk",
+          img:"dell2",
+          price:1599.99,
+          inCart:0
+        },
+   
 
 ]
  

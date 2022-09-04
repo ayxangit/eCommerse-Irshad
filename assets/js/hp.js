@@ -29,111 +29,103 @@ square.forEach(( tab, index)=>{
 let carts = document.querySelectorAll(".add-cart");
 let product = [
     {
-      name: "ASUS ProArt StudioBook H5600Q (90NB0UZ1-M001D0)",
+      name: "HP 250 G7 (197V0EA)",
       tag:"Notbuk",
-      img:"proart",
-      price:5073.99,
+      img:"hp1",
+      price:699.99,
       inCart:0
     },
     {
-      name: "ASUS K513EA-L12236 (90NB0SG1-M00A50)",
-      tag:"Notbuk",
-      img:"90nb0we1-m00550",
-      price:2191.99,
-      inCart:0
+        name: "HP 15s-fq5020nia (6G3Q3EA)",
+        tag:"Notbuk",
+        img:"hp2",
+        price:1799.99,
+        inCart:0
     },
-    {
-      name: "ASUS TUF Gaming F15 FX506LHB-HN323",
-      tag:"Notbuk",
-      img:"90nr03u2-m007n0",
-      price:2089.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook S15 OLED M3205QA-MA117",
-      tag:"Notbuk",
-      img:"asusvivo",
-      price:2036.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook Pro 14  M3401QA-KM113",
-      tag:"Notbuk",
-      img:"asuusgreen",
-      price:1850.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 K513EA-L12078",
-      tag:"Notbuk",
-      img:"dublasus",
-      price:1742.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 X513EA-BQ686",
-      tag:"Notbuk",
-      img:"colorasus",
-      price:1519.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 K513EA-L12875 ",
-      tag:"Notbuk",
-      img:"assuus",
-      price:1419.99,
-      inCart:0
-    },
-    {
-      name: "Asus X515EA-BQ950 (90NB0TY2-M00M60)",
-      tag:"Notbuk",
-      img:"asusbalon",
-      price:1177.99,
-      inCart:0
-    },
-    {
-      name: "ASUS ProArt StudioBook H5600Q (90NB0UZ1-M001D0)",
-      tag:"Notbuk",
-      img:"proart",
-      price:5073.99,
-      inCart:0
-    },
-    {
-      name: "ASUS K513EA-L12236 (90NB0SG1-M00A50)",
-      tag:"Notbuk",
-      img:"90nb0we1-m00550",
-      price:2191.99,
-      inCart:0
-    },
-    {
-      name: "ASUS TUF Gaming F15 FX506LHB-HN323",
-      tag:"Notbuk",
-      img:"90nr03u2-m007n0",
-      price:2089.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook S15 OLED M3205QA-MA117",
-      tag:"Notbuk",
-      img:"asusvivo",
-      price:2036.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook Pro 14  M3401QA-KM113",
-      tag:"Notbuk",
-      img:"asuusgreen",
-      price:1850.99,
-      inCart:0
-    },
-    {
-      name: "ASUS VivoBook 15 K513EA-L12078",
-      tag:"Notbuk",
-      img:"dublasus",
-      price:1742.99,
-      inCart:0
-    },
-  
+      {
+        name: "HP ProBook 450 G8 (32M59EA/1)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:1814.99,
+        inCart:0
+      },
+      {
+        name: "HP 250 G8 (2W8Z4EA/1)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:1247.99,
+        inCart:0
+      },
+      {
+        name: "HP ProBook 450 G8 (32N92EA)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:1999.99,
+        inCart:0
+      },
+      {
+        name: "HP ProBook 440 G8 (32M53EA)",
+        tag:"Notbuk",
+        img:"hp4",
+        price:2214.99,
+        inCart:0
+      },
+      {
+        name: " HP ProBook 450 G8 (3C3S5ES)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:2286.99,
+        inCart:0
+      },
+      {
+        name: "НP 15s-fq3025ur (3V048EA)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:955.99,
+        inCart:0
+      },
+      {
+        name: " НP ENVY x360 15-eh1060ur (4H2K7EA)",
+        tag:"Notbuk",
+        img:"hp5",
+        price:1699.99,
+        inCart:0
+      },
+      {
+        name: "HP 250 G7 (197V0EA)",
+        tag:"Notbuk",
+        img:"hp1",
+        price:699.99,
+        inCart:0
+      },
+      {
+          name: "HP 15s-fq5020nia (6G3Q3EA)",
+          tag:"Notbuk",
+          img:"hp2",
+          price:1799.99,
+          inCart:0
+      },
+        {
+          name: "HP ProBook 450 G8 (32M59EA/1)",
+          tag:"Notbuk",
+          img:"hp3",
+          price:1814.99,
+          inCart:0
+        },
+        {
+          name: "HP 250 G8 (2W8Z4EA/1)",
+          tag:"Notbuk",
+          img:"hp3",
+          price:1247.99,
+          inCart:0
+        },
+        {
+          name: "HP ProBook 450 G8 (32N92EA)",
+          tag:"Notbuk",
+          img:"hp3",
+          price:1999.99,
+          inCart:0
+        },
 
 ]
  

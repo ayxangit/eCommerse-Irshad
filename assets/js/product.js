@@ -65,7 +65,6 @@ let products = [
     price:260.99,
     inCart:0
   },
-
   {
     name: "IPhone 12/12 Pro case Guess",
     tag:"Telefon qabları",
@@ -97,7 +96,7 @@ let products = [
   {
     name: "Alcatel 6056H Black",
     tag:"Telefonlar",
-    img:"imagess/68e8f45fea9574513492a4ff72533de8",
+    img:"68e8f45fea9574513492a4ff72533de8",
     price:399.99,
     inCart:0
   },
@@ -192,7 +191,6 @@ let products = [
     price:669.99,
     inCart:0
   },
-
   {
     name: "Ayaq üçün ağırlıq Sunlin 2x1.5 kq",
     tag:"Idman ləvazimatları",
@@ -256,7 +254,6 @@ let products = [
     price:499.99,
     inCart:0
   },
-
 ]
 
 for(let i=0; i<carts.length;i++){
@@ -380,3 +377,4 @@ function displayCart(){
 
 onLoadCartNumbers();
 displayCart();
+
