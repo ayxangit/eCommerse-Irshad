@@ -1568,12 +1568,13 @@ $font_product_size:36px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            p{
+                            div{
                                 color: $color_orange;
                                 font-weight: 700;
                                 font-family: $font_family;
                                 font-size: $font_size_icon;
                                 line-height: 1.2;
+                                margin-left: 4px;
                             }
                         }
                     }

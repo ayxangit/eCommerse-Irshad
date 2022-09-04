@@ -1516,12 +1516,13 @@
   justify-content: center;
   align-items: center;
 }
-.compain .compainCon .cardBoxs .card .timeBox .countdown .time p {
+.compain .compainCon .cardBoxs .card .timeBox .countdown .time div {
   color: #f6861f;
   font-weight: 700;
   font-family: "Rokkitt", serif;
   font-size: 20px;
   line-height: 1.2;
+  margin-left: 4px;
 }
 .compain .compainCon .cardBoxs .card .timeBox .more {
   width: 30%;
