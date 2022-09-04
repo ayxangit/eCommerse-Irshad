@@ -258,3 +258,208 @@ let product = [
  
  onLoadCartNumbers();
  displayCart();
+
+
+
+ let likes = document.querySelectorAll(".like")
+
+ let products = [
+  {
+    name: "Dell Vostro 3510",
+    tag:"Notbuk",
+    img:"dell1",
+    price:2259.99,
+    inCart:0
+  },
+  {
+      name: "Dell Vostro 3510",
+      tag:"Notbuk",
+      img:"dell1",
+      price:2259.99,
+      inCart:0
+    },
+    {
+      name: "Dell Vostro 3515-273664991",
+      tag:"Notbuk",
+      img:"dell2",
+      price:1149.99,
+      inCart:0
+    },
+    {
+      name: "Dell Vostro 3515-273664996",
+      tag:"Notbuk",
+      img:"dell2",
+      price:1179.99,
+      inCart:0
+    },
+    {
+      name: "Dell Vostro 3515-273665027",
+      tag:"Notbuk",
+      img:"dell2",
+      price:1989.99,
+      inCart:0
+    },
+    {
+      name: " Dell Vostro 3515-273665002",
+      tag:"Notbuk",
+      img:"dell2",
+      price:1599.99,
+      inCart:0
+    },
+    {
+      name: "Dell 5587-6588",
+      tag:"Notbuk",
+      img:"dell3",
+      price:4299.99,
+      inCart:0
+    },
+    {
+      name: "Dell 5587-6588",
+      tag:"Notbuk",
+      img:"dell4",
+      price:1209.99,
+      inCart:0
+    },
+    {
+      name: "Dell Latitude 3410 i5 (3410-273547357)",
+      tag:"Notbuk",
+      img:"dell5",
+      price:1599.99,
+      inCart:0
+    },
+    {
+      name: "Dell Vostro 3510",
+      tag:"Notbuk",
+      img:"dell1",
+      price:2259.99,
+      inCart:0
+    },
+    {
+        name: "Dell Vostro 3510",
+        tag:"Notbuk",
+        img:"dell1",
+        price:2259.99,
+        inCart:0
+      },
+      {
+        name: "Dell Vostro 3515-273664991",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1149.99,
+        inCart:0
+      },
+      {
+        name: "Dell Vostro 3515-273664996",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1179.99,
+        inCart:0
+      },
+      {
+        name: "Dell Vostro 3515-273665027",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1989.99,
+        inCart:0
+      },
+      {
+        name: " Dell Vostro 3515-273665002",
+        tag:"Notbuk",
+        img:"dell2",
+        price:1599.99,
+        inCart:0
+      },
+ 
+
+]
+
+ for(let j=0; j<likes.length;j++){
+  likes[j].addEventListener("click",(e)=>{
+    cartNumber(products[j]);
+    e.preventDefault();
+  })
+}
+
+function onLoadCartNumber(){
+let productNumber= localStorage.getItem("cartNumber");
+if(productNumber){
+  document.querySelector(".hearts small").textContent=productNumber;
+}
+}
+
+function cartNumber(products){
+let productNumber= localStorage.getItem("cartNumber");
+productNumber= parseInt(productNumber);
+
+if(productNumber){
+  localStorage.setItem("cartNumber",productNumber+1);
+  document.querySelector(".hearts small").textContent= productNumber+1
+}else{
+  localStorage.setItem("cartNumber",1);
+  document.querySelector(".hearts small").textContent=1
+}
+setItemss(products);
+}
+
+function setItemss(products){
+let cartItem = localStorage.getItem("productsInCarts");
+ cartItem = JSON.parse(cartItem);
+
+if(cartItem != null){
+  if(cartItem[products.img]==undefined){
+     cartItem ={
+      ...cartItem,
+      [products.img] : products
+     }
+  }
+  cartItem[products.img].inCart += 1
+}else{
+    products.inCart = 1
+        cartItem = {
+           [products.img] : products
+       }
+}
+   localStorage.setItem("productsInCarts",JSON.stringify(cartItem))
+}
+
+function LikeCart(){
+  let cartItem = localStorage.getItem("productsInCarts");
+
+  cartItem = JSON.parse(cartItem);
+  console.log(cartItem);
+  let productCart = document.querySelector(".cartss");
+
+  if(cartItem && productCart){
+    productCart.innerHTML = "";
+    Object.values(cartItem).map(item=>{
+      productCart.innerHTML += `
+      <div class="container cartCon">
+      <div class="product_cart">
+          <div class="product_img">
+              <img src="/assets/image/imagess/${item.img}.jpg">
+          </div>
+          <div class="text_product">
+              <p>
+                 ${item.tag}
+              </p>
+              <h3>
+                ${item.name}
+              </h3>
+              <div class="all_box">
+                  <div class="price">
+                      <p>
+                         ${item.price} AZN
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+      `
+    })
+  }
+}
+
+onLoadCartNumber();
+LikeCart();

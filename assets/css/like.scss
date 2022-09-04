@@ -1484,117 +1484,77 @@ $font_product_size:36px;
     }
 }
 // end
- 
-// start vacantion section
-.vacantion{
+
+// start cart section
+.d-flex{
     width: 100%;
-    height: 684px;
+    height: auto;
+    display: flex;
     margin-top: 50px;
-    .vacantionCon{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        .text{
-            width: 100%;
-            height: 96px;
-            h1{
-                text-align: center;
-                font-size: $font_icon_big;
-                font-family: $font_family;
-                font-weight: 700;
-                color: $color_footer;
-                line-height: 1.2;
-            }
-            h2{
-               font-size: $font_icon_big;
-               font-family: $font_family;
-               font-weight: 700;
-               color: $color_footer;
-               line-height: 1.2;
-            }
-        }
-        .special{
-            width: 60%;
-            height: 255px;
-            margin-left: 100px;
-            h4{
-                font-size: $font_text;
-                font-family: $font_family;
-                font-weight: 700;
-                color: $color_footer;
-                line-height: 1.2;
-                margin-left: 10px;
-            }
-            ul{
-                margin-top: 10px;
-                li{
-                    font-size: $font_size_text;
-                    color: $color_footer;
-                    line-height: 1.5;
-                    font-family: $font_family;
-                    font-weight: 500;
-                    margin-top: 5px;
+    position: relative;
+    .cartss{
+        width: 60%;
+        height: auto;
+        .cartCon{
+            @include d-justify-around;
+            .product_cart{
+                width: 60%;
+                height: 280px;
+                border: 1px solid $color_partnyor;
+                box-shadow: 1px 0 0 0 #e3e5eb, 0 1px 0 0 #e3e5eb, 1px 1px 0 0 #e3e5eb, 1px 0 0 0 #e3e5eb inset, 0 1px 0 0 #e3e5eb inset;
+                border-radius: 1.2rem 1.2rem 0 0;
+                @include d-justify-around;
+                margin-top: 15px;
+                .product_img{
+                    width: 30%;
+                    height: 200px;
+                    img{
+                        width: 100%;
+                    }
                 }
-            }
-        }
-        .ask{
-            width: 60%;
-            height: 200px;
-            margin-left: 100px;
-            h4{
-                font-size: $font_text;
-                font-family: $font_family;
-                font-weight: 700;
-                color: $color_footer;
-                line-height: 1.2;
-                margin-left: 10px;
-            }
-            ul{
-                margin-top: 10px;
-                li{
-                    font-size: $font_size_text;
-                    color: $color_footer;
-                    line-height: 1.5;
-                    font-family: $font_family;
-                    font-weight: 500;
-                    margin-top: 5px;
-                }
-                .bold{
-                    font-size: $font_size_text;
-                    color: $color_footer;
-                    line-height: 1.5;
-                    font-family: $font_family;
-                    font-weight: bold;
-                }
-            }
-        }
-        .button{
-            width: 60%;
-            height: 52px;
-            margin-left: 100px;
-            #button{
-                width: 20%;
-                height: 48px;
-                @include d-flex-center;
-                background: #40b659;
-                border: 1px solid #40b659;
-                border-radius: 6px;
-                color: #fff;
-                font-family: $font_family;
-                font-size: $font_size_icon;
-                font-weight: 500;
-                line-height: 1.2;
-                cursor: pointer;
-                transition: 0.3s all ease-in-out;
-                &:hover{
-                    background: #fff;
-                    color: #40b659;
+                .text_product{
+                    width: 60%;
+                    height: 150px;
+                    p{
+                        color: $color_icon;
+                        font-family: $font_family;
+                        font-size: $font_size_placeholder;
+                        font-weight: 500;
+                        line-height: 1.2;
+                    }
+                    h3{
+                        color: #000000;
+                        font-family: $font_family;
+                        font-size: $font_size_icon;
+                        font-weight: 800;
+                        line-height: 1.5;
+                    }
+                    .all_box{
+                        width: 60%;
+                        height: 52px;
+                        @include d-flex-center;
+                        gap: 15px;
+                        margin-top: 30px;
+                        .price{
+                            width: 50%;
+                            height: 52px;
+                            @include d-flex-center;
+                            p{
+                                color: #000000;
+                                font-size: 30px;
+                                font-family: $font_family;
+                                line-height: 1.2;
+    
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
 // end
+
 
 // start footer
 .footer{

@@ -162,3 +162,127 @@ document.querySelector(".mothly").addEventListener("click",()=>{
   
   onLoadCartNumbers();
   displayCart();
+
+  let likes = document.querySelectorAll(".like")
+
+  let products = [
+    {
+      name: "Şad kart 500 AZN hədiyyə kartı",
+      tag:"Şadkart",
+      img:"500-azn-sad-kart",
+      price:500,
+      inCart:0
+    },
+    {
+        name: "Şad kart 200 AZN hədiyyə kartı",
+        tag:"Şadkart",
+        img:"200azn-sad-kart",
+        price:200,
+        inCart:0
+      },
+      {
+        name: "Şad kart 100 AZN hədiyyə kartı",
+        tag:"Şadkart",
+        img:"100-azn-sad-kart",
+        price:100,
+        inCart:0
+      },
+      {
+        name: "Şad kart 50 AZN hədiyyə kartı",
+        tag:"Şadkart",
+        img:"50aznsad",
+        price:50,
+        inCart:0
+      }, 
+]
+
+ for(let j=0; j<likes.length;j++){
+  likes[j].addEventListener("click",(e)=>{
+    cartNumber(products[j]);
+    e.preventDefault();
+  })
+}
+
+function onLoadCartNumber(){
+let productNumber= localStorage.getItem("cartNumber");
+if(productNumber){
+  document.querySelector(".hearts small").textContent=productNumber;
+}
+}
+
+function cartNumber(products){
+let productNumber= localStorage.getItem("cartNumber");
+productNumber= parseInt(productNumber);
+
+if(productNumber){
+  localStorage.setItem("cartNumber",productNumber+1);
+  document.querySelector(".hearts small").textContent= productNumber+1
+}else{
+  localStorage.setItem("cartNumber",1);
+  document.querySelector(".hearts small").textContent=1
+}
+setItemss(products);
+}
+
+function setItemss(products){
+let cartItem = localStorage.getItem("productsInCarts");
+ cartItem = JSON.parse(cartItem);
+
+if(cartItem != null){
+  if(cartItem[products.img]==undefined){
+     cartItem ={
+      ...cartItem,
+      [products.img] : products
+     }
+  }
+  cartItem[products.img].inCart += 1
+}else{
+    products.inCart = 1
+        cartItem = {
+           [products.img] : products
+       }
+}
+   localStorage.setItem("productsInCarts",JSON.stringify(cartItem))
+}
+
+function LikeCart(){
+  let cartItem = localStorage.getItem("productsInCarts");
+
+  cartItem = JSON.parse(cartItem);
+  console.log(cartItem);
+  let productCart = document.querySelector(".cartss");
+
+  if(cartItem && productCart){
+    productCart.innerHTML = "";
+    Object.values(cartItem).map(item=>{
+      productCart.innerHTML += `
+      <div class="container cartCon">
+      <div class="product_cart">
+          <div class="product_img">
+              <img src="/assets/image/imagess/${item.img}.jpg">
+          </div>
+          <div class="text_product">
+              <p>
+                 ${item.tag}
+              </p>
+              <h3>
+                ${item.name}
+              </h3>
+              <div class="all_box">
+                  <div class="price">
+                      <p>
+                         ${item.price} AZN
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+      `
+    })
+  }
+}
+
+onLoadCartNumber();
+LikeCart();

@@ -361,3 +361,309 @@ let product = [
  
  onLoadCartNumbers();
  displayCart();
+
+
+ let likes = document.querySelectorAll(".like")
+ let products = [
+  {
+    name: "Acer A315-58-58UR (NXADDSG00J)",
+    tag:"Notbuk",
+    img:"acer1",
+    price:1499.99,
+    inCart:0
+  },
+  {
+    name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
+    tag:"Notbuk",
+    img:"acer2",
+    price:1099.99,
+    inCart:0
+  },
+  {
+    name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
+    tag:"Notbuk",
+    img:"acer3",
+    price:2349.99,
+    inCart:0
+  },
+  {
+    name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
+    tag:"Notbuk",
+    img:"acer4",
+    price:1209.99,
+    inCart:0
+  },
+  {
+    name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
+    tag:"Notbuk",
+    img:"acer5",
+    price:1899.99,
+    inCart:0
+  },
+  {
+    name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
+    tag:"Notbuk",
+    img:"acer6",
+    price:2199.99,
+    inCart:0
+  },
+  {
+    name: "Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
+    tag:"Notbuk",
+    img:"acer7",
+    price:1209.99,
+    inCart:0
+  },
+  {
+    name: " Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
+    tag:"Notbuk",
+    img:"acer7",
+    price:1209.99,
+    inCart:0
+  },
+  {
+    name: "Acer Aspire 3 A315-57G (NX.HZSER.00M)",
+    tag:"Notbuk",
+    img:"acer8",
+    price:1599.99,
+    inCart:0
+  },
+  {
+     name: "Acer A315-58-58UR (NXADDSG00J)",
+     tag:"Notbuk",
+     img:"acer1",
+     price:1499.99,
+     inCart:0
+   },
+   {
+     name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
+     tag:"Notbuk",
+     img:"acer2",
+     price:1099.99,
+     inCart:0
+   },
+   {
+     name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
+     tag:"Notbuk",
+     img:"acer3",
+     price:2349.99,
+     inCart:0
+   },
+   {
+     name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
+     tag:"Notbuk",
+     img:"acer4",
+     price:1209.99,
+     inCart:0
+   },
+   {
+     name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
+     tag:"Notbuk",
+     img:"acer5",
+     price:1899.99,
+     inCart:0
+   },
+   {
+     name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
+     tag:"Notbuk",
+     img:"acer6",
+     price:2199.99,
+     inCart:0
+   },
+   {
+     name: "Apple MacBook Air (MLY33RU)",
+     tag:"Notbuk",
+     img:"mcbookair1",
+     price:5859.99,
+     inCart:0
+   },
+   {
+     name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
+     tag:"Notbuk",
+     img:"acer2",
+     price:1099.99,
+     inCart:0
+   },
+   {
+     name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
+     tag:"Notbuk",
+     img:"acer3",
+     price:2349.99,
+     inCart:0
+   },
+   {
+     name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
+     tag:"Notbuk",
+     img:"acer4",
+     price:1209.99,
+     inCart:0
+   },
+   {
+     name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
+     tag:"Notbuk",
+     img:"acer5",
+     price:1899.99,
+     inCart:0
+   },
+   {
+     name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
+     tag:"Notbuk",
+     img:"acer6",
+     price:2199.99,
+     inCart:0
+   },
+   {
+     name: "Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
+     tag:"Notbuk",
+     img:"acer7",
+     price:1209.99,
+     inCart:0
+   },
+   {
+     name: " Acer Aspire 3 A317-53-32QZ (NX.AD0ER.005)",
+     tag:"Notbuk",
+     img:"acer7",
+     price:1209.99,
+     inCart:0
+   },
+   {
+     name: "Acer Aspire 3 A315-57G (NX.HZSER.00M)",
+     tag:"Notbuk",
+     img:"acer8",
+     price:1599.99,
+     inCart:0
+   },
+   {
+      name: "Acer A315-58-58UR (NXADDSG00J)",
+      tag:"Notbuk",
+      img:"acer1",
+      price:1499.99,
+      inCart:0
+    },
+    {
+      name: " Acer Extensa EX215-52-38SC (NXEG8ER004)",
+      tag:"Notbuk",
+      img:"acer2",
+      price:1099.99,
+      inCart:0
+    },
+    {
+      name: "Acer Spin 3 SP314-54N (NX.HQCER.005)",
+      tag:"Notbuk",
+      img:"acer3",
+      price:2349.99,
+      inCart:0
+    },
+    {
+      name: "Acer Aspire A315-56-34Q8 (NX.HS6ER.008)",
+      tag:"Notbuk",
+      img:"acer4",
+      price:1209.99,
+      inCart:0
+    },
+    {
+      name: "Acer Spin 3 SP314-54N (NX.HQCER.002)",
+      tag:"Notbuk",
+      img:"acer5",
+      price:1899.99,
+      inCart:0
+    },
+    {
+      name: "Acer Swift 3 SF314-510G (NX.A10ER.005)",
+      tag:"Notbuk",
+      img:"acer6",
+      price:2199.99,
+      inCart:0
+    },
+]
+
+for(let j=0; j<likes.length;j++){
+  likes[j].addEventListener("click",(e)=>{
+    cartNumber(products[j]);
+    e.preventDefault();
+  })
+}
+
+function onLoadCartNumber(){
+let productNumber= localStorage.getItem("cartNumber");
+if(productNumber){
+  document.querySelector(".hearts small").textContent=productNumber;
+}
+}
+
+function cartNumber(products){
+let productNumber= localStorage.getItem("cartNumber");
+productNumber= parseInt(productNumber);
+
+if(productNumber){
+  localStorage.setItem("cartNumber",productNumber+1);
+  document.querySelector(".hearts small").textContent= productNumber+1
+}else{
+  localStorage.setItem("cartNumber",1);
+  document.querySelector(".hearts small").textContent=1
+}
+setItemss(products);
+}
+
+function setItemss(products){
+let cartItem = localStorage.getItem("productsInCarts");
+ cartItem = JSON.parse(cartItem);
+
+if(cartItem != null){
+  if(cartItem[products.img]==undefined){
+     cartItem ={
+      ...cartItem,
+      [products.img] : products
+     }
+  }
+  cartItem[products.img].inCart += 1
+}else{
+    products.inCart = 1
+        cartItem = {
+           [products.img] : products
+       }
+}
+   localStorage.setItem("productsInCarts",JSON.stringify(cartItem))
+}
+
+function LikeCart(){
+  let cartItem = localStorage.getItem("productsInCarts");
+
+  cartItem = JSON.parse(cartItem);
+  console.log(cartItem);
+  let productCart = document.querySelector(".cartss");
+
+  if(cartItem && productCart){
+    productCart.innerHTML = "";
+    Object.values(cartItem).map(item=>{
+      productCart.innerHTML += `
+      <div class="container cartCon">
+      <div class="product_cart">
+          <div class="product_img">
+              <img src="/assets/image/imagess/${item.img}.jpg">
+          </div>
+          <div class="text_product">
+              <p>
+                 ${item.tag}
+              </p>
+              <h3>
+                ${item.name}
+              </h3>
+              <div class="all_box">
+                  <div class="price">
+                      <p>
+                         ${item.price} AZN
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+      `
+    })
+  }
+}
+
+onLoadCartNumber();
+LikeCart();

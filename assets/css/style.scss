@@ -1633,9 +1633,23 @@ $font_product_size:36px;
                     @include d-flex-column;
                     gap: 3px;
                     transition: 0.4s all ease-in-out;
+                    position: relative;
                     .fa-heart{
                         color: red;
                         transition: 0.3s all ease-in-out;
+                    }
+                    small{
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid $color_orange;
+                        border-radius: 50%;
+                        background: $color_orange;
+                        color: #ffff;
+                        font-size: 8px;
+                        position: absolute;
+                        @include d-flex-center;
+                        bottom: 30px;
+                        left: 34px;
                     }
                     span{
                         color: $color_flag;

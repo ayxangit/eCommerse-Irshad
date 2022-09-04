@@ -250,3 +250,199 @@ let product = [
  
  onLoadCartNumbers();
  displayCart();
+
+
+ let likes = document.querySelectorAll(".like")
+
+ let products = [
+  {
+    name: "HP 250 G7 (197V0EA)",
+    tag:"Notbuk",
+    img:"hp1",
+    price:699.99,
+    inCart:0
+  },
+  {
+      name: "HP 15s-fq5020nia (6G3Q3EA)",
+      tag:"Notbuk",
+      img:"hp2",
+      price:1799.99,
+      inCart:0
+  },
+    {
+      name: "HP ProBook 450 G8 (32M59EA/1)",
+      tag:"Notbuk",
+      img:"hp3",
+      price:1814.99,
+      inCart:0
+    },
+    {
+      name: "HP 250 G8 (2W8Z4EA/1)",
+      tag:"Notbuk",
+      img:"hp3",
+      price:1247.99,
+      inCart:0
+    },
+    {
+      name: "HP ProBook 450 G8 (32N92EA)",
+      tag:"Notbuk",
+      img:"hp3",
+      price:1999.99,
+      inCart:0
+    },
+    {
+      name: "HP ProBook 440 G8 (32M53EA)",
+      tag:"Notbuk",
+      img:"hp4",
+      price:2214.99,
+      inCart:0
+    },
+    {
+      name: " HP ProBook 450 G8 (3C3S5ES)",
+      tag:"Notbuk",
+      img:"hp3",
+      price:2286.99,
+      inCart:0
+    },
+    {
+      name: "НP 15s-fq3025ur (3V048EA)",
+      tag:"Notbuk",
+      img:"hp3",
+      price:955.99,
+      inCart:0
+    },
+    {
+      name: " НP ENVY x360 15-eh1060ur (4H2K7EA)",
+      tag:"Notbuk",
+      img:"hp5",
+      price:1699.99,
+      inCart:0
+    },
+    {
+      name: "HP 250 G7 (197V0EA)",
+      tag:"Notbuk",
+      img:"hp1",
+      price:699.99,
+      inCart:0
+    },
+    {
+        name: "HP 15s-fq5020nia (6G3Q3EA)",
+        tag:"Notbuk",
+        img:"hp2",
+        price:1799.99,
+        inCart:0
+    },
+      {
+        name: "HP ProBook 450 G8 (32M59EA/1)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:1814.99,
+        inCart:0
+      },
+      {
+        name: "HP 250 G8 (2W8Z4EA/1)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:1247.99,
+        inCart:0
+      },
+      {
+        name: "HP ProBook 450 G8 (32N92EA)",
+        tag:"Notbuk",
+        img:"hp3",
+        price:1999.99,
+        inCart:0
+      },
+
+]
+
+ for(let j=0; j<likes.length;j++){
+  likes[j].addEventListener("click",(e)=>{
+    cartNumber(products[j]);
+    e.preventDefault();
+  })
+}
+
+function onLoadCartNumber(){
+let productNumber= localStorage.getItem("cartNumber");
+if(productNumber){
+  document.querySelector(".hearts small").textContent=productNumber;
+}
+}
+
+function cartNumber(products){
+let productNumber= localStorage.getItem("cartNumber");
+productNumber= parseInt(productNumber);
+
+if(productNumber){
+  localStorage.setItem("cartNumber",productNumber+1);
+  document.querySelector(".hearts small").textContent= productNumber+1
+}else{
+  localStorage.setItem("cartNumber",1);
+  document.querySelector(".hearts small").textContent=1
+}
+setItemss(products);
+}
+
+function setItemss(products){
+let cartItem = localStorage.getItem("productsInCarts");
+ cartItem = JSON.parse(cartItem);
+
+if(cartItem != null){
+  if(cartItem[products.img]==undefined){
+     cartItem ={
+      ...cartItem,
+      [products.img] : products
+     }
+  }
+  cartItem[products.img].inCart += 1
+}else{
+    products.inCart = 1
+        cartItem = {
+           [products.img] : products
+       }
+}
+   localStorage.setItem("productsInCarts",JSON.stringify(cartItem))
+}
+
+function LikeCart(){
+  let cartItem = localStorage.getItem("productsInCarts");
+
+  cartItem = JSON.parse(cartItem);
+  console.log(cartItem);
+  let productCart = document.querySelector(".cartss");
+
+  if(cartItem && productCart){
+    productCart.innerHTML = "";
+    Object.values(cartItem).map(item=>{
+      productCart.innerHTML += `
+      <div class="container cartCon">
+      <div class="product_cart">
+          <div class="product_img">
+              <img src="/assets/image/imagess/${item.img}.jpg">
+          </div>
+          <div class="text_product">
+              <p>
+                 ${item.tag}
+              </p>
+              <h3>
+                ${item.name}
+              </h3>
+              <div class="all_box">
+                  <div class="price">
+                      <p>
+                         ${item.price} AZN
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+      `
+    })
+  }
+}
+
+onLoadCartNumber();
+LikeCart();

@@ -1321,10 +1321,26 @@
   align-items: center;
   gap: 3px;
   transition: 0.4s all ease-in-out;
+  position: relative;
 }
 .header .header_down .down .liked a .fa-heart {
   color: red;
   transition: 0.3s all ease-in-out;
+}
+.header .header_down .down .liked a small {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f6861f;
+  border-radius: 50%;
+  background: #f6861f;
+  color: white;
+  font-size: 8px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  left: 34px;
 }
 .header .header_down .down .liked a span {
   color: #212529;
