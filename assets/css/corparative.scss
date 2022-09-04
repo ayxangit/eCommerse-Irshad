@@ -1646,6 +1646,12 @@ $font_product_size:36px;
                         line-height: 1.2;
                     }
                 }
+                .color{
+                    border-color: red;
+                }
+                .colors{
+                    border-color: green;
+                }
                 label{
                        color:#95979c;
                         font-size: $font_size_placeholder;

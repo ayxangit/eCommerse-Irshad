@@ -1607,6 +1607,12 @@
   font-weight: 500;
   line-height: 1.2;
 }
+.corparative_box .corparativeCon .form form .color {
+  border-color: red;
+}
+.corparative_box .corparativeCon .form form .colors {
+  border-color: green;
+}
 .corparative_box .corparativeCon .form form label {
   color: #95979c;
   font-size: 16px;

@@ -1526,6 +1526,7 @@ $font_product_size:36px;
             height: 102px;
             display: flex;
             gap: 15px;
+
             .input1{
                 width: 100%;
                 height: 52px;
@@ -1545,6 +1546,9 @@ $font_product_size:36px;
                         color: $color_icon;
                     }
                 }
+                .color{
+                    border-color: red;
+                }
             }
             .input2{
                 width: 100%;
@@ -1557,6 +1561,9 @@ $font_product_size:36px;
                     border-radius: 0.6rem;
                     padding: 14px 20px;
                     margin-top: 10px;
+                    .color{
+                        border-color: red;
+                    }
                     &::placeholder{
                         font-size: $font_size_placeholder;
                         font-family: $font_family;
@@ -1602,6 +1609,9 @@ $font_product_size:36px;
                     color: #40b659;
                 }
             }
+           }
+           .color{
+            border-color: red;
            }
         }
 
