@@ -1446,12 +1446,14 @@
   border: 1px solid #e3e5eb;
   border-radius: 1.2rem 0 0 1.2rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
-.register .registerCon .register_box h2 {
+.register .registerCon .register_box form {
+  width: 90%;
+  height: auto;
+}
+.register .registerCon .register_box form h2 {
   width: 100%;
   height: 40px;
   color: #18181a;
@@ -1461,22 +1463,20 @@
   line-height: 1.2;
   margin-left: 6px;
 }
-.register .registerCon .register_box .personal_info {
-  width: 90%;
+.register .registerCon .register_box form .personal_info {
+  width: 100%;
   height: 700px;
 }
-.register .registerCon .register_box .personal_info .form {
+.register .registerCon .register_box form .personal_info .form {
   width: 100%;
   height: 650px;
   margin-top: 15px;
-}
-.register .registerCon .register_box .personal_info .form form {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
-.register .registerCon .register_box .personal_info .form form label {
+.register .registerCon .register_box form .personal_info .form label {
   display: block;
   margin-top: 15px;
   color: #95979c;
@@ -1485,7 +1485,7 @@
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .personal_info .form form input {
+.register .registerCon .register_box form .personal_info .form input {
   display: block;
   outline: none;
   border: 1px solid #dadbdd;
@@ -1495,32 +1495,32 @@
   margin-top: 15px;
   padding: 14px 20px;
 }
-.register .registerCon .register_box .personal_info .form form input::-moz-placeholder {
+.register .registerCon .register_box form .personal_info .form input::-moz-placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .personal_info .form form input:-ms-input-placeholder {
+.register .registerCon .register_box form .personal_info .form input:-ms-input-placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .personal_info .form form input::placeholder {
+.register .registerCon .register_box form .personal_info .form input::placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .personal_info .form form .login_info {
+.register .registerCon .register_box form .personal_info .form .login_info {
   width: 48%;
   height: 630px;
 }
-.register .registerCon .register_box .personal_info .form form .login_info .radio {
+.register .registerCon .register_box form .personal_info .form .login_info .radio {
   width: 100%;
   height: 78px;
   display: flex;
@@ -1528,7 +1528,7 @@
   align-items: center;
   position: relative;
 }
-.register .registerCon .register_box .personal_info .form form .login_info .radio label {
+.register .registerCon .register_box form .personal_info .form .login_info .radio label {
   display: inline-block;
   margin-left: 10px;
   position: relative;
@@ -1536,40 +1536,40 @@
   color: #000000;
   font-weight: 800;
 }
-.register .registerCon .register_box .personal_info .form form .login_info .radio input {
+.register .registerCon .register_box form .personal_info .form .login_info .radio input {
   width: 20px;
   height: 20px;
   display: inline-block;
 }
-.register .registerCon .register_box .personal_info .form form .login_info .radio .radio1 {
+.register .registerCon .register_box form .personal_info .form .login_info .radio .radio1 {
   width: 40%;
   height: 25px;
 }
-.register .registerCon .register_box .personal_info .form form .login_info .radio .radio2 {
+.register .registerCon .register_box form .personal_info .form .login_info .radio .radio2 {
   width: 40%;
   height: 25px;
 }
-.register .registerCon .register_box .personal_info .form form .login_info2 {
+.register .registerCon .register_box form .personal_info .form .login_info2 {
   width: 48%;
   height: 630px;
 }
-.register .registerCon .register_box .education {
-  width: 90%;
+.register .registerCon .register_box form .education {
+  width: 100%;
   height: 350px;
 }
-.register .registerCon .register_box .education .education_box {
+.register .registerCon .register_box form .education .education_box {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.register .registerCon .register_box .education .education_box .education_info {
+.register .registerCon .register_box form .education .education_box .education_info {
   width: 48%;
   height: 300px;
   margin-left: 10px;
 }
-.register .registerCon .register_box .education .education_box .education_info h4 {
+.register .registerCon .register_box form .education .education_box .education_info h4 {
   color: #18181a;
   font-family: "Rokkitt", serif;
   font-size: 20px;
@@ -1577,7 +1577,7 @@
   line-height: 1.5;
   margin-top: 15px;
 }
-.register .registerCon .register_box .education .education_box .education_info label {
+.register .registerCon .register_box form .education .education_box .education_info label {
   display: block;
   margin-top: 15px;
   color: #95979c;
@@ -1586,7 +1586,7 @@
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .education .education_box .education_info input {
+.register .registerCon .register_box form .education .education_box .education_info input {
   display: block;
   outline: none;
   border: 1px solid #dadbdd;
@@ -1596,28 +1596,28 @@
   margin-top: 5px;
   padding: 14px 20px;
 }
-.register .registerCon .register_box .education .education_box .education_info input::-moz-placeholder {
+.register .registerCon .register_box form .education .education_box .education_info input::-moz-placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .education .education_box .education_info input:-ms-input-placeholder {
+.register .registerCon .register_box form .education .education_box .education_info input:-ms-input-placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .education .education_box .education_info input::placeholder {
+.register .registerCon .register_box form .education .education_box .education_info input::placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .education .education_box .select_info {
+.register .registerCon .register_box form .education .education_box .select_info {
   width: 48%;
   height: 300px;
   display: flex;
@@ -1626,7 +1626,7 @@
   gap: 20px;
   position: relative;
 }
-.register .registerCon .register_box .education .education_box .select_info label {
+.register .registerCon .register_box form .education .education_box .select_info label {
   display: block;
   margin-top: 15px;
   color: #95979c;
@@ -1637,7 +1637,7 @@
   position: relative;
   top: 40px;
 }
-.register .registerCon .register_box .education .education_box .select_info select {
+.register .registerCon .register_box form .education .education_box .select_info select {
   display: block;
   outline: none;
   border: 1px solid #dadbdd;
@@ -1647,19 +1647,19 @@
   margin-top: 43px;
   padding: 14px 20px;
 }
-.register .registerCon .register_box .education .education_box .select_info .select_start {
+.register .registerCon .register_box form .education .education_box .select_info .select_start {
   width: 48%;
   height: 280px;
 }
-.register .registerCon .register_box .education .education_box .select_info .select_end {
+.register .registerCon .register_box form .education .education_box .select_info .select_end {
   width: 48%;
   height: 280px;
 }
-.register .registerCon .register_box .work {
-  width: 90%;
+.register .registerCon .register_box form .work {
+  width: 100%;
   height: 350px;
 }
-.register .registerCon .register_box .work .work_box {
+.register .registerCon .register_box form .work .work_box {
   width: 100%;
   height: 300px;
   display: flex;
@@ -1667,7 +1667,7 @@
   align-items: center;
   margin-left: 8px;
 }
-.register .registerCon .register_box .work .work_box h4 {
+.register .registerCon .register_box form .work .work_box h4 {
   color: #18181a;
   font-family: "Rokkitt", serif;
   font-size: 20px;
@@ -1675,7 +1675,7 @@
   line-height: 1.5;
   margin-top: 15px;
 }
-.register .registerCon .register_box .work .work_box label {
+.register .registerCon .register_box form .work .work_box label {
   display: block;
   margin-top: 15px;
   color: #95979c;
@@ -1684,7 +1684,7 @@
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .work .work_box input {
+.register .registerCon .register_box form .work .work_box input {
   display: block;
   outline: none;
   border: 1px solid #dadbdd;
@@ -1694,44 +1694,44 @@
   margin-top: 5px;
   padding: 14px 20px;
 }
-.register .registerCon .register_box .work .work_box input::-moz-placeholder {
+.register .registerCon .register_box form .work .work_box input::-moz-placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .work .work_box input:-ms-input-placeholder {
+.register .registerCon .register_box form .work .work_box input:-ms-input-placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .work .work_box input::placeholder {
+.register .registerCon .register_box form .work .work_box input::placeholder {
   color: #95979c;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Rokkitt", serif;
 }
-.register .registerCon .register_box .work .work_box .work_info {
+.register .registerCon .register_box form .work .work_box .work_info {
   width: 48%;
   height: 300px;
 }
-.register .registerCon .register_box .work .work_box .select_boxs {
+.register .registerCon .register_box form .work .work_box .select_boxs {
   width: 48%;
   height: 300px;
   display: flex;
   flex-direction: column;
 }
-.register .registerCon .register_box .work .work_box .select_boxs .selectInfo {
+.register .registerCon .register_box form .work .work_box .select_boxs .selectInfo {
   width: 100%;
   height: 138px;
   display: flex;
   gap: 15px;
 }
-.register .registerCon .register_box .work .work_box .select_boxs .selectInfo label {
+.register .registerCon .register_box form .work .work_box .select_boxs .selectInfo label {
   display: block;
   margin-top: 15px;
   color: #95979c;
@@ -1742,7 +1742,7 @@
   position: relative;
   top: 40px;
 }
-.register .registerCon .register_box .work .work_box .select_boxs .selectInfo select {
+.register .registerCon .register_box form .work .work_box .select_boxs .selectInfo select {
   display: block;
   outline: none;
   border: 1px solid #dadbdd;
@@ -1752,27 +1752,27 @@
   margin-top: 43px;
   padding: 14px 20px;
 }
-.register .registerCon .register_box .work .work_box .select_boxs .selectInfo .selectStart {
+.register .registerCon .register_box form .work .work_box .select_boxs .selectInfo .selectStart {
   width: 48%;
   height: 140px;
 }
-.register .registerCon .register_box .work .work_box .select_boxs .selectInfo .selectEnd {
+.register .registerCon .register_box form .work .work_box .select_boxs .selectInfo .selectEnd {
   width: 48%;
   height: 140px;
 }
-.register .registerCon .register_box .work .work_box .select_boxs .selectText {
+.register .registerCon .register_box form .work .work_box .select_boxs .selectText {
   width: 100%;
   height: 168px;
 }
-.register .registerCon .register_box .language {
-  width: 90%;
+.register .registerCon .register_box form .language {
+  width: 100%;
   height: 220px;
 }
-.register .registerCon .register_box .language .radioBox {
+.register .registerCon .register_box form .language .radioBox {
   width: 100%;
   height: 180px;
 }
-.register .registerCon .register_box .language .radioBox p {
+.register .registerCon .register_box form .language .radioBox p {
   font-family: "Rokkitt", serif;
   font-size: 18px;
   color: #000000;
@@ -1781,33 +1781,33 @@
   margin-left: 8px;
   margin-top: 15px;
 }
-.register .registerCon .register_box .language .radioBox label {
+.register .registerCon .register_box form .language .radioBox label {
   margin-left: 10px;
   position: relative;
   bottom: 5px;
   color: #18181a;
   font-weight: 500;
 }
-.register .registerCon .register_box .language .radioBox input {
+.register .registerCon .register_box form .language .radioBox input {
   width: 20px;
   height: 20px;
 }
-.register .registerCon .register_box .language .radioBox .radio_language {
+.register .registerCon .register_box form .language .radioBox .radio_language {
   width: 100%;
   height: 130px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.register .registerCon .register_box .language .radioBox .radio_language .radioLang {
+.register .registerCon .register_box form .language .radioBox .radio_language .radioLang {
   width: 20%;
   height: 70px;
 }
-.register .registerCon .register_box .computer {
-  width: 90%;
+.register .registerCon .register_box form .computer {
+  width: 100%;
   height: 140px;
 }
-.register .registerCon .register_box .computer .comp_language {
+.register .registerCon .register_box form .computer .comp_language {
   width: 100%;
   height: 80px;
   display: flex;
@@ -1815,27 +1815,27 @@
   align-items: center;
   margin-top: 15px;
 }
-.register .registerCon .register_box .computer .comp_language .compLang {
+.register .registerCon .register_box form .computer .comp_language .compLang {
   width: 16%;
   height: 40px;
   position: relative;
 }
-.register .registerCon .register_box .computer .comp_language .compLang label {
+.register .registerCon .register_box form .computer .comp_language .compLang label {
   margin-left: 5px;
   position: relative;
   bottom: 3px;
   color: #18181a;
   font-weight: 500;
 }
-.register .registerCon .register_box .computer .comp_language .compLang input {
+.register .registerCon .register_box form .computer .comp_language .compLang input {
   width: 16px;
   height: 16px;
 }
-.register .registerCon .register_box .place {
-  width: 90%;
+.register .registerCon .register_box form .place {
+  width: 100%;
   height: 160px;
 }
-.register .registerCon .register_box .place label {
+.register .registerCon .register_box form .place label {
   display: block;
   margin-top: 25px;
   color: #95979c;
@@ -1845,7 +1845,7 @@
   font-family: "Rokkitt", serif;
   margin-left: 9px;
 }
-.register .registerCon .register_box .place select {
+.register .registerCon .register_box form .place select {
   display: block;
   outline: none;
   border: 1px solid #dadbdd;
@@ -1856,15 +1856,15 @@
   margin-left: 8px;
   margin-top: 8px;
 }
-.register .registerCon .register_box .button {
-  width: 90%;
+.register .registerCon .register_box form .button {
+  width: 100%;
   height: 52px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 15px;
 }
-.register .registerCon .register_box .button button {
+.register .registerCon .register_box form .button button {
   width: 20%;
   height: 48px;
   display: flex;
@@ -1881,7 +1881,7 @@
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
-.register .registerCon .register_box .button button:hover {
+.register .registerCon .register_box form .button button:hover {
   background: #fff;
   color: #40b659;
 }
