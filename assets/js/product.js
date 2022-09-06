@@ -4,6 +4,7 @@ let carts = document.querySelectorAll(".add-cart");
 
 let products = [
   {
+    id:1,
     name: "Lenovo IP3 15IIL05 (81WE017GRK)",
     tag:"Notbuk",
     img:"computer",
@@ -11,6 +12,7 @@ let products = [
     inCart:0
   },
   {
+    id:2,
     name: "Apple iPad 10.2 Wi-Fi 32 GB (2020) (8th generation) Space Gray",
     tag:"Planşet",
     img:"tablet",
@@ -18,6 +20,7 @@ let products = [
     inCart:0
   },
   {
+    id:3,
     name: "Xiaomi Mi TV Stick EU HDMI (MDZ-24-AA)",
     tag:"TV box",
     img:"pult",
@@ -25,6 +28,7 @@ let products = [
     inCart:0
   },
   {
+    id:4,
     name:"Honor Earbuds 2 Lite T0005 Glacier White",
     tag:"Qulaqcıqlar",
     img:"WhiteHonor",
@@ -32,6 +36,7 @@ let products = [
     inCart:0
   },
   {
+    id:5,
     name: "Panasonic KX-TG1611UAH Dark Gr",
     tag:"Ev telefonu",
     img:"panasonic",
@@ -39,6 +44,7 @@ let products = [
     inCart:0
   },
   {
+    id:6,
     name: "Samsung RT35K5440S8/WT",
     tag:"Soyuducu",
     img:"xaladenniy",
@@ -46,6 +52,7 @@ let products = [
     inCart:0
   },
   {
+    id:7,
     name: "Fakir Lucina Red",
     tag:"Blender",
     img:"blender",
@@ -53,6 +60,7 @@ let products = [
     inCart:0
   },
   {
+    id:8,
     name: "Fakir Torque 1800 Meat  Frinde ",
     tag:"Ət çəkən",
     img:"etceken",
@@ -60,6 +68,7 @@ let products = [
     inCart:0
   },
   {
+    id:9,
     name: "Taube TB4802GG Silver",
     tag:"Soba",
     img:"soba",
@@ -67,6 +76,7 @@ let products = [
     inCart:0
   },
   {
+    id:10,
     name: "IPhone 12/12 Pro case Guess",
     tag:"Telefon qabları",
     img:"53b5dc26820d85a2713b892de6069655",
@@ -74,6 +84,7 @@ let products = [
     inCart:0
   },
   {
+    id:11,
     name: "Airpods case",
     tag:"Qulaqlıq qabları",
     img:"c86477583262fb8362c1f80c6c2bcad5",
@@ -81,6 +92,7 @@ let products = [
     inCart:0
   },
   {
+    id:12,
     name: "Janod Ayı (J04652)",
     tag:"Daxıl",
     img:"9db7ef71cf6a620813a3526a9a58fbad",
@@ -88,6 +100,7 @@ let products = [
     inCart:0
   },
   {
+    id:13,
     name:" Zimmer 32' LED TV(ZM-TVH3235)",
     tag:"Televizorlar",
     img:"4752dc43430503c3ef74502e079d160b",
@@ -95,6 +108,7 @@ let products = [
     inCart:0
   },
   {
+    id:14,
     name: "Alcatel 6056H Black",
     tag:"Telefonlar",
     img:"68e8f45fea9574513492a4ff72533de8",
@@ -102,6 +116,7 @@ let products = [
     inCart:0
   },
   {
+    id:15,
     name: "ASUS VivoBook 15 K513EA-L12078",
     tag:"Notbuk",
     img:"90nb0sg1-m00es0",
@@ -109,6 +124,7 @@ let products = [
     inCart:0
   },
   {
+    id:16,
     name: " ORIENT RA-AP0005B10",
     tag:"Saatlar",
     img:"orient-ra-ap0005b10",
@@ -116,6 +132,7 @@ let products = [
     inCart:0
   },
   {
+    id:17,
     name: "Edifier R501",
     tag:"Peakerlər",
     img:"9e10f4799a9166273655218cfdee1fa4",
@@ -123,6 +140,7 @@ let products = [
     inCart:0
   },
   {
+    id:18,
     name: "HONOR MagicBook X 14 (NBR-WAI9)",
     tag:"Notbuk",
     img:"577ef5d188a62db507b9b1648edd79b3",
@@ -130,6 +148,7 @@ let products = [
     inCart:0
   },
   {
+    id:19,
     name: "JVC 32' LED TV (LT-32N3100)",
     tag:"Televizor",
     img:"butterfly tv",
@@ -137,6 +156,7 @@ let products = [
     inCart:0
   },
   {
+    id:20,
     name: "Canali Lora 9 pcs Black Dekor",
     tag:"Qazan",
     img:"dekor",
@@ -144,6 +164,7 @@ let products = [
     inCart:0
   },
   {
+    id:21,
     name: "BOSCH SMS43D08ME",
     tag:"Qabyuyan",
     img:"qabyuyan",
@@ -151,6 +172,7 @@ let products = [
     inCart:0
   },
   {
+    id:22,
     name:"JVC 55' LED TV (LT-55N7115) Smart",
     tag:"Televizor",
     img:"55tv",
@@ -158,6 +180,7 @@ let products = [
     inCart:0
   },
   {
+    id:23,
     name: "Kyvol Cybovac D3 Robot Vacuum Mop",
     tag:"Tozsoran",
     img:"supurge",
@@ -165,6 +188,7 @@ let products = [
     inCart:0
   },
   {
+    id:24,
     name: "HP 255 G8 (27K51EA)",
     tag:"Notbuk",
     img:"hp",
@@ -172,6 +196,7 @@ let products = [
     inCart:0
   },
   {
+    id:25,
     name: "Canon Pixma G640",
     tag:"Printerllər və MFA",
     img:"skayner",
@@ -179,6 +204,7 @@ let products = [
     inCart:0
   },
   {
+    id:26,
     name: "LG I12CGH INVERTER",
     tag:"Kondisionerlər",
     img:"lgCon",
@@ -186,6 +212,7 @@ let products = [
     inCart:0
   },
   {
+    id:27,
     name: "Asus VG24VQE Gaming (90LM0575-B01170)",
     tag:"Monitorlar",
     img:"tuf gaming",
@@ -193,6 +220,7 @@ let products = [
     inCart:0
   },
   {
+    id:28,
     name: "Ayaq üçün ağırlıq Sunlin 2x1.5 kq",
     tag:"Idman ləvazimatları",
     img:"ayaq-ucun-agirliq2",
@@ -200,6 +228,7 @@ let products = [
     inCart:0
   },
   {
+    id:29,
     name: " CASIO AE-1000W-2AVDF",
     tag:"Saatlar",
     img:"61debf0f8d34f796cb63415eb03a9904",
@@ -207,6 +236,7 @@ let products = [
     inCart:0
   },
   {
+    id:30,
     name: "Samsung WW70A6S23AN/LP",
     tag:"Paltaryuyan",
     img:"ru-ww6100a-ww70a6s23an-lp-520056945",
@@ -214,6 +244,7 @@ let products = [
     inCart:0
   },
   {
+    id:31,
     name:"  Dell Vostro 3515-273665027 ",
     tag:"Notbuk",
     img:"dell-vostro-3515-273665027-1",
@@ -221,6 +252,7 @@ let products = [
     inCart:0
   },
   {
+    id:32,
     name: "CASIO A168WEMB-1BDF",
     tag:"Saatlar",
     img:"casio-a168wemb-1bdf",
@@ -228,6 +260,7 @@ let products = [
     inCart:0
   },
   {
+    id:33,
     name: "Total THT 141121",
     tag:"Alətlər dəsti",
     img:"tht141121",
@@ -235,6 +268,7 @@ let products = [
     inCart:0
   },
   {
+    id:34,
     name: " Xbox Series S",
     tag:" Oyun konsolları",
     img:"xbox-series-s",
@@ -242,6 +276,7 @@ let products = [
     inCart:0
   },
   {
+    id:35,
     name: " Xiaomi Deerma  DEM-DR050",
     tag:"Termos",
     img:"xiaomi-deerma-dem-dr050-1",
@@ -249,6 +284,7 @@ let products = [
     inCart:0
   },
   {
+    id:36,
     name: "CN.M-605 Blue",
     tag:" Uşaq üçün elektromobil",
     img:"cnm-605-goy",
@@ -256,6 +292,10 @@ let products = [
     inCart:0
   },
 ]
+
+
+
+
 
 for(let i=0; i<carts.length;i++){
     carts[i].addEventListener("click",(e)=>{
@@ -351,7 +391,7 @@ function displayCart(){
                             ${item.inCart}
                         </div>
                         <div class="up">
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus" ></i>
                         </div>
                     </div>
                     <div class="price">
@@ -375,7 +415,6 @@ function displayCart(){
       })
     }
 }
-
 onLoadCartNumbers();
 displayCart();
 

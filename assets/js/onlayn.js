@@ -463,3 +463,45 @@ function LikeCart(){
 
 onLoadCartNumber();
 LikeCart();
+
+let rangeInput = document.querySelectorAll(".range input");
+let priceInput = document.querySelectorAll(".price input");
+let progress = document.querySelector(".progres");
+let priceGab = 1000;
+priceInput.forEach(input=>{
+  input.addEventListener("input",(e)=>{
+    let minVal = parseInt(priceInput[0].value);
+    let maxVal = parseInt(priceInput[1].value);
+
+
+    if((maxVal-minVal >= priceGab) && maxVal<=10000){
+      if(e.target.className==="input-min"){
+        rangeInput[0].value = minVal;
+        progress.style.left = (minVal/rangeInput[0].max) *100 + "%";
+      }else{
+        rangeInput[1].value = maxVal;
+        progress.style.right = 100- (maxVal/rangeInput[1].max) *100 + "%";
+      }
+    }
+  })
+})
+rangeInput.forEach(input=>{
+  input.addEventListener("input",(e)=>{
+    let minVal = parseInt(rangeInput[0].value);
+    let maxVal = parseInt(rangeInput[1].value);
+
+
+    if(maxVal-minVal < priceGab){
+      if(e.target.className==="min-value"){
+        rangeInput[0].value = maxVal-priceGab
+      }else{
+        rangeInput[1].value = minVal+priceGab
+      }
+    }else{
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      progress.style.left = (minVal/rangeInput[0].max) *100 + "%";
+      progress.style.right = 100- (maxVal/rangeInput[1].max) *100 + "%";
+    }
+  })
+})

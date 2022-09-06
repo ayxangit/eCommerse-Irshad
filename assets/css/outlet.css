@@ -1478,24 +1478,63 @@
   width: 48%;
   height: 47px;
   outline: none;
+  font-size: 18px;
+  font-family: "Rokkitt", serif;
+  color: #18181a;
   border: 1px solid #e3e5eb;
   border-radius: 0.6rem;
   padding: 12px 16px;
+  -moz-appearance: none;
 }
-.sadcart .sadCon .onlayn_box .category_box .price_box .price input::-moz-placeholder {
-  color: #95979c;
-  font-family: "Rokkitt", serif;
-  font-size: 18px;
+.sadcart .sadCon .onlayn_box .category_box .price_box .price input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
-.sadcart .sadCon .onlayn_box .category_box .price_box .price input:-ms-input-placeholder {
-  color: #95979c;
-  font-family: "Rokkitt", serif;
-  font-size: 18px;
+.sadcart .sadCon .onlayn_box .category_box .price_box .price input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
-.sadcart .sadCon .onlayn_box .category_box .price_box .price input::placeholder {
-  color: #95979c;
-  font-family: "Rokkitt", serif;
-  font-size: 18px;
+.sadcart .sadCon .onlayn_box .category_box .price_box .slider {
+  height: 5px;
+  border-radius: 5px;
+  background: #ddd;
+  margin-top: 10px;
+  position: relative;
+}
+.sadcart .sadCon .onlayn_box .category_box .price_box .slider .progres {
+  height: 5px;
+  border-radius: 5px;
+  background: #17a2b8;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+.sadcart .sadCon .onlayn_box .category_box .price_box .range {
+  position: relative;
+}
+.sadcart .sadCon .onlayn_box .category_box .price_box .range input {
+  position: absolute;
+  top: -5px;
+  height: 5px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+.sadcart .sadCon .onlayn_box .category_box .price_box .range input[type=range]::-webkit-slider-thumb {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  pointer-events: all;
+  -webkit-appearance: none;
+  background: #17a2b8;
+}
+.sadcart .sadCon .onlayn_box .category_box .price_box .range input[type=range]::-moz-range-thumb {
+  width: 17px;
+  height: 17px;
+  border: none;
+  border-radius: 50%;
+  pointer-events: all;
+  -moz-appearance: none;
+  background: #17a2b8;
 }
 .sadcart .sadCon .onlayn_box .product_box {
   width: 75%;
