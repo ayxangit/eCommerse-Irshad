@@ -346,4 +346,343 @@
   font-size: 16px;
   margin-right: 8px;
   transition: 0.3s all ease-in-out;
+}
+
+@media screen and (device-width: 768px) {
+  .header {
+    width: 100%;
+    height: 99px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .headCon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .headCon .logo {
+    width: 14%;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .header .headCon .logo img {
+    width: 100%;
+  }
+  .header .headCon .language {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .headCon .language .call_fast {
+    width: 30%;
+    height: 24px;
+    border-right: 1px solid #ecedf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .headCon .language .call_fast a img {
+    width: 70%;
+  }
+  .header .headCon .language .choose_language {
+    width: 60%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    padding: 10px 10px;
+  }
+  .header .headCon .language .choose_language:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+  }
+  .header .headCon .language .choose_language .flag {
+    width: 16%;
+    height: 24px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .headCon .language .choose_language .flag img {
+    width: 100%;
+  }
+  .header .headCon .language .choose_language p {
+    color: #212529;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Rokkitt", serif;
+    line-height: 1.5;
+    margin-right: 12px;
+    position: relative;
+  }
+  .header .headCon .language .choose_language p .fa-angle-down {
+    position: relative;
+    top: 2px;
+    left: 6px;
+  }
+  .header .headCon .language .choose_language .dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #e1e2e7;
+    width: 89%;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.3s all ease-in-out;
+    margin-top: 80px;
+    right: 17px;
+  }
+  .header .headCon .language .choose_language .dropdown-content p {
+    color: #212529;
+    font-size: 15px;
+    font-family: "Rokkitt", serif;
+    font-weight: 400;
+  }
+  .login {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+  }
+  .login .loginImg {
+    width: 40%;
+    height: auto;
+    background: url(https://irshad.az/resized/resize672/center/pages/200/kabinet-cover.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .login .login_box {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login .login_box .form {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .login .login_box .form h3 {
+    width: 100%;
+    height: 20px;
+    font-family: "Rokkitt", serif;
+    color: #000000;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 36px;
+  }
+  .login .login_box .form form {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .login .login_box .form form .customerCode {
+    display: flex;
+    width: 98%;
+    height: 80px;
+    gap: 10px;
+  }
+  .login .login_box .form form .customerCode .personalNumber {
+    width: 55%;
+    height: 52px;
+  }
+  .login .login_box .form form .customerCode .personalNumber label {
+    font-size: 16px;
+    font-family: "Rokkitt", serif;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #95979c;
+  }
+  .login .login_box .form form .customerCode .personalNumber input {
+    width: 98%;
+    height: 52px;
+    outline: none;
+    border: 1px solid #dadbdd;
+    border-radius: 0.6rem;
+    padding: 14px 20px;
+  }
+  .login .login_box .form form .customerCode .personalCode {
+    width: 45%;
+    height: 52px;
+  }
+  .login .login_box .form form .customerCode .personalCode label {
+    font-size: 16px;
+    font-family: "Rokkitt", serif;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #95979c;
+  }
+  .login .login_box .form form .customerCode .personalCode input {
+    width: 98%;
+    height: 52px;
+    outline: none;
+    border: 1px solid #dadbdd;
+    border-radius: 0.6rem;
+    padding: 14px 20px;
+  }
+  .login .login_box .form form label {
+    font-size: 16px;
+    font-family: "Rokkitt", serif;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #95979c;
+    margin-top: 7px;
+  }
+  .login .login_box .form form input {
+    width: 98%;
+    height: 52px;
+    outline: none;
+    border: 1px solid #dadbdd;
+    border-radius: 0.6rem;
+    padding: 14px 20px;
+    margin-top: 10px;
+  }
+  .login .login_box .form form .show {
+    width: 10%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    bottom: 35px;
+    left: 385px;
+  }
+  .login .login_box .form form .show .fa-eye-slash {
+    color: #5b5f66;
+    cursor: pointer;
+  }
+  .login .login_box .form form .show .fa-eye {
+    color: #5b5f66;
+    display: none;
+    cursor: pointer;
+  }
+  .login .login_box .form form .restart {
+    width: 10%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    bottom: 35px;
+    left: 385px;
+  }
+  .login .login_box .form form .restart .fa-eye-slash {
+    color: #5b5f66;
+    cursor: pointer;
+  }
+  .login .login_box .form form .restart .fa-eye {
+    color: #5b5f66;
+    display: none;
+    cursor: pointer;
+  }
+  .login .login_box .form form .colorRestart {
+    border-color: red;
+  }
+  .login .login_box .form form .colorRestart1 {
+    border-color: red;
+  }
+  .login .login_box .form form .textContent {
+    position: relative;
+    bottom: 18px;
+    left: 3px;
+    font-family: "Rokkitt", serif;
+    font-size: 16px;
+    color: red;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .login .login_box .form form button {
+    width: 99%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background: #40b659;
+    border: 1px solid #40b659;
+    border-radius: 6px;
+    color: #fff;
+    font-family: "Rokkitt", serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+  }
+  .login .login_box .form form button:hover {
+    background: #fff;
+    color: #40b659;
+  }
+  .login .login_box .form form .loginPage {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .login .login_box .form form .loginPage a {
+    color: #f6861f;
+    font-family: "Rokkitt", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: 0.3s all ease-in-out;
+  }
+  .login .login_box .form form .loginPage a:hover {
+    color: #18181a;
+  }
+  .login .login_box .form form .loginPage a:hover .fa-user {
+    color: #18181a;
+  }
+  .login .login_box .form form .loginPage a .fa-user {
+    color: #f6861f;
+    font-size: 16px;
+    margin-right: 8px;
+    transition: 0.3s all ease-in-out;
+  }
+  .login .login_box .form form .loginPage .key {
+    color: #95979c;
+    font-family: "Rokkitt", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: 0.3s all ease-in-out;
+  }
+  .login .login_box .form form .loginPage .key:hover {
+    color: #18181a;
+  }
+  .login .login_box .form form .loginPage .key:hover .fa-key {
+    color: #18181a;
+  }
+  .login .login_box .form form .loginPage .key .fa-key {
+    color: #95979c;
+    font-size: 16px;
+    margin-right: 8px;
+    transition: 0.3s all ease-in-out;
+  }
 }/*# sourceMappingURL=account.css.map */
