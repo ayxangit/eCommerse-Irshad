@@ -501,3 +501,28 @@ rangeInput.forEach(input=>{
     }
   })
 })
+
+
+let slideBox = document.querySelector(".is-active")
+let arr = []
+
+const getData = async () =>{
+  await fetch(" http://localhost:9000/get-data")
+  .then(res=>res.json())
+  .then(res=>{
+      for(let i=0; i<res.data.length;i++){
+         arr.push(res.data[i])
+      }
+    })
+    return arr
+  }
+
+getData().then(res=>{
+   res.map(item=>{
+     slideBox.innerHTML += `
+     
+      `
+      
+      
+    })
+  })

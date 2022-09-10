@@ -297,13 +297,14 @@ let products = [
 
 
 
-for(let i=0; i<carts.length;i++){
-    carts[i].addEventListener("click",(e)=>{
-      cartNumbers(products[i]);
-      totalCost(products[i])
-      e.preventDefault();
-    })
-}
+  for(let i=0; i<carts.length;i++){
+      carts[i].addEventListener("click",(e)=>{
+        cartNumbers(products[i]);
+        totalCost(products[i])
+        e.preventDefault();
+      })
+  }
+
 
 function onLoadCartNumbers(){
   let productNumbers= localStorage.getItem("cartNumbers");
@@ -360,7 +361,6 @@ function totalCost(product) {
 
 function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
-
     cartItems = JSON.parse(cartItems);
     console.log(cartItems);
     let productCarts = document.querySelector(".carts");
@@ -371,7 +371,7 @@ function displayCart(){
       Object.values(cartItems).map(item=>{
         productCarts.innerHTML += `
         <div class="container cartCon">
-        <div class="product_cart">
+        <div class="product_cart" onclick="removeItem()">
             <div class="product_img">
                 <img src="/assets/image/imagess/${item.img}.jpg">
             </div>
@@ -417,6 +417,9 @@ function displayCart(){
 }
 onLoadCartNumbers();
 displayCart();
+
+
+
 
 
 
